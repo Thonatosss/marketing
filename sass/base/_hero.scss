@@ -1,0 +1,18 @@
+.hero-section{
+    padding-top: 40px;
+}
+.hero-page-title{
+    @media screen and (max-width: 767px){
+        font-size: 36px;
+        
+    }
+    @media screen and (min-width: 768px){
+        font-size: 46px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 50px;
+    }
+}
+.hero-social-netw{
+    color: $accent-color;
+}
