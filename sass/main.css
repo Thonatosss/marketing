@@ -50,6 +50,10 @@ html {
   color: #0E19D7;
 }
 
+.hero-sec-b-corner {
+  transform: rotate(180deg);
+}
+
 .container {
   width: 100%;
   margin-left: auto;
@@ -204,4 +208,22 @@ html {
 
 .nav-container input[type=checkbox]:checked ~ .logo {
   display: none;
+}
+
+.second-section {
+  padding: 40px 0px 40px 0;
+  background-color: #0E19D7;
+}
+
+.second-sec-t-corner {
+  fill: white;
+  transform: rotate(90deg);
+}
+
+.second-sec-b-corner {
+  transform: rotate(-90deg);
+}
+
+.budget-section {
+  padding: 40px 0px 40px 0px;
 }/*# sourceMappingURL=main.css.map */

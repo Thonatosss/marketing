@@ -1,0 +1,11 @@
+.second-section{
+    padding: 40px 0px 40px 0;
+    background-color: $accent-color;
+}
+.second-sec-t-corner{
+    fill: white;
+    transform: rotate(90deg);
+}
+.second-sec-b-corner{
+    transform: rotate(-90deg);
+}
