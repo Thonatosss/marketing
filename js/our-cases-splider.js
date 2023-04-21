@@ -6,6 +6,7 @@ let switching = false
 $('#card-btn').click(flipCard)
 $('#back-card-btn').click(flipCard)
 
+
 function flipCard () {
    if (switching) {
       return false

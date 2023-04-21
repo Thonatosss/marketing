@@ -1,6 +1,6 @@
-// import Splide from '@splidejs/splide';
 
-const slide = document.querySelector('.splide');
+
+const slide = document.getElementById('splide3');
 
 new Splide( '#splide1', {
     type: 'loop',
