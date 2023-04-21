@@ -1,5 +1,19 @@
 .card-container{
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 114px;
     background-color: $accent-color;
+    margin-right: auto;
+    margin-left: auto
+}
+.splide-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.splide__track{
+    margin-right: auto;
+    margin-left: auto;
+}
+#splide2{
+    margin-top: 30px;
 }

@@ -2,11 +2,22 @@
 
 const slide = document.querySelector('.splide');
 
-new Splide( slide, {
+new Splide( '#splide1', {
     type: 'loop',
     perPage: 3,
     autoplay: true,
     lazyload: true,
     arrows: false,
+    pagination: false,
+}).mount();
+
+new Splide( '#splide2', {
+    type: 'loop',
+    perPage: 3,
+    autoplay: true,
+    lazyload: true,
+    arrows: false,
+    pagination: false,
+    direction: 'rtl',
 }).mount();
 console.log(slide);

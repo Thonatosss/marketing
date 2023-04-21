@@ -27,9 +27,26 @@ html {
 }
 
 .card-container {
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 114px;
   background-color: #0E19D7;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.splide-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.splide__track {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#splide2 {
+  margin-top: 30px;
 }
 
 .hero-section {
