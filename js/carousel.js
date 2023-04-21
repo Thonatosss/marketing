@@ -20,4 +20,14 @@ new Splide( '#splide2', {
     pagination: false,
     direction: 'rtl',
 }).mount();
+
+new Splide( '#splide3', {
+    type: 'loop',
+    perPage: 1,
+    autoplay: true,
+    lazyload: true,
+    // arrows: false,
+    // pagination: false,
+    direction: 'rtl',
+}).mount();
 console.log(slide);
