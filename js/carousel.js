@@ -27,7 +27,7 @@ new Splide( '#splide3', {
     autoplay: true,
     lazyload: true,
     // arrows: false,
-    // pagination: false,
+    pagination: false,
     direction: 'rtl',
 }).mount();
 console.log(slide);

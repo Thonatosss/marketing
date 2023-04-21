@@ -7,8 +7,8 @@
 <symbol id="corner" viewBox="0 0 22 32">
 <path d="M4.5 0v26h3.5v-22.5h8v-3.5z"></path>
 </symbol>
-<symbol id="icon-large-corner" viewBox="0 0 60 32">
-<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.8" d="M5.653 22.916l-0.172-9.39h48.913"></path>
+<symbol id="icon-large-corner" viewBox="0 0 32 32">
+<path d="M14.995 31.68v-29.478h4.39v-1.882h-6.771v31.36h2.381z"></path>
 </symbol>
 </defs>
 </svg>

@@ -1,21 +1,7 @@
-let cardTransitionTime = 500;
+var cards = document.querySelectorAll('.card');
 
-let $card = $('.js-card')
-let switching = false
-
-$('#card-btn').click(flipCard)
-$('#back-card-btn').click(flipCard)
-
-
-function flipCard () {
-   if (switching) {
-      return false
-   }
-   switching = true
-   
-   $card.toggleClass('is-switched')
-   window.setTimeout(function () {
-      $card.children().children().toggleClass('is-active')
-      switching = false
-   }, cardTransitionTime / 2)
-}
+[...cards].forEach((card)=>{
+  card.addEventListener( 'click', function() {
+    card.classList.toggle('is-flipped');
+  });
+});
