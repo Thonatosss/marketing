@@ -26,6 +26,12 @@ html {
   box-sizing: border-box;
 }
 
+.card-container {
+  width: 100px;
+  height: 100px;
+  background-color: #0E19D7;
+}
+
 .hero-section {
   padding-top: 40px;
 }
