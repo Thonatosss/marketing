@@ -26,7 +26,15 @@ new Splide( '#splide3', {
     perPage: 1,
     autoplay: true,
     lazyload: true,
-    // arrows: false,
+    pagination: false,
+    direction: 'rtl',
+}).mount();
+new Splide( '#splide4', {
+    type: 'loop',
+    perPage: 1,
+    autoplay: true,
+    lazyload: true,
+    arrows: false,
     pagination: false,
     direction: 'rtl',
 }).mount();
