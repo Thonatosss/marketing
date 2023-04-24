@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+body {
+  background-color: #F4F4F4;
+}
+
 .h1,
 h2,
 h3,
@@ -33,7 +37,7 @@ html {
 .card-container {
   width: 140px;
   height: 114px;
-  background-color: #0E19D7;
+  background-color: #2a2049;
   margin-right: auto;
   margin-left: auto;
 }
@@ -47,8 +51,31 @@ html {
   margin-top: 30px;
 }
 
+.contact-us {
+  background-color: #2a2049;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.contac-us-svg {
+  fill: #F4F4F4;
+}
+
+.header-container {
+  position: fixed;
+  width: 100%;
+  background-color: #F4F4F4;
+  z-index: 1000;
+}
+
 .hero-section {
-  padding-top: 40px;
+  padding-top: 150px;
+  position: relative;
 }
 
 @media screen and (max-width: 767px) {
@@ -68,11 +95,113 @@ html {
 }
 
 .hero-social-netw {
-  color: #0E19D7;
+  color: #2a2049;
 }
 
 .hero-sec-b-corner {
+  margin-left: auto;
+  display: block;
   transform: rotate(180deg);
+}
+
+.hero-sec-t-corner {
+  fill: #2a2049;
+}
+
+.accent-color-text {
+  color: #2a2049;
+}
+
+.about-us {
+  font-size: 17px;
+}
+
+.call-us-form-input {
+  width: 100%;
+  height: 70px;
+  border: none;
+  background-color: white;
+  padding: 8px 30px;
+}
+
+.call-us-form {
+  margin-top: 40px;
+  margin-bottom: 70px;
+  padding: 15px;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: white;
+  border-radius: 5px;
+  max-width: 600px;
+}
+
+.call-us-btn {
+  width: 80%;
+  height: 60px;
+}
+
+.hero-page-title {
+  font-family: "Furore", sans-serif;
+}
+
+.furore-font {
+  font-family: "Furore", sans-serif;
+}
+@media screen and (max-width: 767px) {
+  .furore-font {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .furore-font {
+    font-size: 50px;
+  }
+}
+
+.average-income {
+  margin-top: 10px;
+}
+
+.button-9 {
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  backface-visibility: hidden;
+  background-color: #2a2049;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 100%;
+  height: 60px;
+  line-height: 1.15;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  max-width: 180px;
+}
+
+.button-9:disabled {
+  cursor: default;
+}
+
+.button-9:focus {
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px;
 }
 
 .container {
@@ -100,31 +229,27 @@ html {
 
 .burger-menu_button {
   position: fixed;
-  top: 0px;
+  top: 38px;
   right: 44px;
   z-index: 30;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #2a2049;
   transition: 0.4s;
 }
 
-.burger-menu_button:hover .burger-menu_lines {
-  filter: brightness(0.7);
-}
-
 .burger-menu_button:hover {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #2a2049;
 }
 
 .burger-menu_lines::before,
 .burger-menu_lines::after,
 .burger-menu_lines {
   position: absolute;
-  width: 50px;
+  width: 43px;
   height: 3px;
-  background-color: #0E19D7;
+  background-color: #F4F4F4;
   transition: 0.4s;
 }
 
@@ -166,7 +291,7 @@ html {
   display: flex;
   flex-flow: column;
   height: 100%;
-  background-color: #F9AFE9;
+  background-color: #F4F4F4;
   overflow-y: auto;
   right: -100%;
   transition: 0.8s;
@@ -185,7 +310,7 @@ html {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: 400;
-  color: #BB1E99;
+  color: #2a2049;
   border-bottom: 1px solid #fff;
 }
 
@@ -214,7 +339,7 @@ html {
 
 .second-section {
   padding: 40px 0px 40px 0;
-  background-color: #0E19D7;
+  background-color: #2a2049;
 }
 
 .second-sec-t-corner {
@@ -271,7 +396,7 @@ html {
 }
 
 .card__face--front {
-  background: #0E19D7;
+  background: #2a2049;
 }
 
 .card__face--back {
@@ -281,7 +406,7 @@ html {
 
 /*form styles*/
 #msform {
-  width: 400px;
+  width: 100%;
   margin: 50px auto;
   text-align: center;
   position: relative;

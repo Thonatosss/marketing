@@ -1,0 +1,19 @@
+.contact-us{
+    background-color: $accent-color;
+    border-radius: 50%;
+    width: 60px;
+    height:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+}
+.contac-us-svg{
+    fill: $primary-white-color;
+}
+.header-container{
+    position: fixed;
+    width: 100%;
+    background-color: $primary-white-color;
+    z-index: 1000;
+}

@@ -1,35 +1,46 @@
-<!-- FRONT PAGE -->
+<!-- HTML !-->
+<button class="button-23" role="button">Button 23</button>
 
-<img src="" alt="" />
-<h4 class="our-cases-card-title">
-  BEXHILL <br />
-  TRADING AUTO
-</h4>
-<span class="our-casese-card-description">Продаж авто з США</span>
-<ul class="our-cases-list">
-  <li><span>Прибуток:</span><span>23 800 $</span></li>
-  <li><span>Бюджет:</span><span>12 900$</span></li>
-  <li><span>Отримано лідів:</span>4 750<span></span></li>
-</ul>
+/* CSS */
+.button-23 {
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
 
-<!-- BACK PAGE -->
-<img src="" alt="" />
-<h4 class="our-cases-card-title">
-  BEXHILL <br />
-  TRADING AUTO
-</h4>
-<ul class="our-cases-list">
-  <li>
-    <span>Виконані агенцією послуги:</span
-    ><span
-      >FB ads, <br />
-      Створення сайту</span
-    >
-  </li>
-  <li><span>ГЕО:</span><span>4 750</span></li>
-  <li><span>Бюджет:</span><span>4 750</span></li>
-  <li><span>Термін роботи:</span><span>4 750</span></li>
-  <li><span>Кількість лідів:</span><span>4 750</span></li>
-  <li><span>Прибуток від реклами за цей термін:</span>23 800$<span></span></li>
-</ul>
-<span class="our-casese-card-description">Продаж авто з США</span>
+.button-23:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.button-23:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.button-23:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}

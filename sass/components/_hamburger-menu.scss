@@ -1,32 +1,32 @@
 .burger-menu_button {
   position: fixed;
-  top: 0px;
+  top: 38px;
   right: 44px;
   z-index: 30;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: $accent-color;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
 }
-.burger-menu_button:hover .burger-menu_lines {
-  filter: brightness(0.7);
-}
+// .burger-menu_button:hover .burger-menu_lines {
+//   // filter: brightness(0.7);
+// }
 
 .burger-menu_button:hover {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: $accent-color;
 }
 
 .burger-menu_lines::before,
 .burger-menu_lines::after,
 .burger-menu_lines {
   position: absolute;
-  width: 50px;
+  width: 43px;
   height: 3px;
-  background-color: $accent-color;
+  background-color: $primary-white-color;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -o-transition: 0.4s;
@@ -67,7 +67,7 @@
   display: flex;
   flex-flow: column;
   height: 100%;
-  background-color: #F9AFE9;
+  background-color: $primary-white-color;
   overflow-y: auto;
   right: -100%;
   -webkit-transition: 0.8s;
@@ -90,7 +90,7 @@
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: 400;
-  color: #BB1E99;
+  color: $accent-color;
   border-bottom: 1px solid #fff;
 }
 .burger-menu_link:first-child {
