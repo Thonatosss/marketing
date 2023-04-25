@@ -4,16 +4,20 @@ const slide = document.getElementById('splide3');
 
 new Splide( '#splide1', {
     type: 'loop',
-    perPage: 3,
+    perPage: 2,
     autoplay: true,
     lazyload: true,
     arrows: false,
     pagination: false,
+    // padding: {
+    //     top: '20px',
+    //     bottom: '20px',
+    // }
 }).mount();
 
 new Splide( '#splide2', {
     type: 'loop',
-    perPage: 3,
+    perPage: 2,
     autoplay: true,
     lazyload: true,
     arrows: false,

@@ -10,6 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 .card {
   position: relative;
@@ -22,6 +23,7 @@
   justify-content: center;
   align-items: center;
   transition: transform 1s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .card.is-flipped {
@@ -38,10 +40,11 @@
 }
 
 .card__face--front {
-  background: $accent-color;
+  background: $card-container;
+  
 }
 
 .card__face--back {
-  background: slateblue;
+  background: $card-container;
   transform: rotateY(180deg);
 }

@@ -31,6 +31,7 @@
 }
 .about-us{
     font-size: 17px;
+    font-family: $second-font;
 }
 .call-us-form-input{
     width: 100%;
@@ -59,10 +60,10 @@
     height: 60px;
 }
 .hero-page-title{
-    font-family: 'Furore', sans-serif;
+    font-family:$first-font;
 }
 .furore-font{
-    font-family: $furore-font;
+    font-family: $first-font;
     @media screen and (max-width: 767px){
         font-size: 36px;   
     }
@@ -72,6 +73,9 @@
 }
 .average-income{
     margin-top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: $second-font;
 }
 
 // ---------------------BTN------------------

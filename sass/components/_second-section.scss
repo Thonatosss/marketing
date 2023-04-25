@@ -5,7 +5,24 @@
 .second-sec-t-corner{
     fill: white;
     transform: rotate(90deg);
+    display: block;
+    margin-left: auto;
 }
 .second-sec-b-corner{
     transform: rotate(-90deg);
+    display: block;
+    margin-right: auto;
+}
+.first-font-text{
+    font-family: $first-font;
+    font-size: 40px;
+    font-weight: 400;
+    color: $text-color;
+}
+.second-section-info{
+    font-family: $second-font;
+    font-weight: 600;
+    font-size: 16px;
+    color: $text-color;
+    margin-top: 24px;
 }

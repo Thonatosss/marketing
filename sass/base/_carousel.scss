@@ -1,9 +1,13 @@
 .card-container{
     width: 140px;
-    height: 114px;
-    background-color: $accent-color;
+    height: 90px;
+    background-color: $card-container;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 5px ;
+    margin-bottom: 5px;
 }
 .splide__track{
     margin-right: auto;
@@ -11,4 +15,10 @@
 }
 #splide2{
     margin-top: 30px;
+}
+.our-cases-l-corner{
+    margin-right: auto;
+}
+.our-cases-r-corner{
+    transform: rotate(90deg);
 }

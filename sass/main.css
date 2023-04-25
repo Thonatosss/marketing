@@ -6,6 +6,7 @@
 
 body {
   background-color: #F4F4F4;
+  line-height: 1.2;
 }
 
 .h1,
@@ -36,10 +37,14 @@ html {
 
 .card-container {
   width: 140px;
-  height: 114px;
-  background-color: #2a2049;
+  height: 90px;
+  background-color: #ffffff;
   margin-right: auto;
   margin-left: auto;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .splide__track {
@@ -49,6 +54,14 @@ html {
 
 #splide2 {
   margin-top: 30px;
+}
+
+.our-cases-l-corner {
+  margin-right: auto;
+}
+
+.our-cases-r-corner {
+  transform: rotate(90deg);
 }
 
 .contact-us {
@@ -114,6 +127,7 @@ html {
 
 .about-us {
   font-size: 17px;
+  font-family: "Roboto Mono", monospace;
 }
 
 .call-us-form-input {
@@ -164,12 +178,13 @@ html {
 
 .average-income {
   margin-top: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Roboto Mono", monospace;
 }
 
 .button-9 {
-  -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
+  appearance: button;
   backface-visibility: hidden;
   background-color: #2a2049;
   border-radius: 6px;
@@ -189,8 +204,7 @@ html {
   text-transform: none;
   transform: translateZ(0);
   transition: all 0.2s, box-shadow 0.08s ease-in;
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   max-width: 180px;
@@ -236,6 +250,9 @@ html {
   height: 60px;
   border-radius: 50%;
   background-color: #2a2049;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -250,6 +267,9 @@ html {
   width: 43px;
   height: 3px;
   background-color: #F4F4F4;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -294,11 +314,17 @@ html {
   background-color: #F4F4F4;
   overflow-y: auto;
   right: -100%;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -o-transition: 0.8s;
   transition: 0.8s;
 }
 
 .burger-menu_active .burger-menu_nav {
   right: 0;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -345,14 +371,81 @@ html {
 .second-sec-t-corner {
   fill: white;
   transform: rotate(90deg);
+  display: block;
+  margin-left: auto;
 }
 
 .second-sec-b-corner {
   transform: rotate(-90deg);
+  display: block;
+  margin-right: auto;
+}
+
+.first-font-text {
+  font-family: "Furore", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.second-section-info {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 24px;
 }
 
 .budget-section {
   padding: 40px 0px 40px 0px;
+}
+
+.budget-large-corner-t {
+  transform: rotate(270deg) scaleX(-1);
+  margin-right: auto;
+  margin-left: 15px;
+  fill: #2a2049;
+}
+
+.budget-large-corner-b {
+  transform: rotate(-90deg);
+  margin-right: auto;
+  fill: #2a2049;
+}
+
+.center-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.budget-info {
+  margin-top: 24px;
+}
+
+.budget-two-mil {
+  font-family: "Furore", sans-serif;
+  font-size: 40px;
+}
+
+.budget-corner-t {
+  transform: rotate(90deg);
+  margin-right: 15px;
+}
+
+.budget-corner-b {
+  transform: rotate(90deg) scaleX(-1);
+}
+
+.our-cases-card-title {
+  font-size: 17px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.our-cases-title {
+  font-family: "Furore", sans-serif;
+  font-size: 32px;
+  text-align: center;
 }
 
 .scene {
@@ -367,6 +460,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .card {
@@ -380,6 +474,7 @@ html {
   justify-content: center;
   align-items: center;
   transition: transform 1s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .card.is-flipped {
@@ -396,11 +491,11 @@ html {
 }
 
 .card__face--front {
-  background: #2a2049;
+  background: #ffffff;
 }
 
 .card__face--back {
-  background: slateblue;
+  background: #ffffff;
   transform: rotateY(180deg);
 }
 
@@ -539,4 +634,27 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.our-exp-l-corner {
+  margin-right: auto;
+}
+
+.our-exp-r-corner {
+  transform: scaleX(-1);
+}
+
+.our-exp-title {
+  font-family: "Furore", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.our-exp-companies {
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

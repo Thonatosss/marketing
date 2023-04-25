@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="./sass/main.css" />
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-    <link href="https://fonts.cdnfonts.com/css/furore" rel="stylesheet">             
+    <link href="https://fonts.cdnfonts.com/css/furore" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">            
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css" />
@@ -42,7 +45,7 @@
     </header>
     <section class="hero-section">
       <div class="container">
-        <svg width="30" height="35" class="hero-sec-t-corner">
+        <svg width="30" height="50" class="hero-sec-t-corner">
           <use href="./images/sprite/symbol-defs.svg#corner"></use>
         </svg>
         <h1 class="hero-page-title">
@@ -62,53 +65,65 @@
           </form>
         </div>
         <span class="furore-font">3,9$ </span>
-        <p class="average-income">У СЕРЕДНЬОМУ З 1$ РЕКЛАМНОГО БЮДЖЕТУ НАШІ КЛІЄНТИ ОТРИМУЮТЬ – </p>
-        <svg width="35" height="35" class="hero-sec-b-corner">
+        <p class="average-income">У СЕРЕДНЬОМУ З 1$ РЕКЛАМНОГО БЮДЖЕТУ НАШІ КЛІЄНТИ ОТРИМУЮТЬ – <span class="accent-color-text">3.9$</span></p>
+        <svg width="30" height="50" class="hero-sec-b-corner">
           <use href="./images/sprite/symbol-defs.svg#corner"></use>
         </svg>
       </div>
     </section>
     <section class="second-section">
       <div class="container">
-        <svg width="30" height="35" class="second-sec-t-corner">
+        <svg width="30" height="50" class="second-sec-t-corner">
           <use href="./images/sprite/symbol-defs.svg#corner"></use>
         </svg>
-        <p class="second-section-info"> 65 <br> ПРОЕКТІВ В РІЗНИХ ГАЛУЗЯХ </p>
-        <p class="second-section-info">5+ <br>МІСЯЦІВ СЕРЕДНІЙ ЦИКЛ РОБОТИ НАД ПРОЄКТОМ </p>
-        <p class="second-section-info">320% <br>СЕРЕДНІЙ ROMI </p>
-        <svg width="30" height="35" class="second-sec-b-corner">
+        <span class="first-font-text">65</span>
+        <p class="second-section-info">ПРОЕКТІВ В РІЗНИХ ГАЛУЗЯХ </p>
+        <span class="first-font-text">5+</span>
+        <p class="second-section-info">МІСЯЦІВ СЕРЕДНІЙ ЦИКЛ РОБОТИ НАД ПРОЄКТОМ </p>
+        <span class="first-font-text">320%</span>
+        <p class="second-section-info">СЕРЕДНІЙ ROMI </p>
+        <svg width="30" height="50" class="second-sec-b-corner">
           <use href="./images/sprite/symbol-defs.svg#corner"></use>
         </svg>
       </div>
     </section>
     <section class="budget-section">
-      <svg width="100" height="100" class="budget-large-corner">
-        <use href="./images/sprite/symbol-defs.svg#icon-large-corner"></use>
-      </svg>
-      <svg width="30" height="35" class="corner">
-        <use href="./images/sprite/symbol-defs.svg#corner"></use>
-      </svg>
-      <div class="container">
-        <p class="budget-two-milions">$2.200.000+</p>
-        <p class="budget-info">УСПІШНО ОСВОЇЛИ РЕКЛАМНОГО БЮДЖЕТУ НАШИХ КЛІЄНТІВ</p>
-        <svg width="100" height="100">
+      <div class="center-icons">
+        <svg width="140" height="150" class="budget-large-corner-t">
           <use href="./images/sprite/symbol-defs.svg#icon-large-corner"></use>
         </svg>
-        <svg width="30" height="35">
+        <svg width="30" height="50" class="budget-corner-t">
           <use href="./images/sprite/symbol-defs.svg#corner"></use>
         </svg>
       </div>
+      
+      <div class="container">
+        <p class="budget-two-mil accent-color-text">$2.200.000+</p>
+        <p class="budget-info">УСПІШНО ОСВОЇЛИ РЕКЛАМНОГО БЮДЖЕТУ НАШИХ КЛІЄНТІВ</p>
+        <div class="center-icons">
+          <svg width="140" height="150" class="budget-large-corner-b">
+            <use href="./images/sprite/symbol-defs.svg#icon-large-corner" ></use>
+          </svg>
+          <svg width="30" height="50" class="budget-corner-b">
+            <use href="./images/sprite/symbol-defs.svg#corner"></use>
+          </svg>
+        </div>
+        
+      </div>
     </section>
     <section class="our-exp-section">
-      <svg width="30" height="35">
-        <use href="./images/sprite/symbol-defs.svg#corner"></use>
-      </svg>
-      <svg width="30" height="35">
-        <use href="./images/sprite/symbol-defs.svg#corner"></use>
-      </svg>
+      <div class="center-icons">
+        <svg width="30" height="50" class="our-exp-l-corner">
+          <use href="./images/sprite/symbol-defs.svg#corner"></use>
+        </svg>
+        <svg width="30" height="50" class="our-exp-r-corner">
+          <use href="./images/sprite/symbol-defs.svg#corner"></use>
+        </svg>
+      </div>
+      
       <div class="container">
-        <h2 class="our-exp-title"> Ми працювали з бізнесами в 45 галузях </h2>
-        <p class="our-exp-companies"> Також з відомими компаніями: </p>
+        <h2 class="our-exp-title"> Ми працювали з бізнесами в 45 галузях</h2>
+        <p class="our-exp-companies accent-color-text"> Також з відомими компаніями: </p>
       </div>
     </section>
     <section class="splide" id="splide1" aria-label="Splide Basic HTML Example">
@@ -194,12 +209,15 @@
       </div>
     </section>
     <section class="our-cases-section">
-      <svg width="30" height="35">
-        <use href="./images/sprite/symbol-defs.svg#corner"></use>
-      </svg>
-      <svg width="100" height="100">
-        <use href="./images/sprite/symbol-defs.svg#icon-large-corner"></use>
-      </svg>
+      <div class="center-icons">
+        <svg width="30" height="50" class="our-cases-l-corner">
+          <use href="./images/sprite/symbol-defs.svg#corner"></use>
+        </svg>
+        <svg width="140" height="150" class="our-cases-r-corner">
+          <use href="./images/sprite/symbol-defs.svg#icon-large-corner"></use>
+        </svg>
+      </div>
+      
       <div class="container">
         <h3 class="our-cases-title"> НАШІ КЕЙСИ </h3>
         <div class="splide" id="splide3" role="group" aria-label="Splide Basic HTML Example">

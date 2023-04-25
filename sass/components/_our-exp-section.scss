@@ -1,0 +1,19 @@
+.our-exp-l-corner{
+    margin-right: auto;
+}
+.our-exp-r-corner{
+    transform: scaleX(-1);
+}
+.our-exp-title{
+    font-family: $first-font;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+}
+.our-exp-companies{
+    font-family: $second-font;
+    font-size: 17px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    text-align: center;
+}
