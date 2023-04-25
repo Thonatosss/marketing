@@ -1,7 +1,7 @@
 .scene {
   display: inline-block;
-  width: 200px;
-  height: 260px;
+  width: 250px;
+  height: 300px;
 /*   border: 1px solid #CCC; */
   // margin: 40px 0;
   perspective: 600px;
@@ -35,7 +35,7 @@
   width: 100%;
   height: 100%;
   color: black;
-  text-align: center;
+  // text-align: center;
   backface-visibility: hidden;
 }
 
@@ -48,3 +48,37 @@
   background: $card-container;
   transform: rotateY(180deg);
 }
+.our-cases-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.our-cases-li{
+  font-size: 15px;
+  font-family: $second-font;
+}
+.our-cases-li{
+  margin-top: 10px;
+  
+}
+.our-cases-li:not(:last-child){
+  margin-bottom: 10px;
+}
+.our-cases-card-description{
+  font-size: 13px;
+  font-family: $second-font;
+  color: silver;  
+  text-align: center;
+}
+.our-cases-card-title{
+  font-size: 17px;
+  font-family: $second-font;
+  text-align: center;
+}
+.our-cases-subtitle{
+  font-size: 10px;
+}
+// .our-cases-back-li{
+//  font-size: 13px;
+// }

@@ -28,7 +28,7 @@ new Splide( '#splide2', {
 new Splide( '#splide3', {
     type: 'loop',
     perPage: 1,
-    autoplay: true,
+    // autoplay: true,
     lazyload: true,
     pagination: false,
     direction: 'rtl',

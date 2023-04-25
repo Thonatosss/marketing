@@ -1,0 +1,18 @@
+.motivation-r-corner{
+    transform: rotateY(180deg);
+    margin-left: auto;
+}
+.motivation-section-title{
+    font-family: $second-font;
+    font-size: 22px;
+    text-align: center;
+}
+.motivation-section-info{
+    text-align: center;
+    font-family: $second-font;
+    font-size: 16px;
+    margin-top: 24px;
+}
+.motivation-section-list{
+    background-image: url('/images/chart.png');
+}
