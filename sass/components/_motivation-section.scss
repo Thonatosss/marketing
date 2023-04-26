@@ -1,3 +1,6 @@
+.motivation-section{
+    padding-top: 50px;
+}
 .motivation-r-corner{
     transform: rotateY(180deg);
     margin-left: auto;
@@ -12,7 +15,38 @@
     font-family: $second-font;
     font-size: 16px;
     margin-top: 24px;
+    margin-bottom: 50px;
+}
+
+.motivation-section-second-title{
+    font-family: $second-font;
+    font-size: 22px;
+    text-align:center;
+    // background-image: url('/images/charts_bcg.png');
+    // background-position: 50% 50%;
+    // background-size: cover;
 }
 .motivation-section-list{
-    background-image: url('/images/chart.png');
+    font-family: $second-font;
+    font-size: 16px;
+}
+.motivation-li:not(:last-child){
+    margin-bottom: 20px;
+}
+.motivation-li{
+}
+.motivation-plus{
+    color: $accent-color;
+    font-size: 30px;
+}
+.motivation-l-corner{
+    transform: rotate(-90deg);
+    margin-right: auto;
+}
+.motivation-r-corner{
+    transform: rotate(90deg) scaleX(-1);
+}
+.motivation-r-t-corner{
+    transform: rotateY(180deg);
+    margin-left: auto;
 }

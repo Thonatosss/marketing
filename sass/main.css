@@ -365,7 +365,7 @@ html {
 }
 
 .second-section {
-  padding: 40px 0px 40px 0;
+  padding-top: 50px;
   background-color: #2a2049;
 }
 
@@ -398,7 +398,7 @@ html {
 }
 
 .budget-section {
-  padding: 40px 0px 40px 0px;
+  padding-top: 50px;
 }
 
 .budget-large-corner-t {
@@ -436,6 +436,11 @@ html {
 
 .budget-corner-b {
   transform: rotate(90deg) scaleX(-1);
+}
+
+.our-cases-corner {
+  transform: rotate(90deg) scaleX(-1);
+  margin-left: auto;
 }
 
 .our-cases-title {
@@ -529,6 +534,39 @@ html {
 
 .our-cases-subtitle {
   font-size: 10px;
+}
+
+.team-section {
+  padding-top: 50px;
+}
+
+.team-r-t-corner {
+  transform: rotateY(180deg);
+  margin-left: auto;
+}
+
+.team-section-title {
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.team-section-info {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.team-b-r-corner {
+  transform: rotate(-90deg);
+  margin-right: auto;
+}
+
+.team-b-l-corner {
+  transform: rotate(90deg) scaleX(-1);
 }
 
 /*form styles*/
@@ -691,6 +729,10 @@ html {
   text-align: center;
 }
 
+.motivation-section {
+  padding-top: 50px;
+}
+
 .motivation-r-corner {
   transform: rotateY(180deg);
   margin-left: auto;
@@ -707,8 +749,39 @@ html {
   font-family: "Roboto Mono", monospace;
   font-size: 16px;
   margin-top: 24px;
+  margin-bottom: 50px;
+}
+
+.motivation-section-second-title {
+  font-family: "Roboto Mono", monospace;
+  font-size: 22px;
+  text-align: center;
 }
 
 .motivation-section-list {
-  background-image: url("/images/chart.png");
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+}
+
+.motivation-li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.motivation-plus {
+  color: #2a2049;
+  font-size: 30px;
+}
+
+.motivation-l-corner {
+  transform: rotate(-90deg);
+  margin-right: auto;
+}
+
+.motivation-r-corner {
+  transform: rotate(90deg) scaleX(-1);
+}
+
+.motivation-r-t-corner {
+  transform: rotateY(180deg);
+  margin-left: auto;
 }/*# sourceMappingURL=main.css.map */

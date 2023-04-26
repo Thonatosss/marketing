@@ -1,0 +1,28 @@
+.team-section{
+    padding-top: 50px;
+}
+.team-r-t-corner{
+    transform: rotateY(180deg);
+    margin-left: auto;
+
+}
+.team-section-title{
+    font-family: $second-font;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+.team-section-info{
+    text-align: center;
+    font-family: $second-font;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.team-b-r-corner{
+    transform: rotate(-90deg);
+    margin-right: auto;
+}
+.team-b-l-corner{
+    transform: rotate(90deg) scaleX(-1);
+}
