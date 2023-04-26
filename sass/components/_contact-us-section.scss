@@ -1,0 +1,18 @@
+.contact-us-section{
+    padding-top: 50px;
+}
+
+.contact-t-r-corner{
+    transform: rotateY(180deg);
+    margin-left: auto;
+}
+.contact-us-title{
+    font-family: $first-font;
+    font-size: 26px;
+    text-align: center;
+}
+.contact-us-info{
+    text-align: center;
+    font-family: $second-font;
+    margin-top: 20px;
+}

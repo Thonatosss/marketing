@@ -568,31 +568,10 @@
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
-                <div class="team-member-card">
-                  <img src="" alt="" class="team-member-photo">
+                <div class="team-card-container">
+                  <img src="" alt="" width="100%" height="250" class="team-member-photo">
                   <h5 class="team-member-name">Lorem ipsum dolor sit amet.</h5>
                   <p class="team-member-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, nam?</p>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="team-member-card">
-                  <img src="" alt="" class="team-member-photo">
-                  <h5 class="team-member-name">Lorem ipsum dolor sit amet.</h5>
-                  <p class="team-member-info">Lorem ipsum dolor sit amet.</p>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="team-member-card">
-                  <img src="" alt="" class="team-member-photo">
-                  <h5 class="team-member-name">Lorem ipsum dolor sit amet.</h5>
-                  <p class="team-member-info">Lorem ipsum dolor sit amet.</p>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="team-member-card">
-                  <img src="" alt="" class="team-member-photo">
-                  <h5 class="team-member-name">Lorem ipsum dolor sit amet.</h5>
-                  <p class="team-member-info">Lorem ipsum dolor sit amet.</p>
                 </div>
               </li>
             </ul>
@@ -611,12 +590,15 @@
     </div>
     <section class="contact-us-section">
       <div class="container">
-        <svg width="30" height="35">
-          <use href="./images/sprite/symbol-defs.svg#corner"></use>
-        </svg>
-        <svg width="30" height="35">
-          <use href="./images/sprite/symbol-defs.svg#corner"></use>
-        </svg>
+        <div class="center-icons">
+          <svg width="30" height="50" class="contact-t-l-corner">
+            <use href="./images/sprite/symbol-defs.svg#corner"></use>
+          </svg>
+          <svg width="30" height="50" class="contact-t-r-corner">
+            <use href="./images/sprite/symbol-defs.svg#corner"></use>
+          </svg>
+        </div>
+        
         <h5 class="contact-us-title"> ЗАЛИШТЕ ВАШІ ДАНІ, ЩОБ МИ ПРОАНАЛІЗУВАЛИ ВАШ ПРОЕКТ </h5>
         <p class="contact-us-info"> Та провели безкоштовний аудит </p>
         <div>
@@ -632,7 +614,7 @@
             <fieldset>
               <h2 class="fs-title">Яка галузь вашого бізнесу?</h2>
               <input type="text" name="email" placeholder="Наприклад: інтернет-магазин одягу" />
-              <input type="button" name="next" class="next action-button" value="Next" />
+              <input type="button" name="next" class="next action-button" value="Наступний крок" />
             </fieldset>
             <fieldset>
               <h2 class="fs-title">Які елементи для залучення клієнтів ви використовуєте?</h2>
@@ -653,7 +635,7 @@
                 <label for="have-not-used">Не використовували платні способи залучення клієнтів</label>
               </div>
               <input type="button" name="previous" class="previous action-button" value="Previous" />
-              <input type="button" name="next" class="next action-button" value="Next" />
+              <input type="reset" name="next" class="next action-button" value="Next" />
             </fieldset>
             <fieldset>
               <h2 class="fs-title">Який рекламний бюджет готові інвестувати?</h2>

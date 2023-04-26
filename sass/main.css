@@ -569,6 +569,25 @@ html {
   transform: rotate(90deg) scaleX(-1);
 }
 
+.team-member-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.team-card-container {
+  width: 250px;
+  height: 350px;
+  background-color: #ffffff;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 /*form styles*/
 #msform {
   width: 100%;
@@ -611,7 +630,7 @@ html {
 /*buttons*/
 #msform .action-button {
   width: 100px;
-  background: #27AE60;
+  background: #2a2049;
   font-weight: bold;
   color: white;
   border: 0 none;
@@ -624,7 +643,7 @@ html {
 }
 
 #msform .action-button:hover, #msform .action-button:focus {
-  box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #2a2049;
 }
 
 /*headings*/
@@ -646,7 +665,6 @@ html {
 #progressbar {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-bottom: 30px;
   overflow: hidden;
   /*CSS counters to number the steps*/
@@ -655,7 +673,7 @@ html {
 
 #progressbar li {
   list-style-type: none;
-  color: white;
+  color: #2a2049;
   text-transform: uppercase;
   font-size: 9px;
   width: 20%;
@@ -696,7 +714,7 @@ html {
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
 #progressbar li.active:before, #progressbar li.active:after {
-  background: #27AE60;
+  background: #2a2049;
   color: white;
 }
 
@@ -784,4 +802,25 @@ html {
 .motivation-r-t-corner {
   transform: rotateY(180deg);
   margin-left: auto;
+}
+
+.contact-us-section {
+  padding-top: 50px;
+}
+
+.contact-t-r-corner {
+  transform: rotateY(180deg);
+  margin-left: auto;
+}
+
+.contact-us-title {
+  font-family: "Furore", sans-serif;
+  font-size: 26px;
+  text-align: center;
+}
+
+.contact-us-info {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  margin-top: 20px;
 }/*# sourceMappingURL=main.css.map */
