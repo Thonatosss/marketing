@@ -4,6 +4,8 @@
     position: relative;
 }
 .hero-page-title{
+    text-align: center;
+    
     @media screen and (max-width: 767px){
         font-size: 36px;
         
@@ -32,6 +34,7 @@
 .about-us{
     font-size: 17px;
     font-family: $second-font;
+    text-align: center;
 }
 .call-us-form-input{
     width: 100%;
