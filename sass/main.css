@@ -91,6 +91,9 @@ html {
   position: relative;
 }
 
+.hero-page-title {
+  text-align: center;
+}
 @media screen and (max-width: 767px) {
   .hero-page-title {
     font-size: 36px;
@@ -128,6 +131,7 @@ html {
 .about-us {
   font-size: 17px;
   font-family: "Roboto Mono", monospace;
+  text-align: center;
 }
 
 .call-us-form-input {
@@ -619,19 +623,18 @@ html {
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 3px;
-  margin-bottom: 10px;
   width: 100%;
   box-sizing: border-box;
-  font-family: montserrat;
+  font-family: "Roboto Mono", monospace;
   color: #2C3E50;
-  font-size: 13px;
+  font-size: 10px;
 }
 
 /*buttons*/
 #msform .action-button {
-  width: 100px;
+  max-width: 150px;
   background: #2a2049;
-  font-weight: bold;
+  font-family: "Roboto Mono", monospace;
   color: white;
   border: 0 none;
   border-radius: 1px;
@@ -639,7 +642,7 @@ html {
   padding: 10px;
   margin: 10px 5px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 #msform .action-button:hover, #msform .action-button:focus {
@@ -718,7 +721,25 @@ html {
   color: white;
 }
 
-.contact-us-checkboxes {
+.to-center-checkboxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-checkbox:nth-child(1n+1) {
+  margin-bottom: 20px;
+}
+
+.to-center-labels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.test {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -635,29 +635,33 @@
             <!-- fieldsets -->
             <fieldset>
               <h2 class="fs-title">Яка галузь вашого бізнесу?</h2>
-              <input type="text" name="email" placeholder="Наприклад: інтернет-магазин одягу" />
+              <input type="text" name="email" placeholder="Наприклад: інтернет-магазин одягу" required />
               <input type="button" name="next" class="next action-button" value="Наступний крок" />
             </fieldset>
             <fieldset>
               <h2 class="fs-title">Які елементи для залучення клієнтів ви використовуєте?</h2>
-              <div class="contact-us-checkboxes">
-                <input type="checkbox" id="target-ad" name="target-ad">
-                <label for="target-ad">Таргетована реклама (Facebook, Instagram, TikTok)</label>
+              <div class="test">
+                <div class="to-center-checkboxes">
+                  <input type="checkbox" id="context-ad" name="context-ad" class="form-checkbox">
+                  <input type="checkbox" id="smm-ad" name="smm-ad" class="form-checkbox" >
+                  <input type="checkbox" id="target-ad" name="target-ad" class="form-checkbox">
+                  <input type="checkbox" id="have-not-used" name="have-not-used" class="form-checkbox">
+                </div>
+
+                <div class="to-center-labels">
+                  <label for="context-ad">Контекстна реклама (Google ads)</label>
+                  <label for="smm-ad">SMM просування (реклама у блогерів)</label>
+                  <label for="target-ad">Таргетована реклама (Facebook, Instagram, TikTok)</label>
+                   <label for="have-not-used">Не використовували платні способи залучення клієнтів</label>
+                  </div>
               </div>
-              <div class="contact-us-checkboxes">
-                <input type="checkbox" id="context-ad" name="context-ad">
-                <label for="context-ad">Контекстна реклама (Google ads)</label>
-              </div>
-              <div class="contact-us-checkboxes">
-                <input type="checkbox" id="smm-ad" name="smm-ad">
-                <label for="smm-ad">SMM просування (реклама у блогерів)</label>
-              </div>
-              <div class="contact-us-checkboxes">
-                <input type="checkbox" id="have-not-used" name="have-not-used">
-                <label for="have-not-used">Не використовували платні способи залучення клієнтів</label>
-              </div>
-              <input type="button" name="previous" class="previous action-button" value="Previous" />
-              <input type="reset" name="next" class="next action-button" value="Next" />
+              
+                
+              
+               
+                
+              <input type="button" name="previous" class="previous action-button" value="Previous" class="form-btn" />
+              <input type="reset" name="next" class="next action-button" value="Next" class="form-btn"/>
             </fieldset>
             <fieldset>
               <h2 class="fs-title">Який рекламний бюджет готові інвестувати?</h2>
@@ -669,8 +673,8 @@
               <label for="5000-15000">5.000 - 15.0000$</label>
               <input type="checkbox" name="15000-plus" />
               <label for="15000-plus">Від 15.0000$</label>
-              <input type="button" name="previous" class="previous action-button" value="Previous" />
-              <input type="button" name="next" class="next action-button" value="Next" />
+              <input type="button" name="previous" class="previous action-button" value="Previous" class="form-btn" />
+              <input type="button" name="next" class="next action-button" value="Next" class="form-btn" />
             </fieldset>
             <fieldset>
               <h2 class="fs-title">Залиште ваші контакти</h2>
@@ -680,8 +684,8 @@
               <input type="text" name="lname" />
               <label for="phone">Посилання на бізнес</label>
               <input type="text" name="phone" />
-              <input type="button" name="previous" class="previous action-button" value="Previous" />
-              <input type="submit" name="submit" class="submit action-button" value="Submit" />
+              <input type="button" name="previous" class="previous action-button" value="Previous"class="form-btn" />
+              <input type="submit" name="submit" class="submit action-button" value="Submit" class="form-btn"/>
             </fieldset>
           </form>
           <svg width="30" height="35">
