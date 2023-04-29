@@ -40,7 +40,7 @@
 	font-family: $second-font;
 	color: white;
 	border: 0 none;
-	border-radius: 1px;
+	border-radius: 5px;
 	cursor: pointer;
 	padding: 10px;
 	margin: 10px 5px;
@@ -54,8 +54,9 @@
 .fs-title {
 	font-size: 15px;
 	text-transform: uppercase;
-	color: #2C3E50;
+	color: $accent-color;
 	margin-bottom: 10px;
+	font-family: $second-font;
 }
 .fs-subtitle {
 	font-weight: normal;
@@ -116,23 +117,3 @@
 }
 
 
-.to-center-checkboxes{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-.form-checkbox:nth-child(1n + 1){
-	margin-bottom: 20px;
-}
-.to-center-labels{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-.test{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}

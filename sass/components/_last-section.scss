@@ -1,0 +1,53 @@
+.last-section{
+    padding-top: 50px;
+    
+}
+.last-section-title{
+    font-size: 24px;
+    font-family: $first-font;
+    text-align: center;
+}
+.last-section-info{
+ 
+    font-family: $second-font;
+    font-weight: 800;
+    font-size: 16px;
+    margin: 20px 0 20px 0;
+}
+.additional-info{
+
+    color: rgb(143, 141, 141);
+    font-family: $second-font;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.last-open-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: $second-font;
+    font-size: 14px;
+    width: 50%;
+    margin-bottom: 25px;
+    
+}
+.last-benefits-title{
+    font-size: 20px;
+    text-align: center;
+    font-family: $first-font;
+    margin-bottom: 20px;
+}
+.last-benefits-li{
+    margin-bottom: 10px;
+}
+.last-section-benefits-list{
+    font-family: $second-font;
+    font-size: 16px;
+    padding: 30px;
+    list-style-type:circle;
+    
+    
+}

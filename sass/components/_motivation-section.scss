@@ -33,8 +33,6 @@
 .motivation-li:not(:last-child){
     margin-bottom: 20px;
 }
-.motivation-li{
-}
 .motivation-plus{
     color: $accent-color;
     font-size: 30px;
@@ -42,9 +40,11 @@
 .motivation-l-corner{
     transform: rotate(-90deg);
     margin-right: auto;
+    fill: $accent-color;
 }
 .motivation-r-corner{
     transform: rotate(90deg) scaleX(-1);
+    fill: $accent-color;
 }
 .motivation-r-t-corner{
     transform: rotateY(180deg);

@@ -3,8 +3,29 @@
     justify-content: space-between;
     align-items: center;
 }
+a{
+    text-decoration: none;
+}
 body{
     background-color: $primary-white-color;
     line-height: 1.2;
 
+}
+.b-l-corner{
+   transform: rotate(-90deg);
+    margin-right: auto;
+}
+.b-r-corner{
+ transform: rotate(90deg) scaleX(-1);
+}
+.t-r-corner{
+    transform: rotate(90deg);
+}
+.t-l-corner{
+    transform: rotate(270deg) scaleX(-1);
+    margin-right: auto;
+}
+.t-l-corner-180{
+    transform: rotateY(180deg);
+    margin-left: auto;
 }

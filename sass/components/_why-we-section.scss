@@ -1,0 +1,35 @@
+.why-we-section{
+    padding-top: 50px;
+}
+.why-we-title{
+    font-size: 30px;
+    font-family: $second-font;
+    color: $accent-color;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.why-we-card{
+   background-color: white;
+   margin-bottom: 25px;
+   position: relative;
+   padding: 15px;
+   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+}
+.why-we-card-title{
+    font-size: 16px;
+    font-family: $second-font;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+.why-we-card-info{
+    font-size: 16px;
+    font-family: $second-font;
+}
+.why-we-card-number{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: $second-font;
+    font-size: 18px;
+    transform: rotate(-90deg);
+}

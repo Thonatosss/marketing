@@ -1,8 +1,10 @@
 .our-exp-l-corner{
     margin-right: auto;
+    fill: $accent-color;
 }
 .our-exp-r-corner{
     transform: scaleX(-1);
+    fill: $accent-color;
 }
 .our-exp-title{
     font-family: $first-font;

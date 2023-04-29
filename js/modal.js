@@ -1,4 +1,7 @@
-$("#modal").iziModal();
+$("#modal").iziModal({
+    padding: 15,
+
+});
 $(document).on('click', '.trigger', function (event) {
     event.preventDefault();
     // $('#modal').iziModal('setZindex', 99999);
