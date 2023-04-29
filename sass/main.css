@@ -636,15 +636,12 @@ html {
 }
 
 /*inputs*/
-#msform input, #msform textarea {
+#msform input:not(.form-checkbox),
+#msform textarea {
   padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
   width: 100%;
   box-sizing: border-box;
   font-family: "Roboto Mono", monospace;
-  color: #2C3E50;
-  font-size: 10px;
 }
 
 /*buttons*/
@@ -662,7 +659,8 @@ html {
   font-size: 12px;
 }
 
-#msform .action-button:hover, #msform .action-button:focus {
+#msform .action-button:hover,
+#msform .action-button:focus {
   box-shadow: 0 0 0 2px white, 0 0 0 3px #2a2049;
 }
 
@@ -696,10 +694,11 @@ html {
   list-style-type: none;
   color: #2a2049;
   text-transform: uppercase;
-  font-size: 9px;
-  width: 20%;
+  font-size: 11px;
+  width: 40%;
   float: left;
   position: relative;
+  font-family: "Roboto Mono", monospace;
 }
 
 #progressbar li:before {
@@ -734,9 +733,62 @@ html {
 
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
-#progressbar li.active:before, #progressbar li.active:after {
+#progressbar li.active:before,
+#progressbar li.active:after {
   background: #2a2049;
+  font-size: 10px;
   color: white;
+}
+
+.form-checkbox {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+}
+
+.form-label {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 13px;
+}
+
+.form-label:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.invest-label {
+  font-size: 15px;
+}
+
+.contacts-label {
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.contacts-input {
+  background-color: #F4F4F4;
+  border: none;
+  width: 80%;
+  height: 40px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 5px;
+  padding: 15px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.biz-type-input::-moz-placeholder {
+  text-align: center;
+  font-size: 11px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.biz-type-input::placeholder {
+  text-align: center;
+  font-size: 11px;
+  font-family: "Roboto Mono", monospace;
 }
 
 .modal-title {

@@ -10,7 +10,8 @@
     <link href="https://fonts.cdnfonts.com/css/furore" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">            
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />        
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css" />
@@ -44,12 +45,12 @@
         </div>
       </div>
     </header>
-    <section class="hero-section" id="hero-section">
+    <section class="hero-section" id="hero-section" data-aos="fade-up">
       <div class="container">
         <svg width="30" height="50" class="hero-sec-t-corner">
           <use href="./images/sprite/symbol-defs.svg#corner"></use>
         </svg>
-        <h1 class="hero-page-title">
+        <h1 class="hero-page-title" >
           <span class="accent-color-text">ЕФЕКТИВНИЙ</span>
           <br> PERFORMANCE <br> MARKETING
         </h1>
@@ -72,7 +73,7 @@
         </svg>
       </div>
     </section>
-    <section class="second-section" id="second-section">
+    <section class="second-section" id="second-section" data-aos="fade-down">
       <div class="container">
         <svg width="30" height="50" class="second-sec-t-corner">
           <use href="./images/sprite/symbol-defs.svg#corner"></use>
@@ -88,7 +89,7 @@
         </svg>
       </div>
     </section>
-    <section class="budget-section" id="budget-section">
+    <section class="budget-section" id="budget-section" data-aos="fade-up">
        
       <div class="container">
         <div class="center-icons">
@@ -112,7 +113,7 @@
         
       </div>
     </section>
-    <section class="our-exp-section" id="our-exp-section">    
+    <section class="our-exp-section" id="our-exp-section" data-aos="fade-down">    
       <div class="container">
          <div class="center-icons">
         <svg width="30" height="50" class="our-exp-l-corner">
@@ -208,7 +209,7 @@
         </ul>
       </div>
     </section>
-    <section class="our-cases-section" id="our-cases">
+    <section class="our-cases-section" id="our-cases" data-aos="fade-up">
       
       <div class="container">
         <div class="center-icons">
@@ -515,7 +516,7 @@
       
       
     </section>
-    <section class="motivation-section">
+    <section class="motivation-section" data-aos="fade-down">
       <div class="container">
         <div class="center-icons">
           <svg width="30" height="50" class="motivation-l-t-corner">
@@ -549,7 +550,7 @@
         </ul>
       </div>
     </section>
-    <section class="team-section" id="our-team">
+    <section class="team-section" id="our-team" data-aos="fade-up">
       <div class="container">
         <div class="center-icons">
           <svg width="30" height="50" class="team-l-t-corner">
@@ -609,7 +610,7 @@
         
     </section>
     </div>
-    <section class="contact-us-section">
+    <section class="contact-us-section" data-aos="fade-down">
       <div class="container">
         <div class="center-icons">
           <svg width="30" height="50" class="contact-t-l-corner">
@@ -626,60 +627,82 @@
           <form id="msform">
             <!-- progressbar -->
             <ul id="progressbar">
-              <li class="active">Account Setup</li>
-              <li>Social Profiles</li>
-              <li>Personal Details</li>
-              <li>Personal Details</li>
+              <li class="active">Галузь</li>
+              <li>Залучення клієнтів</li>
+              <li>Інвестиції</li>
+              <li>Ваші контакти</li>
             </ul>
             <!-- fieldsets -->
             <fieldset>
               <h2 class="fs-title">Яка галузь вашого бізнесу?</h2>
-              <input type="text" name="email" placeholder="Наприклад: інтернет-магазин одягу" required />
+              <input type="text" name="email" class="biz-type-input" placeholder="Наприклад: інтернет-магазин" required />
               <input type="button" name="next" class="next action-button" value="Наступний крок" />
             </fieldset>
             <fieldset>
               <h2 class="fs-title">Які елементи для залучення клієнтів ви використовуєте?</h2>
               
                 
-                  <input type="checkbox" id="context-ad" name="context-ad" class="form-checkbox">
-                  <label for="context-ad">Контекстна реклама (Google ads)</label>
-                
-                  <input type="checkbox" id="smm-ad" name="smm-ad" class="form-checkbox" >
-                  <label for="smm-ad">SMM просування (реклама у блогерів)</label>
-                
-                  <input type="checkbox" id="target-ad" name="target-ad" class="form-checkbox">
-                  <label for="target-ad">Таргетована реклама (Facebook, Instagram, TikTok)</label>
-                
-                  <input type="checkbox" id="have-not-used" name="have-not-used" class="form-checkbox">
-                  <label for="have-not-used">Не використовували платні способи залучення клієнтів</label>
+                  
+                  <label for="context-ad" class="form-label">
+                    <input type="checkbox" id="context-ad" name="context-ad" class="form-checkbox">
+                    Контекстна реклама (Google ads)
+                  </label>
+                          
+                  <label for="smm-ad" class="form-label">
+                     <input type="checkbox" id="smm-ad" name="smm-ad" class="form-checkbox" >
+                    SMM просування (реклама у блогерів) 
+                  </label>
+                              
+                  <label for="target-ad" class="form-label">
+                     <input type="checkbox" id="target-ad" name="target-ad" class="form-checkbox">
+                    Таргетована реклама (Facebook, Instagram, TikTok)
+                  </label>
+                            
+                  <label for="have-not-used" class="form-label">
+                    <input type="checkbox" id="have-not-used" name="have-not-used" class="form-checkbox">
+                    Не використовували платні способи залучення клієнтів
+                  </label>
               
               
-              <input type="button" name="previous" class="previous action-button" value="Previous" class="form-btn" />
-              <input type="reset" name="next" class="next action-button" value="Next" class="form-btn"/>
+              <input type="button" name="previous" class="previous action-button" value="Попередній крок" class="form-btn" />
+              <input type="button" name="next" class="next action-button" value="Наступний крок" class="Наступний крок"/>
             </fieldset>
             <fieldset>
               <h2 class="fs-title">Який рекламний бюджет готові інвестувати?</h2>
-              <input type="checkbox" name="1000" />
-              <label for="1000">до 1000$</label>
-              <input type="checkbox" name="1000-5000" />
-              <label for="1000-5000">1.000 - 5.0000$</label>
-              <input type="checkbox" name="5000-15000" />
-              <label for="5000-15000">5.000 - 15.0000$</label>
-              <input type="checkbox" name="15000-plus" />
-              <label for="15000-plus">Від 15.0000$</label>
-              <input type="button" name="previous" class="previous action-button" value="Previous" class="form-btn" />
-              <input type="button" name="next" class="next action-button" value="Next" class="form-btn" />
+              
+              <label for="1000" class="form-label invest-label">
+                <input type="checkbox" name="1000" class="form-checkbox" />
+                до 1000$
+              </label>
+              
+              <label for="1000-5000" class="form-label invest-label">
+                <input type="checkbox" name="1000-5000" class="form-checkbox" />
+                1.000 - 5.0000$
+              </label>
+              
+              <label for="5000-15000" class="form-label invest-label">
+                <input type="checkbox" name="5000-15000" class="form-checkbox" />
+                5.000 - 15.0000$
+              </label>
+              
+              <label for="15000-plus" class="form-label invest-label">
+                <input type="checkbox" name="15000-plus" class="form-checkbox" />
+                Від 15.0000$
+              </label>
+
+              <input type="button" name="previous" class="previous action-button" value="Попередній крок" class="form-btn" />
+              <input type="button" name="next" class="next action-button" value="Наступний крок" class="form-btn" />
             </fieldset>
             <fieldset>
               <h2 class="fs-title">Залиште ваші контакти</h2>
-              <label for="fname">Ім'я</label>
-              <input type="text" name="fname" />
-              <label for="lname">Номер телефону</label>
-              <input type="text" name="lname" />
-              <label for="phone">Посилання на бізнес</label>
-              <input type="text" name="phone" />
-              <input type="button" name="previous" class="previous action-button" value="Previous"class="form-btn" />
-              <input type="submit" name="submit" class="submit action-button" value="Submit" class="form-btn"/>
+              <label for="fname" class="contacts-label">Ім'я</label>
+              <input type="text" name="fname" class="contacts-input" />
+              <label for="lname" class="contacts-label">Номер телефону</label>
+              <input type="text" name="lname" class="contacts-input" />
+              <label for="phone" class="contacts-label">Посилання на бізнес</label>
+              <input type="text" name="phone" class="contacts-input" />
+              <input type="button" name="previous" class="previous action-button" value="Попередній крок"class="form-btn" />
+              <input type="submit" name="submit" class="submit action-button" value="Підтвердити" class="form-btn"/>
             </fieldset>
           </form>
           <div class="center-icons">
@@ -692,7 +715,7 @@
           </div>
          
     </section>
-    <section class="benefits-section" id="benefits">
+    <section class="benefits-section" id="benefits" data-aos="fade-up">
       
       <div class="container">
        <div class="center-icons">
@@ -743,7 +766,7 @@
         
       </div>
     </section>
-    <section class="why-we-section" id="why-we"> 
+    <section class="why-we-section" id="why-we" data-aos="fade-down"> 
       <div class="container">
         <div class="center-icons">
         <svg width="30" height="50" class="">
@@ -789,7 +812,7 @@
         </ul>
       </div>
     </section>
-    <section class="free-oudit-section">
+    <section class="free-oudit-section"data-aos="fade-up">
       <div class="container">
         <div class="center-icons">
         <svg width="30" height="50" >
@@ -814,7 +837,7 @@
         </button>
       </form>
     </section>
-    <section class="last-section" id="last-section">
+    <section class="last-section" id="last-section" data-aos="fade-down">
       <div class="container">
         <div class="center-icons">
           <svg width="30" height="50" class="">
@@ -874,7 +897,7 @@
       
       
     </section>
-    <footer class="footer">
+    <footer class="footer" data-aos="zoom-in">
       <div class="container footer-wrapper">
         <img src="" alt="" width="100" height="100" class="footer-logo">
         <ul class="footer-list">
@@ -911,5 +934,9 @@
     <script type="module" src="./js/hamburger-menu.js"></script>
     <script type="module" src="./js/btn.js"></script>
     <script type="module" src="./js/smooth-scroll.js"></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+   </script>
   </body>
 </html>
