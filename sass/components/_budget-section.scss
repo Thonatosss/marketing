@@ -18,10 +18,15 @@
 }
 .budget-info{
     margin-top: 24px;
+    font-family: $second-font;
+    font-weight: 800;
+    font-size: 16px;
+    text-align: center;
 }
 .budget-two-mil{
     font-family: $first-font;
     font-size: 40px;
+    text-align: center;
 }
 .budget-corner-t{
     transform: rotate(90deg);
