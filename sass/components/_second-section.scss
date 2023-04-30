@@ -7,17 +7,29 @@
     transform: rotate(90deg);
     display: block;
     margin-left: auto;
+     @media screen and (min-width: 768px){
+       width: 60px;
+       height: 60px;   
+    }
 }
 .second-sec-b-corner{
     transform: rotate(-90deg);
     display: block;
     margin-right: auto;
+     @media screen and (min-width: 768px){
+       width: 60px;
+       height: 60px;   
+    }
 }
 .first-font-text{
     font-family: $first-font;
     font-size: 40px;
     font-weight: 400;
     color: $text-color;
+
+     @media screen and (min-width: 768px){
+      font-size: 48px;   
+    }
 }
 .second-section-info{
     font-family: $second-font;
@@ -25,4 +37,25 @@
     font-size: 16px;
     color: $text-color;
     margin-top: 24px;
+}
+
+.second-section-tablet-wrapper{
+     @media screen and (min-width: 768px){
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: row-reverse;
+    }
+};
+.second-section-tab-img{
+    width: 300px;
+    height: 300px;
+    
+};
+.second-sec-img-wrapper{
+    display: none;
+
+     @media screen and (min-width: 768px){
+       display: block; 
+    }
 }

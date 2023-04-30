@@ -5,14 +5,30 @@
 .contact-t-r-corner{
     transform: rotateY(180deg);
     margin-left: auto;
+    @media screen and (min-width: 768px){
+     width: 60px;
+     height: 60px;    
+    }
+}
+.contact-t-l-corner{
+    @media screen and (min-width: 768px){
+     width: 60px;
+     height: 60px;    
+    }
 }
 .contact-us-title{
     font-family: $first-font;
     font-size: 26px;
     text-align: center;
+    @media screen and (min-width: 768px){
+        font-size: 46px; 
+    }
 }
 .contact-us-info{
     text-align: center;
     font-family: $second-font;
     margin-top: 20px;
+    @media screen and (min-width: 768px){
+         font-size: 20px;
+    }
 }

@@ -4,13 +4,26 @@
 .team-r-t-corner{
     transform: rotateY(180deg);
     margin-left: auto;
+    @media screen and (min-width: 768px){
+         width: 60px;
+         height: 60px;
+    }
 
+}
+.team-l-t-corner{
+    @media screen and (min-width: 768px){
+         width: 60px;
+         height: 60px;
+    }
 }
 .team-section-title{
     font-family: $second-font;
     font-size: 30px;
     text-align: center;
     margin-top: 30px;
+    @media screen and (min-width: 768px){
+        font-size: 50px;
+    }
 }
 .team-section-info{
     text-align: center;
@@ -18,13 +31,24 @@
     font-size: 16px;
     margin-top: 15px;
     margin-bottom: 50px;
+    @media screen and (min-width: 768px){
+         font-size: 20px;
+    }
 }
 .team-b-r-corner{
     transform: rotate(-90deg);
     margin-right: auto;
+    @media screen and (min-width: 768px){
+         width: 60px;
+         height: 60px;
+    }
 }
 .team-b-l-corner{
     transform: rotate(90deg) scaleX(-1);
+    @media screen and (min-width: 768px){
+         width: 60px;
+         height: 60px;
+    }
 }
 .team-member-card {
     display: flex;

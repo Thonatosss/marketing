@@ -17,6 +17,18 @@
         font-size: 50px;
     }
 }
+.hero-wrapper-tablet{
+    @media  screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.hero-income-container{
+     @media screen and (min-width: 768px){
+        margin-left: 10px;   
+    }
+}
 .hero-social-netw{
     color: $accent-color;
 }
@@ -24,9 +36,17 @@
     margin-left: auto;
     display: block;
     transform: rotate(180deg);
+     @media screen and (min-width: 768px){
+       width: 60px;
+       height: 60px;   
+    }
 }
 .hero-sec-t-corner{
     fill: $accent-color;
+     @media screen and (min-width: 768px){
+       width: 60px;
+       height: 60px;   
+    }
 }
 .accent-color-text{
     color: $accent-color;
@@ -35,6 +55,9 @@
     font-size: 17px;
     font-family: $second-font;
     text-align: center;
+     @media screen and (min-width: 768px){
+        font-size: 19px;   
+    }
 }
 .call-us-form-input{
     width: 100%;
@@ -42,6 +65,10 @@
     border: none;
     background-color: white;
     padding: 8px 30px;
+     @media screen and (min-width: 768px){
+        height: 100px;
+        font-size: 20px;   
+    }
 }
 .call-us-form{
     margin-top: 40px;
@@ -56,6 +83,9 @@
     background-color: white;
     border-radius: 5px;
     max-width: 600px;
+     @media screen and (min-width: 768px){
+       margin-bottom: 0px;
+    }
 
 }
 .call-us-btn{
@@ -67,8 +97,8 @@
 }
 .furore-font{
     font-family: $first-font;
-    @media screen and (max-width: 767px){
-        font-size: 36px;   
+    @media screen and (min-width: 768px){
+        font-size: 45px;   
     }
     @media screen and (min-width: 1200px) {
         font-size: 50px;
@@ -79,6 +109,10 @@
     font-size: 16px;
     font-weight: 700;
     font-family: $second-font;
+
+     @media screen and (min-width: 768px){
+        font-size: 18px;   
+    }
 }
 
 // ---------------------BTN------------------

@@ -1,11 +1,15 @@
 .last-section{
     padding-top: 50px;
     
+    
 }
 .last-section-title{
     font-size: 24px;
     font-family: $first-font;
     text-align: center;
+    @media screen and (min-width: 768px){
+         font-size: 48px;
+    }
 }
 .last-section-info{
  
@@ -39,6 +43,9 @@
     text-align: center;
     font-family: $first-font;
     margin-bottom: 20px;
+    @media screen and (min-width: 768px){
+        text-align: justify; 
+    }
 }
 .last-benefits-li{
     margin-bottom: 10px;
@@ -50,4 +57,12 @@
     list-style-type:circle;
     
     
+}
+.last-section-wrapper{
+    @media screen and (min-width: 768px){
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;    
+    }
 }

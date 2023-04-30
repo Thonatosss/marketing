@@ -18,7 +18,15 @@
 }
 .our-cases-l-corner{
     margin-right: auto;
+    @media screen and (min-width: 768px){
+         width: 60px;
+         height: 60px;
+    }
 }
 .our-cases-r-corner{
     transform: rotate(90deg);
+    @media screen and (min-width: 768px){
+         width: 200px;
+         height: 200px;
+    }
 }

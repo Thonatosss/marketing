@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+*:focus {
+  outline: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -11,6 +15,7 @@ a {
 body {
   background-color: #F4F4F4;
   line-height: 1.2;
+  background-image: url("/images/cool-background.png");
 }
 
 .b-l-corner {
@@ -34,6 +39,27 @@ body {
 .t-l-corner-180 {
   transform: rotateY(180deg);
   margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-b-corner {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tablet-corners {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tablet-large-corners {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .h1,
@@ -86,170 +112,21 @@ html {
 .our-cases-l-corner {
   margin-right: auto;
 }
+@media screen and (min-width: 768px) {
+  .our-cases-l-corner {
+    width: 60px;
+    height: 60px;
+  }
+}
 
 .our-cases-r-corner {
   transform: rotate(90deg);
 }
-
-.contact-us {
-  background-color: #2a2049;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 100px;
-}
-
-.contac-us-svg {
-  fill: #F4F4F4;
-}
-
-.header-container {
-  position: fixed;
-  width: 100%;
-  background-color: #F4F4F4;
-  z-index: 30;
-}
-
-.hero-section {
-  padding-top: 150px;
-  position: relative;
-}
-
-.hero-page-title {
-  text-align: center;
-}
-@media screen and (max-width: 767px) {
-  .hero-page-title {
-    font-size: 34px;
-  }
-}
 @media screen and (min-width: 768px) {
-  .hero-page-title {
-    font-size: 46px;
+  .our-cases-r-corner {
+    width: 200px;
+    height: 200px;
   }
-}
-@media screen and (min-width: 1200px) {
-  .hero-page-title {
-    font-size: 50px;
-  }
-}
-
-.hero-social-netw {
-  color: #2a2049;
-}
-
-.hero-sec-b-corner {
-  margin-left: auto;
-  display: block;
-  transform: rotate(180deg);
-}
-
-.hero-sec-t-corner {
-  fill: #2a2049;
-}
-
-.accent-color-text {
-  color: #2a2049;
-}
-
-.about-us {
-  font-size: 17px;
-  font-family: "Roboto Mono", monospace;
-  text-align: center;
-}
-
-.call-us-form-input {
-  width: 100%;
-  height: 70px;
-  border: none;
-  background-color: white;
-  padding: 8px 30px;
-}
-
-.call-us-form {
-  margin-top: 40px;
-  margin-bottom: 70px;
-  padding: 15px;
-  width: 100%;
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  background-color: white;
-  border-radius: 5px;
-  max-width: 600px;
-}
-
-.call-us-btn {
-  width: 80%;
-  height: 60px;
-}
-
-.hero-page-title {
-  font-family: "Furore", sans-serif;
-}
-
-.furore-font {
-  font-family: "Furore", sans-serif;
-}
-@media screen and (max-width: 767px) {
-  .furore-font {
-    font-size: 36px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .furore-font {
-    font-size: 50px;
-  }
-}
-
-.average-income {
-  margin-top: 10px;
-  font-size: 16px;
-  font-weight: 700;
-  font-family: "Roboto Mono", monospace;
-}
-
-.button-9 {
-  -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
-  backface-visibility: hidden;
-  background-color: #2a2049;
-  border-radius: 6px;
-  border-width: 0;
-  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  font-size: 100%;
-  height: 60px;
-  line-height: 1.15;
-  outline: none;
-  overflow: hidden;
-  padding: 0 25px;
-  position: relative;
-  text-align: center;
-  text-transform: none;
-  transform: translateZ(0);
-  transition: all 0.2s, box-shadow 0.08s ease-in;
-  -moz-user-select: none;
-       user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  max-width: 180px;
-}
-
-.button-9:disabled {
-  cursor: default;
-}
-
-.button-9:focus {
-  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px;
 }
 
 .container {
@@ -386,6 +263,219 @@ html {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.contact-us {
+  background-color: #2a2049;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.contac-us-svg {
+  fill: #F4F4F4;
+}
+
+.header-container {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 30;
+}
+@media screen and (min-width: 768px) {
+  .header-container {
+    height: 120px;
+  }
+}
+
+.hero-section {
+  padding-top: 150px;
+  position: relative;
+}
+
+.hero-page-title {
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .hero-page-title {
+    font-size: 34px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-page-title {
+    font-size: 46px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-page-title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-wrapper-tablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-income-container {
+    margin-left: 10px;
+  }
+}
+
+.hero-social-netw {
+  color: #2a2049;
+}
+
+.hero-sec-b-corner {
+  margin-left: auto;
+  display: block;
+  transform: rotate(180deg);
+}
+@media screen and (min-width: 768px) {
+  .hero-sec-b-corner {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.hero-sec-t-corner {
+  fill: #2a2049;
+}
+@media screen and (min-width: 768px) {
+  .hero-sec-t-corner {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.accent-color-text {
+  color: #2a2049;
+}
+
+.about-us {
+  font-size: 17px;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .about-us {
+    font-size: 19px;
+  }
+}
+
+.call-us-form-input {
+  width: 100%;
+  height: 70px;
+  border: none;
+  background-color: white;
+  padding: 8px 30px;
+}
+@media screen and (min-width: 768px) {
+  .call-us-form-input {
+    height: 100px;
+    font-size: 20px;
+  }
+}
+
+.call-us-form {
+  margin-top: 40px;
+  margin-bottom: 70px;
+  padding: 15px;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: white;
+  border-radius: 5px;
+  max-width: 600px;
+}
+@media screen and (min-width: 768px) {
+  .call-us-form {
+    margin-bottom: 0px;
+  }
+}
+
+.call-us-btn {
+  width: 80%;
+  height: 60px;
+}
+
+.hero-page-title {
+  font-family: "Furore", sans-serif;
+}
+
+.furore-font {
+  font-family: "Furore", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  .furore-font {
+    font-size: 45px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .furore-font {
+    font-size: 50px;
+  }
+}
+
+.average-income {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Roboto Mono", monospace;
+}
+@media screen and (min-width: 768px) {
+  .average-income {
+    font-size: 18px;
+  }
+}
+
+.button-9 {
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  backface-visibility: hidden;
+  background-color: #2a2049;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 100%;
+  height: 60px;
+  line-height: 1.15;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  max-width: 180px;
+}
+
+.button-9:disabled {
+  cursor: default;
+}
+
+.button-9:focus {
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px;
+}
+
 .second-section {
   padding-top: 50px;
   background-color: #2a2049;
@@ -397,11 +487,23 @@ html {
   display: block;
   margin-left: auto;
 }
+@media screen and (min-width: 768px) {
+  .second-sec-t-corner {
+    width: 60px;
+    height: 60px;
+  }
+}
 
 .second-sec-b-corner {
   transform: rotate(-90deg);
   display: block;
   margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .second-sec-b-corner {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .first-font-text {
@@ -410,6 +512,11 @@ html {
   font-weight: 400;
   color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .first-font-text {
+    font-size: 48px;
+  }
+}
 
 .second-section-info {
   font-family: "Roboto Mono", monospace;
@@ -417,6 +524,29 @@ html {
   font-size: 16px;
   color: #ffffff;
   margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .second-section-tablet-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+}
+
+.second-section-tab-img {
+  width: 300px;
+  height: 300px;
+}
+
+.second-sec-img-wrapper {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .second-sec-img-wrapper {
+    display: block;
+  }
 }
 
 .budget-section {
@@ -428,11 +558,23 @@ html {
   margin-right: auto;
   fill: #2a2049;
 }
+@media screen and (min-width: 768px) {
+  .budget-large-corner-t {
+    width: 200px;
+    height: 200px;
+  }
+}
 
 .budget-large-corner-b {
   transform: rotate(-90deg);
   margin-right: auto;
   fill: #2a2049;
+}
+@media screen and (min-width: 768px) {
+  .budget-large-corner-b {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .center-icons {
@@ -448,25 +590,87 @@ html {
   font-size: 16px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .budget-info {
+    font-size: 18px;
+    text-align: right;
+  }
+}
 
 .budget-two-mil {
   font-family: "Furore", sans-serif;
   font-size: 40px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .budget-two-mil {
+    font-size: 48px;
+  }
+}
 
 .budget-corner-t {
   transform: rotate(90deg);
   margin-right: 15px;
 }
+@media screen and (min-width: 768px) {
+  .budget-corner-t {
+    width: 60px;
+    height: 60px;
+  }
+}
 
 .budget-corner-b {
   transform: rotate(90deg) scaleX(-1);
+}
+@media screen and (min-width: 768px) {
+  .budget-corner-b {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .budget-tablet-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.our-exp-l-corner {
+  margin-right: auto;
+  fill: #2a2049;
+}
+
+.our-exp-r-corner {
+  transform: scaleX(-1);
+  fill: #2a2049;
+}
+
+.our-exp-title {
+  font-family: "Furore", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.our-exp-companies {
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .our-cases-corner {
   transform: rotate(90deg) scaleX(-1);
   margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .our-cases-corner {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .our-cases-title {
@@ -562,6 +766,127 @@ html {
   font-size: 10px;
 }
 
+.motivation-section {
+  padding-top: 50px;
+  background-image: url("/images/cool-background.png");
+}
+
+.motivation-r-corner {
+  transform: rotateY(180deg);
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .motivation-r-corner {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.motivation-section-title {
+  font-family: "Roboto Mono", monospace;
+  font-size: 22px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .motivation-section-title {
+    font-size: 48px;
+  }
+}
+
+.motivation-section-info {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  margin-top: 24px;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .motivation-section-info {
+    font-size: 24px;
+  }
+}
+
+.motivation-section-second-title {
+  font-family: "Roboto Mono", monospace;
+  font-size: 22px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .motivation-section-second-title {
+    font-size: 32px;
+    text-align: start;
+  }
+}
+
+.motivation-section-list {
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  .motivation-section-list {
+    font-size: 18px;
+    font-weight: 800;
+  }
+}
+
+.motivation-li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.motivation-plus {
+  color: #2a2049;
+  font-size: 30px;
+}
+
+.motivation-l-corner {
+  transform: rotate(-90deg);
+  margin-right: auto;
+  fill: #2a2049;
+}
+@media screen and (min-width: 768px) {
+  .motivation-l-corner {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.motivation-r-corner {
+  transform: rotate(90deg) scaleX(-1);
+  fill: #2a2049;
+}
+@media screen and (min-width: 768px) {
+  .motivation-r-corner {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.motivation-r-t-corner {
+  transform: rotateY(180deg);
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .motivation-r-t-corner {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .motivation-tablet-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .motivation-l-t-corner {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 .team-section {
   padding-top: 50px;
 }
@@ -570,12 +895,30 @@ html {
   transform: rotateY(180deg);
   margin-left: auto;
 }
+@media screen and (min-width: 768px) {
+  .team-r-t-corner {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-l-t-corner {
+    width: 60px;
+    height: 60px;
+  }
+}
 
 .team-section-title {
   font-family: "Roboto Mono", monospace;
   font-size: 30px;
   text-align: center;
   margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team-section-title {
+    font-size: 50px;
+  }
 }
 
 .team-section-info {
@@ -585,14 +928,31 @@ html {
   margin-top: 15px;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 768px) {
+  .team-section-info {
+    font-size: 20px;
+  }
+}
 
 .team-b-r-corner {
   transform: rotate(-90deg);
   margin-right: auto;
 }
+@media screen and (min-width: 768px) {
+  .team-b-r-corner {
+    width: 60px;
+    height: 60px;
+  }
+}
 
 .team-b-l-corner {
   transform: rotate(90deg) scaleX(-1);
+}
+@media screen and (min-width: 768px) {
+  .team-b-l-corner {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .team-member-card {
@@ -663,6 +1023,13 @@ html {
   text-decoration: none;
   font-size: 12px;
 }
+@media screen and (min-width: 768px) {
+  #msform .action-button {
+    font-size: 20px;
+    max-width: 250px;
+    height: 70px;
+  }
+}
 
 #msform .action-button:hover,
 #msform .action-button:focus {
@@ -677,12 +1044,11 @@ html {
   margin-bottom: 10px;
   font-family: "Roboto Mono", monospace;
 }
-
-.fs-subtitle {
-  font-weight: normal;
-  font-size: 13px;
-  color: #666;
-  margin-bottom: 20px;
+@media screen and (min-width: 768px) {
+  .fs-title {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
 }
 
 /*progressbar*/
@@ -705,6 +1071,12 @@ html {
   position: relative;
   font-family: "Roboto Mono", monospace;
 }
+@media screen and (min-width: 768px) {
+  #progressbar li {
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
 
 #progressbar li:before {
   content: counter(step);
@@ -717,6 +1089,13 @@ html {
   background: white;
   border-radius: 3px;
   margin: 0 auto 5px auto;
+}
+@media screen and (min-width: 768px) {
+  #progressbar li:before {
+    width: 40px;
+    line-height: 40px;
+    font-size: 20px;
+  }
 }
 
 /*progressbar connectors*/
@@ -744,6 +1123,12 @@ html {
   font-size: 10px;
   color: white;
 }
+@media screen and (min-width: 768px) {
+  #progressbar li.active:before,
+  #progressbar li.active:after {
+    font-size: 20px;
+  }
+}
 
 .form-checkbox {
   flex: none;
@@ -751,12 +1136,25 @@ html {
   height: 20px;
   margin-right: 3px;
 }
+@media screen and (min-width: 768px) {
+  .form-checkbox {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+}
 
 .form-label {
   display: flex;
   align-items: center;
   font-family: "Roboto Mono", monospace;
   font-size: 13px;
+}
+@media screen and (min-width: 768px) {
+  .form-label {
+    font-size: 15px;
+    font-weight: 700;
+  }
 }
 
 .form-label:not(:last-child) {
@@ -766,6 +1164,11 @@ html {
 .invest-label {
   font-size: 15px;
 }
+@media screen and (min-width: 768px) {
+  .invest-label {
+    font-size: 20px;
+  }
+}
 
 .contacts-label {
   font-family: "Roboto Mono", monospace;
@@ -774,11 +1177,10 @@ html {
 }
 
 .contacts-input {
-  background-color: #F4F4F4;
   border: none;
   width: 80%;
   height: 40px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 5px;
   padding: 15px;
   font-family: "Roboto Mono", monospace;
@@ -794,6 +1196,128 @@ html {
   text-align: center;
   font-size: 11px;
   font-family: "Roboto Mono", monospace;
+}
+@media screen and (min-width: 768px) {
+  .biz-type-input::-moz-placeholder {
+    font-size: 20px;
+    text-align: start;
+  }
+  .biz-type-input::placeholder {
+    font-size: 20px;
+    text-align: start;
+  }
+}
+
+.biz-type-input {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+.benefits-section {
+  padding-top: 50px;
+}
+
+.benefits-title {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Furore", sans-serif;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .benefits-title {
+    font-size: 43px;
+    margin-bottom: 30px;
+  }
+}
+
+.stage-number {
+  font-family: "Furore", sans-serif;
+  font-size: 40px;
+  color: #2a2049;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+@media screen and (min-width: 768px) {
+  .stage-number {
+    font-size: 50px;
+  }
+}
+
+.stage-info {
+  font-family: "Roboto Mono", monospace;
+}
+@media screen and (min-width: 768px) {
+  .stage-info {
+    font-size: 20px;
+  }
+}
+
+.why-we-section {
+  padding-top: 50px;
+}
+
+.why-we-title {
+  font-size: 30px;
+  font-family: "Roboto Mono", monospace;
+  color: #2a2049;
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .why-we-title {
+    font-size: 48px;
+  }
+}
+
+.why-we-card {
+  background-color: white;
+  margin-bottom: 25px;
+  position: relative;
+  padding: 15px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+}
+@media screen and (min-width: 768px) {
+  .why-we-card {
+    width: 200px;
+    height: 230px;
+  }
+}
+
+.why-we-card-title {
+  font-size: 16px;
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.why-we-card-info {
+  font-size: 16px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.why-we-card-number {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  transform: rotate(-90deg);
+}
+@media screen and (min-width: 768px) {
+  .why-we-card-number {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .why-we-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 70px;
+  }
 }
 
 .modal-title {
@@ -863,7 +1387,7 @@ html {
   max-width: 180px;
   margin-top: 20px;
   font-family: "Roboto Mono", monospace;
-  width: 50%;
+  width: 80%;
   margin-bottom: 20px;
 }
 
@@ -881,90 +1405,72 @@ html {
   color: rgb(156, 154, 154);
 }
 
-.our-exp-l-corner {
-  margin-right: auto;
-  fill: #2a2049;
+/*Dialog Styles*/
+dialog {
+  padding: 1rem 3rem;
+  background: white;
+  max-width: 400px;
+  padding-top: 2rem;
+  border-radius: 20px;
+  border: 0;
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease both;
+}
+dialog::backdrop {
+  animation: fadeIn 1s ease both;
+  background: rgba(255, 255, 255, 0.4);
+  z-index: 2;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+dialog .x {
+  filter: grayscale(1);
+  border: none;
+  background: none;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  transition: ease filter, transform 0.3s;
+  cursor: pointer;
+  transform-origin: center;
+}
+dialog .x:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+dialog h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+dialog p {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  padding: 0.5rem 0;
+}
+dialog p a:visited {
+  color: rgb(var(--vs-primary));
 }
 
-.our-exp-r-corner {
-  transform: scaleX(-1);
-  fill: #2a2049;
+/*General Styles*/
+button.primary {
+  box-sizing: border-box;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+button.primary:hover {
+  box-shadow: 0 20px 20px -10px rgb(var(--vs-primary)/50%);
+  transform: translateY(-5px);
 }
 
-.our-exp-title {
-  font-family: "Furore", sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  text-align: center;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
-.our-exp-companies {
-  font-family: "Roboto Mono", monospace;
-  font-size: 17px;
-  margin-bottom: 25px;
-  margin-top: 10px;
-  text-align: center;
-}
-
-.motivation-section {
-  padding-top: 50px;
-}
-
-.motivation-r-corner {
-  transform: rotateY(180deg);
-  margin-left: auto;
-}
-
-.motivation-section-title {
-  font-family: "Roboto Mono", monospace;
-  font-size: 22px;
-  text-align: center;
-}
-
-.motivation-section-info {
-  text-align: center;
-  font-family: "Roboto Mono", monospace;
-  font-size: 16px;
-  margin-top: 24px;
-  margin-bottom: 50px;
-}
-
-.motivation-section-second-title {
-  font-family: "Roboto Mono", monospace;
-  font-size: 22px;
-  text-align: center;
-}
-
-.motivation-section-list {
-  font-family: "Roboto Mono", monospace;
-  font-size: 16px;
-}
-
-.motivation-li:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.motivation-plus {
-  color: #2a2049;
-  font-size: 30px;
-}
-
-.motivation-l-corner {
-  transform: rotate(-90deg);
-  margin-right: auto;
-  fill: #2a2049;
-}
-
-.motivation-r-corner {
-  transform: rotate(90deg) scaleX(-1);
-  fill: #2a2049;
-}
-
-.motivation-r-t-corner {
-  transform: rotateY(180deg);
-  margin-left: auto;
-}
-
 .contact-us-section {
   padding-top: 50px;
 }
@@ -973,11 +1479,29 @@ html {
   transform: rotateY(180deg);
   margin-left: auto;
 }
+@media screen and (min-width: 768px) {
+  .contact-t-r-corner {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-t-l-corner {
+    width: 60px;
+    height: 60px;
+  }
+}
 
 .contact-us-title {
   font-family: "Furore", sans-serif;
   font-size: 26px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .contact-us-title {
+    font-size: 46px;
+  }
 }
 
 .contact-us-info {
@@ -985,69 +1509,10 @@ html {
   font-family: "Roboto Mono", monospace;
   margin-top: 20px;
 }
-
-.benefits-section {
-  padding-top: 50px;
-}
-
-.benefits-title {
-  text-align: center;
-  font-size: 30px;
-  font-family: "Furore", sans-serif;
-  margin-bottom: 25px;
-}
-
-.stage-number {
-  font-family: "Furore", sans-serif;
-  font-size: 40px;
-  color: #2a2049;
-  margin-bottom: 15px;
-  margin-top: 15px;
-}
-
-.stage-info {
-  font-family: "Roboto Mono", monospace;
-}
-
-.why-we-section {
-  padding-top: 50px;
-}
-
-.why-we-title {
-  font-size: 30px;
-  font-family: "Roboto Mono", monospace;
-  color: #2a2049;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.why-we-card {
-  background-color: white;
-  margin-bottom: 25px;
-  position: relative;
-  padding: 15px;
-  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
-}
-
-.why-we-card-title {
-  font-size: 16px;
-  font-family: "Roboto Mono", monospace;
-  margin-bottom: 20px;
-  font-weight: 800;
-}
-
-.why-we-card-info {
-  font-size: 16px;
-  font-family: "Roboto Mono", monospace;
-}
-
-.why-we-card-number {
-  position: absolute;
-  right: 0;
-  top: 0;
-  font-family: "Roboto Mono", monospace;
-  font-size: 18px;
-  transform: rotate(-90deg);
+@media screen and (min-width: 768px) {
+  .contact-us-info {
+    font-size: 20px;
+  }
 }
 
 .free-oudit-section {
@@ -1060,11 +1525,21 @@ html {
   font-family: "Furore", sans-serif;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .free-oudit-title {
+    font-size: 48px;
+  }
+}
 
 .free-oudit-info-container {
   text-align: center;
   font-family: "Roboto Mono", monospace;
   font-size: 17px;
+}
+@media screen and (min-width: 768px) {
+  .free-oudit-info-container {
+    font-size: 21px;
+  }
 }
 
 .free-oudit-info {
@@ -1122,6 +1597,11 @@ html {
   font-family: "Furore", sans-serif;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .last-section-title {
+    font-size: 48px;
+  }
+}
 
 .last-section-info {
   font-family: "Roboto Mono", monospace;
@@ -1156,6 +1636,11 @@ html {
   font-family: "Furore", sans-serif;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .last-benefits-title {
+    text-align: justify;
+  }
+}
 
 .last-benefits-li {
   margin-bottom: 10px;
@@ -1166,6 +1651,15 @@ html {
   font-size: 16px;
   padding: 30px;
   list-style-type: circle;
+}
+
+@media screen and (min-width: 768px) {
+  .last-section-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
 }
 
 .footer {

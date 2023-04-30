@@ -6,12 +6,17 @@
     font-size: 30px;
     font-family: $first-font;
     margin-bottom: 30px;
-
+    @media screen and (min-width: 768px){
+         font-size: 48px;
+    }
 }
 .free-oudit-info-container{
     text-align: center;
     font-family: $second-font;
     font-size: 17px;
+    @media screen and (min-width: 768px){
+         font-size: 21px;
+    }
 }
 .free-oudit-info{
     margin-bottom: 10px;

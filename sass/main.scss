@@ -7,23 +7,30 @@
 @import './base/carousel';
 
 
-@import './components/header';
-@import './components/hero';
 @import './components/container';
 @import './components/section';
+
 @import './components/hamburger-menu';
+@import './components/header';
+
+@import './components/hero';
 @import './components/second-section';
 @import './components/budget-section';
+@import './components/our-exp-section';
 @import './components/our-cases-section';
 @import './components/our-cases-splider';
+@import './components/motivation-section';
 @import './components/team-section';
 @import './components/contact-us';
-@import './components/modal';
-@import './components/our-exp-section';
-@import './components/motivation-section';
-@import './components/contact-us-section';
 @import './components/benefits-section';
 @import './components/why-we-section';
+@import './components/modal';
+
+
+
+@import './components/contact-us-section';
+
+
 @import './components/free-oudit';
 @import './components/last-section';
 @import './components/footer';

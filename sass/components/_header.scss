@@ -14,6 +14,11 @@
 .header-container{
     position: fixed;
     width: 100%;
-    background-color: $primary-white-color;
+    
+    background-color: white;
     z-index: 30;
+@media screen and (min-width: 768px){
+         height: 120px;
+    }
+    
 }

@@ -3,12 +3,19 @@
     justify-content: space-between;
     align-items: center;
 }
+
+*:focus {
+    outline: none;
+}
+
 a{
     text-decoration: none;
 }
 body{
     background-color: $primary-white-color;
     line-height: 1.2;
+    background-image: url('/images/cool-background.png');
+    
 
 }
 .b-l-corner{
@@ -28,4 +35,24 @@ body{
 .t-l-corner-180{
     transform: rotateY(180deg);
     margin-left: auto;
+}
+
+.contact-b-corner{
+     @media screen and (min-width: 768px){
+         width: 60px;
+         height: 60px;
+    }
+}
+.tablet-corners{
+@media screen and (min-width: 768px){
+     width: 60px;
+     height: 60px;    
+    }
+}
+
+.tablet-large-corners{
+    @media screen and (min-width: 768px){
+     width: 200px;
+     height: 200px;    
+    }
 }

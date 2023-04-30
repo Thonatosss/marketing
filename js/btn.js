@@ -1,6 +1,6 @@
 const btns = document.querySelectorAll('.prevent-default');
 
-btns.forEach(btn => {
+export default btns.forEach(btn => {
     btn.addEventListener('click', (e) => {
         e.preventDefault();
     });

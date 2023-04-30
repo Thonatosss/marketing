@@ -1,14 +1,22 @@
 .motivation-section{
     padding-top: 50px;
+     background-image: url('/images/cool-background.png');
 }
 .motivation-r-corner{
     transform: rotateY(180deg);
     margin-left: auto;
+    @media screen and (min-width: 768px){
+         width: 60px;
+         height: 60px;
+    }
 }
 .motivation-section-title{
     font-family: $second-font;
     font-size: 22px;
     text-align: center;
+    @media screen and (min-width: 768px){
+       font-size: 48px;
+    }
 }
 .motivation-section-info{
     text-align: center;
@@ -16,19 +24,27 @@
     font-size: 16px;
     margin-top: 24px;
     margin-bottom: 50px;
+     @media screen and (min-width: 768px){
+       font-size: 24px;
+    }
 }
 
 .motivation-section-second-title{
     font-family: $second-font;
     font-size: 22px;
     text-align:center;
-    // background-image: url('/images/charts_bcg.png');
-    // background-position: 50% 50%;
-    // background-size: cover;
+    @media screen and (min-width: 768px){
+        font-size: 32px;
+        text-align: start;
+    }
 }
 .motivation-section-list{
     font-family: $second-font;
     font-size: 16px;
+    @media screen and (min-width: 768px){
+         font-size: 18px;
+         font-weight: 800;
+    }
 }
 .motivation-li:not(:last-child){
     margin-bottom: 20px;
@@ -41,12 +57,38 @@
     transform: rotate(-90deg);
     margin-right: auto;
     fill: $accent-color;
+    @media screen and (min-width: 768px){
+         width: 60px;
+         height: 60px;
+    }
 }
 .motivation-r-corner{
     transform: rotate(90deg) scaleX(-1);
     fill: $accent-color;
+    @media screen and (min-width: 768px){
+         width: 60px;
+         height: 60px;
+    }
 }
 .motivation-r-t-corner{
     transform: rotateY(180deg);
     margin-left: auto;
+    @media screen and (min-width: 768px){
+         width: 60px;
+         height: 60px;
+    }
+}
+
+.motivation-tablet-wrapper{
+    @media screen and (min-width: 768px){
+     display: flex;
+    justify-content: center;
+    align-items: center;    
+    }
+}
+.motivation-l-t-corner{
+    @media screen and (min-width: 768px){
+         width: 60px;
+         height: 60px;
+    }
 }
