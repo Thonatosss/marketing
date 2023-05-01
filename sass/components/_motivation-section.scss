@@ -1,6 +1,5 @@
 .motivation-section{
     padding-top: 50px;
-     background-image: url('/images/cool-background.png');
     
 }
 .motivation-r-corner{
@@ -12,6 +11,7 @@
     }
 }
 .motivation-section-title{
+    color: $text-color;
     font-family: $second-font;
     font-size: 22px;
     text-align: center;
@@ -24,6 +24,7 @@
     }
 }
 .motivation-section-info{
+    color: $text-color;
     text-align: center;
     font-family: $second-font;
     font-size: 16px;
@@ -39,6 +40,7 @@
 }
 
 .motivation-section-second-title{
+    color: $text-color;
     font-family: $second-font;
     font-size: 22px;
     text-align:center;
@@ -51,6 +53,7 @@
     }
 }
 .motivation-section-list{
+    color: $text-color;
     font-family: $second-font;
     font-size: 16px;
     @media screen and (min-width: 768px){

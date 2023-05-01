@@ -8,6 +8,7 @@
 }
 .hero-page-title{
     text-align: center;
+    color: $text-color;
     
     @media screen and (max-width: 767px){
         font-size: 34px;
@@ -68,6 +69,7 @@
     color: $accent-color;
 }
 .about-us{
+    color: $text-color;
     font-size: 17px;
     font-family: $second-font;
     text-align: center;
@@ -86,7 +88,7 @@
     background-color: white;
     padding: 8px 30px;
      @media screen and (min-width: 768px){
-        height: 100px;
+        height: 70px;
         font-size: 20px;   
     }
 }
@@ -117,6 +119,7 @@
 }
 .furore-font{
     font-family: $first-font;
+    color: $text-color;
     @media screen and (min-width: 768px){
         font-size: 45px;   
     }
@@ -125,6 +128,7 @@
     }
 }
 .average-income{
+    color: $text-color;
     margin-top: 10px;
     font-size: 16px;
     font-weight: 700;

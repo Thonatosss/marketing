@@ -1,5 +1,6 @@
 .team-section{
     padding-top: 50px;
+    
 }
 .team-r-t-corner{
     transform: rotateY(180deg);
@@ -25,6 +26,7 @@
     }
 }
 .team-section-title{
+    color: $text-color;
     font-family: $second-font;
     font-size: 30px;
     text-align: center;
@@ -37,6 +39,7 @@
     }
 }
 .team-section-info{
+    color: $text-color;
     text-align: center;
     font-family: $second-font;
     font-size: 16px;
@@ -99,4 +102,10 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-top: 5px ;
     margin-bottom: 5px;
+}
+.team-member-info{
+    color: $text-color;
+}
+.team-member-name{
+    color: $text-color;
 }

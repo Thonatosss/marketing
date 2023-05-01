@@ -26,6 +26,7 @@
 
 }
 .contact-us-title{
+    color: $text-color;
     font-family: $first-font;
     font-size: 26px;
     text-align: center;
@@ -37,6 +38,7 @@
     }
 }
 .contact-us-info{
+    color: $text-color;
     text-align: center;
     font-family: $second-font;
     margin-top: 20px;
@@ -49,5 +51,6 @@
 }
 .contacts-label{
     font-size: 20px;
+    color: $text-color;
     
 }

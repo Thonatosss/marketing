@@ -2,6 +2,7 @@
     padding-top: 50px;
 }
 .why-we-title{
+    color: $text-color;
     font-size: 30px;
     font-family: $second-font;
     color: $accent-color;
@@ -31,6 +32,7 @@
     }
 }
 .why-we-card-title{
+    color: $text-color;
     font-size: 16px;
     font-family: $second-font;
     margin-bottom: 20px;
@@ -40,6 +42,7 @@
     }
 }
 .why-we-card-info{
+    color: $text-color;
     font-size: 16px;
     font-family: $second-font;
     @media screen and (min-width: 1200px){

@@ -16,7 +16,6 @@ a {
 body {
   background-color: #F4F4F4;
   line-height: 1.2;
-  background-image: url("/images/cool-background.png");
 }
 
 .b-l-corner {
@@ -158,6 +157,17 @@ html {
   }
 }
 
+.particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: block;
+  display: block;
+}
+
 @media screen and (min-width: 1200px) {
   .burger-menu {
     display: none;
@@ -277,7 +287,7 @@ html {
 .header-link {
   height: 30px;
   align-items: center;
-  color: #000;
+  color: black;
   text-decoration: none;
   display: flex;
 }
@@ -428,6 +438,7 @@ html {
     font-family: "Roboto Mono", monospace;
     font-size: 17px;
     font-weight: 700;
+    color: black;
   }
 }
 
@@ -488,6 +499,7 @@ html {
 
 .hero-page-title {
   text-align: center;
+  color: black;
 }
 @media screen and (max-width: 767px) {
   .hero-page-title {
@@ -569,6 +581,7 @@ html {
 }
 
 .about-us {
+  color: black;
   font-size: 17px;
   font-family: "Roboto Mono", monospace;
   text-align: center;
@@ -594,7 +607,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   .call-us-form-input {
-    height: 100px;
+    height: 70px;
     font-size: 20px;
   }
 }
@@ -630,6 +643,7 @@ html {
 
 .furore-font {
   font-family: "Furore", sans-serif;
+  color: black;
 }
 @media screen and (min-width: 768px) {
   .furore-font {
@@ -643,6 +657,7 @@ html {
 }
 
 .average-income {
+  color: black;
   margin-top: 10px;
   font-size: 16px;
   font-weight: 700;
@@ -753,7 +768,7 @@ html {
   font-family: "Furore", sans-serif;
   font-size: 40px;
   font-weight: 400;
-  color: #ffffff;
+  color: black;
 }
 @media screen and (min-width: 768px) {
   .first-font-text {
@@ -770,7 +785,7 @@ html {
   font-family: "Roboto Mono", monospace;
   font-weight: 600;
   font-size: 16px;
-  color: #ffffff;
+  color: black;
   margin-top: 24px;
 }
 
@@ -844,6 +859,7 @@ html {
 }
 
 .budget-info {
+  color: black;
   margin-top: 24px;
   font-family: "Roboto Mono", monospace;
   font-weight: 800;
@@ -944,6 +960,7 @@ html {
 }
 
 .our-exp-title {
+  color: black;
   font-family: "Furore", sans-serif;
   font-size: 32px;
   font-weight: 400;
@@ -989,6 +1006,7 @@ html {
 
 .our-cases-title {
   font-family: "Furore", sans-serif;
+  color: black;
   font-size: 32px;
   text-align: center;
 }
@@ -1126,7 +1144,6 @@ html {
 
 .motivation-section {
   padding-top: 50px;
-  background-image: url("/images/cool-background.png");
 }
 
 .motivation-r-corner {
@@ -1141,6 +1158,7 @@ html {
 }
 
 .motivation-section-title {
+  color: black;
   font-family: "Roboto Mono", monospace;
   font-size: 22px;
   text-align: center;
@@ -1158,6 +1176,7 @@ html {
 }
 
 .motivation-section-info {
+  color: black;
   text-align: center;
   font-family: "Roboto Mono", monospace;
   font-size: 16px;
@@ -1177,6 +1196,7 @@ html {
 }
 
 .motivation-section-second-title {
+  color: black;
   font-family: "Roboto Mono", monospace;
   font-size: 22px;
   text-align: center;
@@ -1194,6 +1214,7 @@ html {
 }
 
 .motivation-section-list {
+  color: black;
   font-family: "Roboto Mono", monospace;
   font-size: 16px;
 }
@@ -1326,6 +1347,7 @@ html {
 }
 
 .team-section-title {
+  color: black;
   font-family: "Roboto Mono", monospace;
   font-size: 30px;
   text-align: center;
@@ -1343,6 +1365,7 @@ html {
 }
 
 .team-section-info {
+  color: black;
   text-align: center;
   font-family: "Roboto Mono", monospace;
   font-size: 16px;
@@ -1416,6 +1439,14 @@ html {
     width: 350px;
     height: 400px;
   }
+}
+
+.team-member-info {
+  color: black;
+}
+
+.team-member-name {
+  color: black;
 }
 
 /*form styles*/
@@ -1508,9 +1539,9 @@ html {
 
 /*headings*/
 .fs-title {
+  color: black;
   font-size: 15px;
   text-transform: uppercase;
-  color: #2a2049;
   margin-bottom: 10px;
   font-family: "Roboto Mono", monospace;
 }
@@ -1533,7 +1564,7 @@ html {
 
 #progressbar li {
   list-style-type: none;
-  color: #2a2049;
+  color: black;
   text-transform: uppercase;
   font-size: 11px;
   width: 40%;
@@ -1689,6 +1720,7 @@ html {
 }
 
 .benefits-title {
+  color: black;
   text-align: center;
   font-size: 30px;
   font-family: "Furore", sans-serif;
@@ -1726,6 +1758,7 @@ html {
 }
 
 .stage-info {
+  color: black;
   font-family: "Roboto Mono", monospace;
 }
 @media screen and (min-width: 768px) {
@@ -1745,6 +1778,7 @@ html {
 }
 
 .why-we-title {
+  color: black;
   font-size: 30px;
   font-family: "Roboto Mono", monospace;
   color: #2a2049;
@@ -1784,6 +1818,7 @@ html {
 }
 
 .why-we-card-title {
+  color: black;
   font-size: 16px;
   font-family: "Roboto Mono", monospace;
   margin-bottom: 20px;
@@ -1796,6 +1831,7 @@ html {
 }
 
 .why-we-card-info {
+  color: black;
   font-size: 16px;
   font-family: "Roboto Mono", monospace;
 }
@@ -2020,6 +2056,7 @@ button.primary:hover {
 }
 
 .contact-us-title {
+  color: black;
   font-family: "Furore", sans-serif;
   font-size: 26px;
   text-align: center;
@@ -2036,6 +2073,7 @@ button.primary:hover {
 }
 
 .contact-us-info {
+  color: black;
   text-align: center;
   font-family: "Roboto Mono", monospace;
   margin-top: 20px;
@@ -2053,6 +2091,7 @@ button.primary:hover {
 
 .contacts-label {
   font-size: 20px;
+  color: black;
 }
 
 .free-oudit-section {
@@ -2060,6 +2099,7 @@ button.primary:hover {
 }
 
 .free-oudit-title {
+  color: black;
   text-align: center;
   font-size: 30px;
   font-family: "Furore", sans-serif;
@@ -2077,6 +2117,7 @@ button.primary:hover {
 }
 
 .free-oudit-info-container {
+  color: black;
   text-align: center;
   font-family: "Roboto Mono", monospace;
   font-size: 17px;
@@ -2177,6 +2218,7 @@ button.primary:hover {
 }
 
 .last-section-title {
+  color: black;
   font-size: 24px;
   font-family: "Furore", sans-serif;
   text-align: center;
@@ -2194,6 +2236,7 @@ button.primary:hover {
 }
 
 .last-section-info {
+  color: black;
   font-family: "Roboto Mono", monospace;
   font-weight: 800;
   font-size: 16px;
@@ -2206,7 +2249,7 @@ button.primary:hover {
 }
 
 .additional-info {
-  color: rgb(143, 141, 141);
+  color: black;
   font-family: "Roboto Mono", monospace;
   font-weight: 500;
   font-size: 16px;
@@ -2244,6 +2287,7 @@ button.primary:hover {
 }
 
 .last-benefits-title {
+  color: black;
   font-size: 20px;
   text-align: center;
   font-family: "Furore", sans-serif;
@@ -2266,6 +2310,7 @@ button.primary:hover {
 }
 
 .last-section-benefits-list {
+  color: black;
   font-family: "Roboto Mono", monospace;
   font-size: 16px;
   padding: 30px;

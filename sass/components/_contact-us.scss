@@ -77,9 +77,9 @@
 }
 /*headings*/
 .fs-title {
+  color: $text-color;
   font-size: 15px;
   text-transform: uppercase;
-  color: $accent-color;
   margin-bottom: 10px;
   font-family: $second-font;
   @media screen and (min-width: 768px) {
@@ -99,7 +99,7 @@
 }
 #progressbar li {
   list-style-type: none;
-  color: $accent-color;
+ color: $text-color;
   text-transform: uppercase;
   font-size: 11px;
   width: 40%;
