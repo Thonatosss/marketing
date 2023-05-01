@@ -36,6 +36,7 @@ body {
 .b-l-corner {
   transform: rotate(-90deg);
   margin-right: auto;
+  fill: #ceb76e;
 }
 
 .b-r-corner {
@@ -44,6 +45,7 @@ body {
 
 .t-r-corner {
   transform: rotate(90deg);
+  fill: #ceb76e;
 }
 
 .t-l-corner {
@@ -52,6 +54,7 @@ body {
 }
 
 .t-l-corner-180 {
+  fill: #ceb76e;
   transform: rotateY(180deg);
   margin-left: auto;
 }
@@ -748,7 +751,7 @@ html {
 }
 
 .second-sec-t-corner {
-  fill: white;
+  fill: black;
   transform: rotate(90deg);
   display: block;
   margin-left: auto;
@@ -757,6 +760,12 @@ html {
   .second-sec-t-corner {
     width: 60px;
     height: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .second-sec-t-corner {
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -769,6 +778,12 @@ html {
   .second-sec-b-corner {
     width: 60px;
     height: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .second-sec-b-corner {
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -1043,6 +1058,7 @@ html {
 
 .our-cases-r-corner {
   transform: rotate(90deg);
+  fill: #ceb76e;
 }
 @media screen and (min-width: 768px) {
   .our-cases-r-corner {
@@ -1326,6 +1342,7 @@ html {
 
 .team-r-t-corner {
   transform: rotateY(180deg);
+  fill: #ceb76e;
   margin-left: auto;
 }
 @media screen and (min-width: 768px) {
@@ -1393,6 +1410,7 @@ html {
 
 .team-b-r-corner {
   transform: rotate(-90deg);
+  fill: #ceb76e;
   margin-right: auto;
 }
 @media screen and (min-width: 768px) {
@@ -2035,6 +2053,7 @@ button.primary:hover {
 
 .contact-t-r-corner {
   transform: rotateY(180deg);
+  fill: #ceb76e;
   margin-left: auto;
 }
 @media screen and (min-width: 768px) {
@@ -2166,6 +2185,7 @@ button.primary:hover {
   .oudit-user-name {
     width: 50%;
     height: 70px;
+    font-size: 22px;
   }
 }
 
@@ -2184,6 +2204,7 @@ button.primary:hover {
   .oudit-user-phone {
     width: 50%;
     height: 70px;
+    font-size: 22px;
   }
 }
 

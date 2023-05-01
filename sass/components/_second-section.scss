@@ -3,13 +3,17 @@
     background-color: $accent-color;
 }
 .second-sec-t-corner{
-    fill: white;
+    fill: black;
     transform: rotate(90deg);
     display: block;
     margin-left: auto;
      @media screen and (min-width: 768px){
        width: 60px;
        height: 60px;   
+    }
+    @media screen and (min-width: 1200px){
+       width: 100px;
+       height: 100px;
     }
 }
 .second-sec-b-corner{
@@ -19,6 +23,10 @@
      @media screen and (min-width: 768px){
        width: 60px;
        height: 60px;   
+    }
+    @media screen and (min-width: 1200px){
+       width: 100px;
+       height: 100px;
     }
 }
 .first-font-text{

@@ -4,6 +4,7 @@
 
 .contact-t-r-corner{
     transform: rotateY(180deg);
+    fill: $accent-color;
     margin-left: auto;
     @media screen and (min-width: 768px){
      width: 60px;
