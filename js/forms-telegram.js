@@ -24,7 +24,7 @@ document.getElementById('first-form').addEventListener('submit', function (e) {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-            alert('Дякуємо за звернення!');
+
             this.firstFormPhone.value = '';
 
         })
