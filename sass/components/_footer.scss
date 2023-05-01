@@ -1,7 +1,9 @@
 .footer{
-    background-color: white;
     padding-top: 50px;
     padding-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 80px;
+    }
 }
 .footer-wrapper{
     display: flex;

@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "MyFont1";
+  src: url("/fonts/RG-SpaciousBook.ttf");
+}
+@font-face {
+  font-family: "MyFont2";
+  src: url("/fonts/RG-StandardMedium.ttf");
+}
 .to-center {
   display: flex;
   justify-content: space-between;
@@ -14,8 +22,9 @@ a {
 }
 
 body {
-  background-color: #F4F4F4;
+  background-image: linear-gradient(to left top, #343333, #2b2b2b, #232222, #1a1a1a, #121212, #111111, #111111, #101010, #181818, #1f1f1f, #262626, #2e2e2e);
   line-height: 1.2;
+  letter-spacing: 3px;
 }
 
 .b-l-corner {
@@ -182,12 +191,12 @@ html {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #2a2049;
+  background-color: #ceb76e;
   transition: 0.4s;
 }
 
 .burger-menu_button:hover {
-  background-color: #2a2049;
+  background-color: #ceb76e;
 }
 
 .burger-menu_lines::before,
@@ -196,7 +205,7 @@ html {
   position: absolute;
   width: 43px;
   height: 3px;
-  background-color: #F4F4F4;
+  background-color: black;
   transition: 0.4s;
 }
 
@@ -238,7 +247,7 @@ html {
   display: flex;
   flex-flow: column;
   height: 100%;
-  background-color: #F4F4F4;
+  background-color: black;
   overflow-y: auto;
   right: -100%;
   transition: 0.8s;
@@ -257,7 +266,7 @@ html {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: 400;
-  color: #2a2049;
+  color: #ceb76e;
   border-bottom: 1px solid #fff;
 }
 
@@ -287,7 +296,7 @@ html {
 .header-link {
   height: 30px;
   align-items: center;
-  color: black;
+  color: #fcfcfc;
   text-decoration: none;
   display: flex;
 }
@@ -324,9 +333,9 @@ html {
 
 .link-icon {
   position: relative;
-  width: 23px;
-  height: 23px;
-  background: #f8f8ff;
+  width: 20px;
+  height: 20px;
+  background: #ceb76e;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -371,7 +380,7 @@ html {
 }
 
 .contact-us {
-  background-color: #2a2049;
+  background-color: #ceb76e;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -387,7 +396,7 @@ html {
 }
 
 .contac-us-svg {
-  fill: #F4F4F4;
+  fill: black;
 }
 @media screen and (min-width: 1200px) {
   .contac-us-svg {
@@ -399,7 +408,7 @@ html {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: white;
+  background-color: #000000;
   z-index: 30;
 }
 @media screen and (min-width: 768px) {
@@ -414,9 +423,8 @@ html {
 @media screen and (min-width: 1200px) {
   .navigation-list {
     display: flex;
-    gap: 40px;
     align-items: center;
-    font-family: "Roboto Mono", monospace;
+    font-family: "MyFont1";
   }
 }
 
@@ -435,10 +443,10 @@ html {
 }
 @media screen and (min-width: 1200px) {
   .header-phone {
-    font-family: "Roboto Mono", monospace;
-    font-size: 17px;
+    font-family: "MyFont2";
+    font-size: 25px;
     font-weight: 700;
-    color: black;
+    color: #fcfcfc;
   }
 }
 
@@ -467,11 +475,11 @@ html {
 }
 @media screen and (min-width: 1200px) {
   .header-phone-num {
-    font-size: 23px;
+    font-size: px;
     font-weight: 500;
-    color: black;
+    color: #fcfcfc;
     display: block;
-    font-family: "Roboto Mono", monospace;
+    font-family: "MyFont2";
   }
 }
 
@@ -484,7 +492,12 @@ html {
     width: 24px;
     height: 24px;
     margin-right: 10px;
+    fill: #ceb76e;
   }
+}
+
+.navigation-li:not(:last-child) {
+  margin-right: 25px;
 }
 
 .hero-section {
@@ -499,7 +512,7 @@ html {
 
 .hero-page-title {
   text-align: center;
-  color: black;
+  color: #fcfcfc;
 }
 @media screen and (max-width: 767px) {
   .hero-page-title {
@@ -539,7 +552,7 @@ html {
 }
 
 .hero-social-netw {
-  color: #2a2049;
+  color: #ceb76e;
 }
 
 .hero-sec-b-corner {
@@ -561,7 +574,7 @@ html {
 }
 
 .hero-sec-t-corner {
-  fill: #2a2049;
+  fill: #ceb76e;
 }
 @media screen and (min-width: 768px) {
   .hero-sec-t-corner {
@@ -577,13 +590,13 @@ html {
 }
 
 .accent-color-text {
-  color: #2a2049;
+  color: #ceb76e;
 }
 
 .about-us {
-  color: black;
+  color: #fcfcfc;
   font-size: 17px;
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -638,12 +651,12 @@ html {
 }
 
 .hero-page-title {
-  font-family: "Furore", sans-serif;
+  font-family: "MyFont1";
 }
 
 .furore-font {
-  font-family: "Furore", sans-serif;
-  color: black;
+  font-family: "MyFont1";
+  color: #fcfcfc;
 }
 @media screen and (min-width: 768px) {
   .furore-font {
@@ -657,11 +670,11 @@ html {
 }
 
 .average-income {
-  color: black;
+  color: #fcfcfc;
   margin-top: 10px;
   font-size: 16px;
   font-weight: 700;
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
 }
 @media screen and (min-width: 768px) {
   .average-income {
@@ -681,7 +694,7 @@ html {
      -moz-appearance: button;
           appearance: button;
   backface-visibility: hidden;
-  background-color: #2a2049;
+  background-color: #ceb76e;
   border-radius: 6px;
   border-width: 0;
   box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
@@ -736,7 +749,7 @@ html {
 
 .second-section {
   padding-top: 50px;
-  background-color: #2a2049;
+  background-color: #ceb76e;
 }
 
 .second-sec-t-corner {
@@ -765,10 +778,10 @@ html {
 }
 
 .first-font-text {
-  font-family: "Furore", sans-serif;
+  font-family: "MyFont1";
   font-size: 40px;
   font-weight: 400;
-  color: black;
+  color: #fcfcfc;
 }
 @media screen and (min-width: 768px) {
   .first-font-text {
@@ -782,10 +795,10 @@ html {
 }
 
 .second-section-info {
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
   font-weight: 600;
   font-size: 16px;
-  color: black;
+  color: #fcfcfc;
   margin-top: 24px;
 }
 
@@ -819,7 +832,7 @@ html {
 .budget-large-corner-t {
   transform: rotate(270deg) scaleX(-1);
   margin-right: auto;
-  fill: #2a2049;
+  fill: #ceb76e;
 }
 @media screen and (min-width: 768px) {
   .budget-large-corner-t {
@@ -837,7 +850,7 @@ html {
 .budget-large-corner-b {
   transform: rotate(-90deg);
   margin-right: auto;
-  fill: #2a2049;
+  fill: #ceb76e;
 }
 @media screen and (min-width: 768px) {
   .budget-large-corner-b {
@@ -859,9 +872,9 @@ html {
 }
 
 .budget-info {
-  color: black;
+  color: #fcfcfc;
   margin-top: 24px;
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
   font-weight: 800;
   font-size: 16px;
   text-align: center;
@@ -880,7 +893,7 @@ html {
 }
 
 .budget-two-mil {
-  font-family: "Furore", sans-serif;
+  font-family: "MyFont1";
   font-size: 40px;
   text-align: center;
 }
@@ -939,7 +952,7 @@ html {
 
 .our-exp-l-corner {
   margin-right: auto;
-  fill: #2a2049;
+  fill: #ceb76e;
 }
 @media screen and (min-width: 1200px) {
   .our-exp-l-corner {
@@ -950,7 +963,7 @@ html {
 
 .our-exp-r-corner {
   transform: scaleX(-1);
-  fill: #2a2049;
+  fill: #ceb76e;
 }
 @media screen and (min-width: 1200px) {
   .our-exp-r-corner {
@@ -960,8 +973,8 @@ html {
 }
 
 .our-exp-title {
-  color: black;
-  font-family: "Furore", sans-serif;
+  color: #fcfcfc;
+  font-family: "MyFont1";
   font-size: 32px;
   font-weight: 400;
   text-align: center;
@@ -973,7 +986,7 @@ html {
 }
 
 .our-exp-companies {
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
   font-size: 17px;
   margin-bottom: 25px;
   margin-top: 10px;
@@ -1005,8 +1018,8 @@ html {
 }
 
 .our-cases-title {
-  font-family: "Furore", sans-serif;
-  color: black;
+  font-family: "MyFont1";
+  color: #fcfcfc;
   font-size: 32px;
   text-align: center;
 }
@@ -1092,7 +1105,7 @@ html {
   position: absolute;
   width: 100%;
   height: 100%;
-  color: black;
+  color: #fcfcfc;
   backface-visibility: hidden;
 }
 
@@ -1114,7 +1127,7 @@ html {
 
 .our-cases-li {
   font-size: 15px;
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
 }
 
 .our-cases-li {
@@ -1127,14 +1140,14 @@ html {
 
 .our-cases-card-description {
   font-size: 13px;
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
   color: silver;
   text-align: center;
 }
 
 .our-cases-card-title {
   font-size: 17px;
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
   text-align: center;
 }
 
@@ -1158,8 +1171,8 @@ html {
 }
 
 .motivation-section-title {
-  color: black;
-  font-family: "Roboto Mono", monospace;
+  color: #fcfcfc;
+  font-family: "MyFont2";
   font-size: 22px;
   text-align: center;
 }
@@ -1176,9 +1189,9 @@ html {
 }
 
 .motivation-section-info {
-  color: black;
+  color: #fcfcfc;
   text-align: center;
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
   font-size: 16px;
   margin-top: 24px;
   margin-bottom: 50px;
@@ -1196,8 +1209,8 @@ html {
 }
 
 .motivation-section-second-title {
-  color: black;
-  font-family: "Roboto Mono", monospace;
+  color: #fcfcfc;
+  font-family: "MyFont2";
   font-size: 22px;
   text-align: center;
 }
@@ -1214,8 +1227,8 @@ html {
 }
 
 .motivation-section-list {
-  color: black;
-  font-family: "Roboto Mono", monospace;
+  color: #fcfcfc;
+  font-family: "MyFont2";
   font-size: 16px;
 }
 @media screen and (min-width: 768px) {
@@ -1235,14 +1248,14 @@ html {
 }
 
 .motivation-plus {
-  color: #2a2049;
+  color: #ceb76e;
   font-size: 30px;
 }
 
 .motivation-l-corner {
   transform: rotate(-90deg);
   margin-right: auto;
-  fill: #2a2049;
+  fill: #ceb76e;
 }
 @media screen and (min-width: 768px) {
   .motivation-l-corner {
@@ -1259,7 +1272,7 @@ html {
 
 .motivation-r-corner {
   transform: rotate(90deg) scaleX(-1);
-  fill: #2a2049;
+  fill: #ceb76e;
 }
 @media screen and (min-width: 768px) {
   .motivation-r-corner {
@@ -1347,8 +1360,8 @@ html {
 }
 
 .team-section-title {
-  color: black;
-  font-family: "Roboto Mono", monospace;
+  color: #fcfcfc;
+  font-family: "MyFont2";
   font-size: 30px;
   text-align: center;
   margin-top: 30px;
@@ -1365,9 +1378,9 @@ html {
 }
 
 .team-section-info {
-  color: black;
+  color: #fcfcfc;
   text-align: center;
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
   font-size: 16px;
   margin-top: 15px;
   margin-bottom: 50px;
@@ -1442,11 +1455,11 @@ html {
 }
 
 .team-member-info {
-  color: black;
+  color: #fcfcfc;
 }
 
 .team-member-name {
-  color: black;
+  color: #fcfcfc;
 }
 
 /*form styles*/
@@ -1481,7 +1494,7 @@ html {
   padding: 15px;
   width: 100%;
   box-sizing: border-box;
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
   margin-top: 10px;
   height: 50px;
 }
@@ -1496,8 +1509,8 @@ html {
 /*buttons*/
 #msform .action-button {
   max-width: 150px;
-  background: #2a2049;
-  font-family: "Roboto Mono", monospace;
+  background: #ceb76e;
+  font-family: "MyFont2";
   color: white;
   border: 0 none;
   border-radius: 5px;
@@ -1517,7 +1530,7 @@ html {
 
 #msform .action-button:hover,
 #msform .action-button:focus {
-  box-shadow: 0 0 0 2px white, 0 0 0 3px #2a2049;
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #ceb76e;
   outline: none;
   box-sizing: border-box;
   transition: all 0.25s ease;
@@ -1539,11 +1552,11 @@ html {
 
 /*headings*/
 .fs-title {
-  color: black;
+  color: #fcfcfc;
   font-size: 15px;
   text-transform: uppercase;
   margin-bottom: 10px;
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
 }
 @media screen and (min-width: 768px) {
   .fs-title {
@@ -1564,13 +1577,13 @@ html {
 
 #progressbar li {
   list-style-type: none;
-  color: black;
+  color: #fcfcfc;
   text-transform: uppercase;
   font-size: 11px;
   width: 40%;
   float: left;
   position: relative;
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
 }
 @media screen and (min-width: 768px) {
   #progressbar li {
@@ -1620,7 +1633,7 @@ html {
 /*The number of the step and the connector before it = green*/
 #progressbar li.active:before,
 #progressbar li.active:after {
-  background: #2a2049;
+  background: #ceb76e;
   font-size: 10px;
   color: white;
 }
@@ -1648,7 +1661,7 @@ html {
 .form-label {
   display: flex;
   align-items: center;
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
   font-size: 13px;
 }
 @media screen and (min-width: 768px) {
@@ -1672,7 +1685,7 @@ html {
 }
 
 .contacts-label {
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
   font-size: 14px;
   margin-bottom: 20px;
 }
@@ -1690,13 +1703,13 @@ html {
 .biz-type-input::-moz-placeholder {
   text-align: center;
   font-size: 11px;
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
 }
 
 .biz-type-input::placeholder {
   text-align: center;
   font-size: 11px;
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
 }
 @media screen and (min-width: 768px) {
   .biz-type-input::-moz-placeholder {
@@ -1720,10 +1733,10 @@ html {
 }
 
 .benefits-title {
-  color: black;
+  color: #fcfcfc;
   text-align: center;
   font-size: 30px;
-  font-family: "Furore", sans-serif;
+  font-family: "MyFont1";
   margin-bottom: 25px;
 }
 @media screen and (min-width: 768px) {
@@ -1740,9 +1753,9 @@ html {
 }
 
 .stage-number {
-  font-family: "Furore", sans-serif;
+  font-family: "MyFont1";
   font-size: 40px;
-  color: #2a2049;
+  color: #ceb76e;
   margin-bottom: 15px;
   margin-top: 15px;
 }
@@ -1758,8 +1771,8 @@ html {
 }
 
 .stage-info {
-  color: black;
-  font-family: "Roboto Mono", monospace;
+  color: #fcfcfc;
+  font-family: "MyFont2";
 }
 @media screen and (min-width: 768px) {
   .stage-info {
@@ -1778,10 +1791,10 @@ html {
 }
 
 .why-we-title {
-  color: black;
+  color: #fcfcfc;
   font-size: 30px;
-  font-family: "Roboto Mono", monospace;
-  color: #2a2049;
+  font-family: "MyFont2";
+  color: #ceb76e;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -1818,9 +1831,9 @@ html {
 }
 
 .why-we-card-title {
-  color: black;
+  color: #fcfcfc;
   font-size: 16px;
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
   margin-bottom: 20px;
   font-weight: 800;
 }
@@ -1831,9 +1844,9 @@ html {
 }
 
 .why-we-card-info {
-  color: black;
+  color: #fcfcfc;
   font-size: 16px;
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
 }
 @media screen and (min-width: 1200px) {
   .why-we-card-info {
@@ -1845,7 +1858,7 @@ html {
   position: absolute;
   right: 0;
   top: 0;
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
   font-size: 18px;
   transform: rotate(-90deg);
 }
@@ -1872,7 +1885,7 @@ html {
 
 .modal-title {
   font-size: 20px;
-  font-family: "Furore", sans-serif;
+  font-family: "MyFont1";
   text-align: center;
 }
 
@@ -1886,8 +1899,8 @@ html {
 
 .modal-user-name {
   border: none;
-  border-color: #F4F4F4;
-  font-family: "Roboto Mono", monospace;
+  border-color: black;
+  font-family: "MyFont2";
   width: 80%;
   height: 50px;
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
@@ -1898,8 +1911,8 @@ html {
 .modal-user-phone {
   margin-top: 20px;
   border: none;
-  border-color: #F4F4F4;
-  font-family: "Roboto Mono", monospace;
+  border-color: black;
+  font-family: "MyFont2";
   width: 80%;
   height: 50px;
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
@@ -1912,7 +1925,7 @@ html {
      -moz-appearance: button;
           appearance: button;
   backface-visibility: hidden;
-  background-color: #2a2049;
+  background-color: #ceb76e;
   border-radius: 5px;
   border-width: 0;
   box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
@@ -1936,7 +1949,7 @@ html {
   touch-action: manipulation;
   max-width: 180px;
   margin-top: 20px;
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
   width: 80%;
   margin-bottom: 20px;
 }
@@ -2056,8 +2069,8 @@ button.primary:hover {
 }
 
 .contact-us-title {
-  color: black;
-  font-family: "Furore", sans-serif;
+  color: #fcfcfc;
+  font-family: "MyFont1";
   font-size: 26px;
   text-align: center;
 }
@@ -2073,9 +2086,9 @@ button.primary:hover {
 }
 
 .contact-us-info {
-  color: black;
+  color: #fcfcfc;
   text-align: center;
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
   margin-top: 20px;
 }
 @media screen and (min-width: 768px) {
@@ -2091,7 +2104,7 @@ button.primary:hover {
 
 .contacts-label {
   font-size: 20px;
-  color: black;
+  color: #fcfcfc;
 }
 
 .free-oudit-section {
@@ -2099,10 +2112,10 @@ button.primary:hover {
 }
 
 .free-oudit-title {
-  color: black;
+  color: #fcfcfc;
   text-align: center;
   font-size: 30px;
-  font-family: "Furore", sans-serif;
+  font-family: "MyFont1";
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -2117,9 +2130,9 @@ button.primary:hover {
 }
 
 .free-oudit-info-container {
-  color: black;
+  color: #fcfcfc;
   text-align: center;
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
   font-size: 17px;
 }
 @media screen and (min-width: 768px) {
@@ -2152,7 +2165,7 @@ button.primary:hover {
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   padding: 15px;
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
 }
 @media screen and (min-width: 1200px) {
   .oudit-user-name {
@@ -2169,7 +2182,7 @@ button.primary:hover {
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   padding: 15px;
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
   margin-top: 15px;
 }
 @media screen and (min-width: 1200px) {
@@ -2188,7 +2201,7 @@ button.primary:hover {
   height: 50px;
   margin-top: 10px;
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
   box-sizing: border-box;
   transition: all 0.25s ease;
   cursor: pointer;
@@ -2218,9 +2231,9 @@ button.primary:hover {
 }
 
 .last-section-title {
-  color: black;
+  color: #fcfcfc;
   font-size: 24px;
-  font-family: "Furore", sans-serif;
+  font-family: "MyFont1";
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -2236,8 +2249,8 @@ button.primary:hover {
 }
 
 .last-section-info {
-  color: black;
-  font-family: "Roboto Mono", monospace;
+  color: #fcfcfc;
+  font-family: "MyFont2";
   font-weight: 800;
   font-size: 16px;
   margin: 20px 0 20px 0;
@@ -2249,8 +2262,8 @@ button.primary:hover {
 }
 
 .additional-info {
-  color: black;
-  font-family: "Roboto Mono", monospace;
+  color: #fcfcfc;
+  font-family: "MyFont2";
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 30px;
@@ -2265,7 +2278,7 @@ button.primary:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
   font-size: 14px;
   width: 50%;
   margin-bottom: 25px;
@@ -2287,10 +2300,10 @@ button.primary:hover {
 }
 
 .last-benefits-title {
-  color: black;
+  color: #fcfcfc;
   font-size: 20px;
   text-align: center;
-  font-family: "Furore", sans-serif;
+  font-family: "MyFont1";
   margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
@@ -2310,8 +2323,8 @@ button.primary:hover {
 }
 
 .last-section-benefits-list {
-  color: black;
-  font-family: "Roboto Mono", monospace;
+  color: #fcfcfc;
+  font-family: "MyFont2";
   font-size: 16px;
   padding: 30px;
   list-style-type: circle;
@@ -2332,9 +2345,13 @@ button.primary:hover {
 }
 
 .footer {
-  background-color: white;
   padding-top: 50px;
   padding-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 80px;
+  }
 }
 
 .footer-wrapper {
@@ -2352,7 +2369,7 @@ button.primary:hover {
 }
 
 .footer-list-item {
-  font-family: "Roboto Mono", monospace;
+  font-family: "MyFont2";
   font-weight: 700;
 }
 
@@ -2365,20 +2382,20 @@ button.primary:hover {
 }
 
 .footer-mail-link {
-  color: black;
+  color: #fcfcfc;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .footer-phone-num-link {
-  color: black;
+  color: #fcfcfc;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .footer-icon {
-  fill: #2a2049;
+  fill: #ceb76e;
   margin-right: 4px;
 }/*# sourceMappingURL=main.css.map */

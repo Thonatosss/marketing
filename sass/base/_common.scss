@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'MyFont1';
+    src: url('/fonts/RG-SpaciousBook.ttf');
+}
+@font-face {
+    font-family: 'MyFont2';
+    src: url('/fonts/RG-StandardMedium.ttf');
+}
+
 .to-center {
   
    display: flex;
@@ -14,8 +23,9 @@ a {
   text-decoration: none;
 }
 body {
-  background-color: $primary-white-color;
+ background-image: linear-gradient(to left top, #343333, #2b2b2b, #232222, #1a1a1a, #121212, #111111, #111111, #101010, #181818, #1f1f1f, #262626, #2e2e2e);
   line-height: 1.2;
+  letter-spacing: 3px;
   
 }
 .b-l-corner {
