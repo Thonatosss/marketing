@@ -9,12 +9,21 @@
      width: 60px;
      height: 60px;    
     }
+    @media screen and (min-width: 1200px){
+     width: 100px;
+     height: 100px;   
+    }
 }
 .contact-t-l-corner{
     @media screen and (min-width: 768px){
      width: 60px;
      height: 60px;    
     }
+    @media screen and (min-width: 1200px){
+    width: 100px;
+    height: 100px;    
+    }
+
 }
 .contact-us-title{
     font-family: $first-font;
@@ -22,6 +31,9 @@
     text-align: center;
     @media screen and (min-width: 768px){
         font-size: 46px; 
+    }
+    @media screen and (min-width: 1200px){
+     font-size: 52px;   
     }
 }
 .contact-us-info{
@@ -31,4 +43,11 @@
     @media screen and (min-width: 768px){
          font-size: 20px;
     }
+    @media screen and (min-width: 1200px){
+     font-size: 22px;   
+    }
+}
+.contacts-label{
+    font-size: 20px;
+    
 }

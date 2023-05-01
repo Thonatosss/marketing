@@ -10,6 +10,9 @@
     @media screen and (min-width: 768px){
      font-size: 48px;    
     }
+    @media screen and (min-width: 1200px){
+     font-size: 90px;   
+    }
 }
 .why-we-card{
    background-color: white;
@@ -21,16 +24,27 @@
         width: 200px;
         height: 230px;
     }
+    @media screen and (min-width: 1200px){
+     width: 350px;
+     height: 300px;
+     padding: 40px;   
+    }
 }
 .why-we-card-title{
     font-size: 16px;
     font-family: $second-font;
     margin-bottom: 20px;
     font-weight: 800;
+    @media screen and (min-width: 1200px){
+     font-size: 27px;   
+    }
 }
 .why-we-card-info{
     font-size: 16px;
     font-family: $second-font;
+    @media screen and (min-width: 1200px){
+     font-size: 18px;   
+    }
 }
 .why-we-card-number{
     position: absolute;
@@ -41,6 +55,9 @@
     transform: rotate(-90deg);
     @media screen and (min-width: 768px){
      font-size: 20px;
+    }
+    @media screen and (min-width: 1200px){
+     font-size: 32px;   
     }
 }
 .why-we-list{

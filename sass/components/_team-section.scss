@@ -8,12 +8,20 @@
          width: 60px;
          height: 60px;
     }
+    @media screen and (min-width: 1200px){
+     width: 100px;
+     height: 100px;   
+    }
 
 }
 .team-l-t-corner{
     @media screen and (min-width: 768px){
          width: 60px;
          height: 60px;
+    }
+    @media screen and (min-width: 1200px){
+     width: 100px;
+     height: 100px;   
     }
 }
 .team-section-title{
@@ -23,6 +31,9 @@
     margin-top: 30px;
     @media screen and (min-width: 768px){
         font-size: 50px;
+    }
+    @media screen and (min-width: 1200px){
+     font-size: 60px;   
     }
 }
 .team-section-info{
@@ -34,6 +45,9 @@
     @media screen and (min-width: 768px){
          font-size: 20px;
     }
+    @media screen and (min-width: 1200px){
+     font-size: 25px;   
+    }
 }
 .team-b-r-corner{
     transform: rotate(-90deg);
@@ -42,12 +56,20 @@
          width: 60px;
          height: 60px;
     }
+    @media screen and (min-width: 1200px){
+     width: 100px;
+     height: 100px;   
+    }
 }
 .team-b-l-corner{
     transform: rotate(90deg) scaleX(-1);
     @media screen and (min-width: 768px){
          width: 60px;
          height: 60px;
+    }
+    @media screen and (min-width: 1200px){
+     width: 100px;
+     height: 100px;   
     }
 }
 .team-member-card {
@@ -66,6 +88,10 @@
 .team-card-container{
     width: 250px;
     height: 350px;
+    @media screen and (min-width: 1200px){
+        width: 350px;
+        height: 400px;
+    }
     background-color: $card-container;
     margin-right: auto;
     margin-left: auto;

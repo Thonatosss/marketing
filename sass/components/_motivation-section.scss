@@ -1,6 +1,7 @@
 .motivation-section{
     padding-top: 50px;
      background-image: url('/images/cool-background.png');
+    
 }
 .motivation-r-corner{
     transform: rotateY(180deg);
@@ -17,6 +18,10 @@
     @media screen and (min-width: 768px){
        font-size: 48px;
     }
+    @media screen and (min-width: 1200px){
+        font-size: 63px;
+        text-align: center;
+    }
 }
 .motivation-section-info{
     text-align: center;
@@ -26,6 +31,10 @@
     margin-bottom: 50px;
      @media screen and (min-width: 768px){
        font-size: 24px;
+    }
+    @media screen and (min-width: 1200px){
+        font-size: 28px;
+        margin-bottom: 100px;
     }
 }
 
@@ -37,6 +46,9 @@
         font-size: 32px;
         text-align: start;
     }
+    @media screen and (min-width: 1200px){
+     font-size: 42px;   
+    }
 }
 .motivation-section-list{
     font-family: $second-font;
@@ -44,6 +56,9 @@
     @media screen and (min-width: 768px){
          font-size: 18px;
          font-weight: 800;
+    }
+    @media screen and (min-width: 1200px){
+     font-size: 20px;   
     }
 }
 .motivation-li:not(:last-child){
@@ -61,6 +76,10 @@
          width: 60px;
          height: 60px;
     }
+    @media screen and (min-width: 1200px){
+     width: 100px;
+     height: 100px;   
+    }
 }
 .motivation-r-corner{
     transform: rotate(90deg) scaleX(-1);
@@ -69,6 +88,10 @@
          width: 60px;
          height: 60px;
     }
+    @media screen and (min-width: 1200px){
+     width: 100px;
+     height: 100px;   
+    }
 }
 .motivation-r-t-corner{
     transform: rotateY(180deg);
@@ -76,6 +99,10 @@
     @media screen and (min-width: 768px){
          width: 60px;
          height: 60px;
+    }
+    @media screen and (min-width: 1200px){
+     width: 100px;
+     height: 100px;   
     }
 }
 
@@ -90,5 +117,9 @@
     @media screen and (min-width: 768px){
          width: 60px;
          height: 60px;
+    }
+    @media screen and (min-width: 1200px){
+     width: 100px;
+     height: 100px;   
     }
 }

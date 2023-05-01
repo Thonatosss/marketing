@@ -11,8 +11,8 @@ new Splide('#splide1', {
         },
         1999: {
             perPage: 5,
-            interval: 2000,
-            speed: 5000,
+            interval: 3000,
+            speed: 2000,
         }
     }
 }).mount();
@@ -30,8 +30,8 @@ new Splide('#splide2', {
         },
         1999: {
             perPage: 5,
-            interval: 2000,
-            speed: 5000,
+            interval: 3000,
+            speed: 2000,
         }
     }
 }).mount();
@@ -45,10 +45,16 @@ new Splide('#splide3', {
     breakpoints: {
         767: {
             perPage: 1,
+            interval: 3000
         },
-        1999: {
+        1199: {
             perPage: 2,
+            interval: 3000
 
+        },
+        3000: {
+            perPage: 3,
+            interval: 2500
         }
     }
 
@@ -65,9 +71,14 @@ new Splide('#splide4', {
         767: {
             perPage: 1,
         },
-        1999: {
+        1199: {
             perPage: 2,
 
+        },
+        3000: {
+            perPage: 3,
+            interval: 2000,
+            speed: 2000
         }
     }
 }).mount();

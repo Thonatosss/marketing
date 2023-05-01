@@ -28,6 +28,12 @@
   width: 100%;
   box-sizing: border-box;
   font-family: $second-font;
+  margin-top: 10px;
+  height: 50px;
+  @media screen and (min-width: 1200px) {
+    height: 60px;
+    margin-top: 20px;
+  }
 }
 /*buttons*/
 #msform .action-button {
@@ -42,15 +48,32 @@
   margin: 10px 5px;
   text-decoration: none;
   font-size: 12px;
-   @media screen and (min-width: 768px){
-         font-size: 20px;
-        max-width: 250px;
-        height: 70px;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    max-width: 250px;
+    height: 70px;
+  }
 }
 #msform .action-button:hover,
 #msform .action-button:focus {
   box-shadow: 0 0 0 2px white, 0 0 0 3px $accent-color;
+  outline: none;
+	box-sizing: border-box;
+	transition: all 0.25s ease;
+	cursor: pointer;
+	&:hover {
+		box-shadow: 0 20px 20px -10px rgb(var(--vs-primary) / 50%);
+		transform: translateY(-5px);
+	}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+  
 }
 /*headings*/
 .fs-title {
@@ -59,10 +82,10 @@
   color: $accent-color;
   margin-bottom: 10px;
   font-family: $second-font;
-  @media screen and (min-width: 768px){
-         font-size: 25px;
-         margin-bottom: 15px;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
 }
 /*progressbar*/
 #progressbar {
@@ -70,7 +93,7 @@
   justify-content: center;
   margin-bottom: 30px;
   overflow: hidden;
-  
+
   /*CSS counters to number the steps*/
   counter-reset: step;
 }
@@ -83,10 +106,10 @@
   float: left;
   position: relative;
   font-family: $second-font;
-  @media screen and (min-width: 768px){
-         font-size: 15px;
-         font-weight: 700;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 15px;
+    font-weight: 700;
+  }
 }
 #progressbar li:before {
   content: counter(step);
@@ -99,11 +122,11 @@
   background: white;
   border-radius: 3px;
   margin: 0 auto 5px auto;
-  @media screen and (min-width: 768px){
-         width: 40px;
-         line-height: 40px;
-         font-size: 20px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 40px;
+    line-height: 40px;
+    font-size: 20px;
+  }
 }
 
 /*progressbar connectors*/
@@ -128,66 +151,65 @@
   background: $accent-color;
   font-size: 10px;
   color: white;
-   @media screen and (min-width: 768px){
-         font-size: 20px;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 }
 .form-checkbox {
-   flex: none;
-   width: 20px;
-   height: 20px;
-   margin-right: 3px;
-    @media screen and (min-width: 768px){
-         width: 30px;
-        height: 30px;
-        margin-right: 20px;
-    }
+  flex: none;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  @media screen and (min-width: 768px) {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
 }
 .form-label {
   display: flex;
   align-items: center;
   font-family: $second-font;
   font-size: 13px;
-   @media screen and (min-width: 768px){
-         font-size: 15px;
-         font-weight: 700;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 15px;
+    font-weight: 700;
+  }
 }
-.form-label:not(:last-child){
-	margin-bottom: 10px;
+.form-label:not(:last-child) {
+  margin-bottom: 10px;
 }
-.invest-label{
-	font-size: 15px;
-   @media screen and (min-width: 768px){
-         font-size: 20px;
-    }
+.invest-label {
+  font-size: 15px;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 }
-.contacts-label{
-	font-family: $second-font;
-	font-size: 14px;
-	margin-bottom: 20px;
+.contacts-label {
+  font-family: $second-font;
+  font-size: 14px;
+  margin-bottom: 20px;
 }
-.contacts-input{
-    border: none;
-    width: 80%;
-    height: 40px;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 5px;
-    padding: 15px;
-    font-family: "Roboto Mono", monospace;
-
+.contacts-input {
+  border: none;
+  width: 80%;
+  height: 40px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  padding: 15px;
+  font-family: "Roboto Mono", monospace;
 }
-.biz-type-input::placeholder{
-	text-align: center;
-	font-size: 11px;
-	font-family: $second-font;
-   @media screen and (min-width: 768px){
-         font-size: 20px;
-         text-align: start;
-    }
+.biz-type-input::placeholder {
+  text-align: center;
+  font-size: 11px;
+  font-family: $second-font;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    text-align: start;
+  }
 }
-.biz-type-input{
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-      border: none;
-      border-radius: 5px;
+.biz-type-input {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+  border-radius: 5px;
 }

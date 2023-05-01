@@ -2,16 +2,27 @@
 .our-exp-l-corner{
     margin-right: auto;
     fill: $accent-color;
+    @media screen and (min-width: 1200px){
+     width: 100px;
+     height: 100px;   
+    }
 }
 .our-exp-r-corner{
     transform: scaleX(-1);
     fill: $accent-color;
+    @media screen and (min-width: 1200px){
+     width: 100px;
+     height: 100px;   
+    }
 }
 .our-exp-title{
     font-family: $first-font;
     font-size: 32px;
     font-weight: 400;
     text-align: center;
+    @media screen and (min-width: 1200px){
+     font-size: 66px;   
+    }
 }
 .our-exp-companies{
     font-family: $second-font;
@@ -19,4 +30,9 @@
     margin-bottom: 25px;
     margin-top: 10px;
     text-align: center;
+    @media screen and (min-width: 1200px){
+     font-size: 21px;   
+     margin-bottom: 40px;
+     margin-top: 20px;
+    }
 }

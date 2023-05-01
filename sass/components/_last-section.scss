@@ -1,68 +1,88 @@
-.last-section{
-    padding-top: 50px;
-    
-    
+.last-section {
+  padding-top: 50px;
 }
-.last-section-title{
-    font-size: 24px;
-    font-family: $first-font;
-    text-align: center;
-    @media screen and (min-width: 768px){
-         font-size: 48px;
+.last-section-title {
+  font-size: 24px;
+  font-family: $first-font;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+  @media screen and (min-width: 1200px){
+     font-size: 52px;
+     margin-top: 20px;
     }
 }
-.last-section-info{
- 
-    font-family: $second-font;
-    font-weight: 800;
-    font-size: 16px;
-    margin: 20px 0 20px 0;
+.last-section-info {
+  font-family: $second-font;
+  font-weight: 800;
+  font-size: 16px;
+  margin: 20px 0 20px 0;
+  @media screen and (min-width: 1200px){
+     font-size: 52px;
+    }
 }
-.additional-info{
+.additional-info {
+  color: rgb(143, 141, 141);
+  font-family: $second-font;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px){
+     font-size: 25px;
+    }
+}
+.last-open-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    color: rgb(143, 141, 141);
-    font-family: $second-font;
-    font-weight: 500;
-    font-size: 16px;
-    margin-bottom: 30px;
+  font-family: $second-font;
+  font-size: 14px;
+  width: 50%;
+  margin-bottom: 25px;
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px){
+     margin-right: auto;
+      margin-left: auto;
+      max-width: 300px;
+      height: 80px;
+      font-size: 22px;
+    }
 }
-.last-open-form{
+.last-benefits-title {
+  font-size: 20px;
+  text-align: center;
+  font-family: $first-font;
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+  @media screen and (min-width: 1200px){
+     font-size: 25px;
+     margin: 0;
+    }
+}
+.last-benefits-li {
+  margin-bottom: 10px;
+}
+.last-section-benefits-list {
+  font-family: $second-font;
+  font-size: 16px;
+  padding: 30px;
+  list-style-type: circle;
+  @media screen and (min-width: 1200px){
+     font-size: 20px;
+    }
+}
+.last-section-wrapper {
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: auto;
-    margin-left: auto;
-    font-family: $second-font;
-    font-size: 14px;
-    width: 50%;
-    margin-bottom: 25px;
-    
-}
-.last-benefits-title{
-    font-size: 20px;
-    text-align: center;
-    font-family: $first-font;
-    margin-bottom: 20px;
-    @media screen and (min-width: 768px){
-        text-align: justify; 
-    }
-}
-.last-benefits-li{
-    margin-bottom: 10px;
-}
-.last-section-benefits-list{
-    font-family: $second-font;
-    font-size: 16px;
-    padding: 30px;
-    list-style-type:circle;
-    
-    
-}
-.last-section-wrapper{
-    @media screen and (min-width: 768px){
-     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;    
-    }
+    margin-top: 50px;
+  }
 }

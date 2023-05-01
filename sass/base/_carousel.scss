@@ -1,6 +1,10 @@
 .card-container{
     width: 140px;
     height: 90px;
+    @media screen and (min-width: 1200px){
+     width: 220px;
+     height: 120px;   
+    }
     background-color: $card-container;
     margin-right: auto;
     margin-left: auto;
@@ -15,18 +19,4 @@
 }
 #splide2{
     margin-top: 30px;
-}
-.our-cases-l-corner{
-    margin-right: auto;
-    @media screen and (min-width: 768px){
-         width: 60px;
-         height: 60px;
-    }
-}
-.our-cases-r-corner{
-    transform: rotate(90deg);
-    @media screen and (min-width: 768px){
-         width: 200px;
-         height: 200px;
-    }
 }
