@@ -20,6 +20,7 @@
 .header-container {
   position: fixed;
   width: 100%;
+  top: 0;
 
   background-color: white;
   z-index: 30;
@@ -79,6 +80,7 @@ display: none;
      font-weight: 500;
      color: black;
      display: block;
+     font-family: $second-font;
      
     }
 }

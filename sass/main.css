@@ -388,6 +388,7 @@ html {
 .header-container {
   position: fixed;
   width: 100%;
+  top: 0;
   background-color: white;
   z-index: 30;
 }
@@ -459,6 +460,7 @@ html {
     font-weight: 500;
     color: black;
     display: block;
+    font-family: "Roboto Mono", monospace;
   }
 }
 
