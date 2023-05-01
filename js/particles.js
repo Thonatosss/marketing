@@ -1,5 +1,5 @@
 window.onload = function () {
-    var particlesSettings = {
+    let particlesSettings = {
         connectParticles: true,
         speed: 0.2,
         maxParticles: 50,

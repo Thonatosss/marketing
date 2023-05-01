@@ -2,10 +2,12 @@
 @font-face {
   font-family: "MyFont1";
   src: url("/fonts/RG-SpaciousBook.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "MyFont2";
   src: url("/fonts/RG-StandardMedium.ttf");
+  font-display: swap;
 }
 .to-center {
   display: flex;
@@ -24,7 +26,11 @@ a {
 body {
   background-image: linear-gradient(to left top, #343333, #2b2b2b, #232222, #1a1a1a, #121212, #111111, #111111, #101010, #181818, #1f1f1f, #262626, #2e2e2e);
   line-height: 1.2;
-  letter-spacing: 3px;
+}
+@media scren and (min-width: 1200px) {
+  body {
+    letter-spacing: 3px;
+  }
 }
 
 .b-l-corner {
@@ -317,8 +323,8 @@ html {
 .link-title {
   display: block;
   /*  Set same font-size and line height  */
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 18px;
   transition: transform 0.4s ease;
 }
 
@@ -438,18 +444,6 @@ html {
   }
 }
 
-.header-phone {
-  display: none;
-}
-@media screen and (min-width: 1200px) {
-  .header-phone {
-    font-family: "MyFont2";
-    font-size: 25px;
-    font-weight: 700;
-    color: #fcfcfc;
-  }
-}
-
 .header-phone-link {
   display: flex;
   justify-content: center;
@@ -479,7 +473,8 @@ html {
     font-weight: 500;
     color: #fcfcfc;
     display: block;
-    font-family: "MyFont2";
+    font-family: "MyFont1";
+    font-size: 22px;
   }
 }
 
@@ -1105,7 +1100,7 @@ html {
   position: absolute;
   width: 100%;
   height: 100%;
-  color: #fcfcfc;
+  color: black;
   backface-visibility: hidden;
 }
 
@@ -1471,7 +1466,7 @@ html {
 }
 
 #msform fieldset {
-  background: white;
+  background: #fcfcfc;
   border: 0 none;
   border-radius: 3px;
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
@@ -1494,7 +1489,7 @@ html {
   padding: 15px;
   width: 100%;
   box-sizing: border-box;
-  font-family: "MyFont2";
+  font-family: "MyFont1";
   margin-top: 10px;
   height: 50px;
 }
@@ -1510,8 +1505,7 @@ html {
 #msform .action-button {
   max-width: 150px;
   background: #ceb76e;
-  font-family: "MyFont2";
-  color: white;
+  color: black;
   border: 0 none;
   border-radius: 5px;
   cursor: pointer;
@@ -1552,7 +1546,7 @@ html {
 
 /*headings*/
 .fs-title {
-  color: #fcfcfc;
+  color: #ceb76e;
   font-size: 15px;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -1560,7 +1554,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   .fs-title {
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 15px;
   }
 }
@@ -1831,7 +1825,7 @@ html {
 }
 
 .why-we-card-title {
-  color: #fcfcfc;
+  color: #ceb76e;
   font-size: 16px;
   font-family: "MyFont2";
   margin-bottom: 20px;
@@ -1844,13 +1838,14 @@ html {
 }
 
 .why-we-card-info {
-  color: #fcfcfc;
+  color: black;
   font-size: 16px;
   font-family: "MyFont2";
 }
 @media screen and (min-width: 1200px) {
   .why-we-card-info {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 600;
   }
 }
 
@@ -2104,7 +2099,7 @@ button.primary:hover {
 
 .contacts-label {
   font-size: 20px;
-  color: #fcfcfc;
+  color: #ceb76e;
 }
 
 .free-oudit-section {

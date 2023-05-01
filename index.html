@@ -22,7 +22,7 @@
     <header class="page-header header-container">
       <div class="container">
         <div class="to-center">
-          <img src="./images/logo_transparent.png" width="135" height="135" alt="">
+          <img src="./images/logo_transparent.png" width="135" height="135" alt="логотип">
           <nav class="navigation">
             <ul class="navigation-list">
               <li class="navigation-li">
@@ -129,7 +129,7 @@
             </svg>
           </a>
           <div class="burger-menu">
-            <a href="" class="burger-menu_button">
+            <a href="" class="burger-menu_button" aria-label="Відкрити бургерне меню">
               <spun class="burger-menu_lines"></spun>
             </a>
             <nav class="burger-menu_nav">
@@ -161,7 +161,7 @@
             <div class="call-us-container">
               <form name="call-us-form" action="" class="call-us-form" id="first-form">
                 <input type="numer" name="firstFormPhone" class="call-us-form-input" placeholder="+38(0__)-__-__-___">
-                <button class="call-us-btn button-9" type="submit">
+                <button class="call-us-btn button-9" type="submit" aria-label="Відправити заявку">
                   <svg width="25" height="25" fill="white">
                     <use href="./images/sprite/symbol-defs.svg#icon-checkmark"></use>
                   </svg>
@@ -898,7 +898,7 @@
       <form class="free-oudit-form">
         <input type="text" class="oudit-user-name" placeholder="Ваше ім'я" required>
         <input type="text" class="oudit-user-phone" placeholder="+38(0__)-___-__-__" required>
-        <button type="submit" class="free-oudit-submit prevent-default button-9"> ОТРМАТИ АУДИТ </button>
+        <button type="submit" class="free-oudit-submit prevent-default button-9" aria-label="Отримати безкоштовний аудит"> ОТРМАТИ АУДИТ </button>
       </form>
     </section>
     <section class="last-section" id="last-section" data-aos="fade-down">
@@ -947,7 +947,7 @@
             </p>
           </div>
         </div>
-        <button class="last-open-form trigger prevent-default button-9 primary" onclick="window.dialog.showModal();"> ЗАМОВИТИ КОНСУЛЬТАЦІЮ </button>
+        <button class="last-open-form trigger prevent-default button-9 primary" aria-label="Відкрити вікно для заявки" onclick="window.dialog.showModal();"> ЗАМОВИТИ КОНСУЛЬТАЦІЮ </button>
         <dialog dialog id="dialog">
           <h5 class="modal-title">
             <span class="accent-color-text">ЗАЛИШТЕ СВОЇ ДАНІ</span>
@@ -956,10 +956,10 @@
           <form class="modal-form">
             <input type="text" class="modal-user-name" autofocus="false" placeholder="Ваше ім'я" required>
             <input type="text" class="modal-user-phone" autofocus="false" placeholder="+38(0__)-___-__-__" required>
-            <button type="submit" class="form-submit-btn prevent-default">Відправити</button>
+            <button type="submit" class="form-submit-btn prevent-default" aria-label="Відправити заявку">Відправити</button>
           </form>
           <p class="rights">Натискаючи кнопку «ВІДПРАВИТИ», Ви погоджуєтесь на обробку персональних даних згідно Політики конфіденційності</p>
-          <button onclick="window.dialog.close();" aria-label="close" class="x">❌</button>
+          <button onclick="window.dialog.close();" aria-label="close" class="x" aria-label="Закрити вікно для формування заявки">❌</button>
         </dialog>
         <div class="center-icons">
           <svg width="30" height="50" class="b-l-corner tablet-corners">
@@ -1003,6 +1003,7 @@
     <script type="module" src="./js/btn.js"></script>
     <script type="module" src="./js/smooth-scroll.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="module" src="./js/forms-telegram.js"></script>
     
     <script>
       AOS.init();

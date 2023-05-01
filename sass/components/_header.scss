@@ -44,15 +44,7 @@
     margin-left: 0;
   }
 }
-.header-phone {
-  display: none;
-  @media screen and (min-width: 1200px) {
-    font-family: $second-font;
-    font-size: 25px;
-    font-weight: 700;
-    color: $text-color;
-  }
-}
+
 
 .header-phone-link{
   display: flex;
@@ -81,7 +73,8 @@ display: none;
      font-weight: 500;
      color: $text-color;
      display: block;
-     font-family: $second-font;
+     font-family: $first-font;
+     font-size: 22px;
      
     }
 }

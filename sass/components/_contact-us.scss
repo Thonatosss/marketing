@@ -6,7 +6,7 @@
   position: relative;
 }
 #msform fieldset {
-  background: white;
+  background: $text-color;
   border: 0 none;
   border-radius: 3px;
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
@@ -27,7 +27,7 @@
   padding: 15px;
   width: 100%;
   box-sizing: border-box;
-  font-family: $second-font;
+  font-family: $first-font;
   margin-top: 10px;
   height: 50px;
   @media screen and (min-width: 1200px) {
@@ -39,8 +39,7 @@
 #msform .action-button {
   max-width: 150px;
   background: $accent-color;
-  font-family: $second-font;
-  color: white;
+  color: $form-text-color;
   border: 0 none;
   border-radius: 5px;
   cursor: pointer;
@@ -77,13 +76,13 @@
 }
 /*headings*/
 .fs-title {
-  color: $text-color;
+  color: $accent-color;
   font-size: 15px;
   text-transform: uppercase;
   margin-bottom: 10px;
   font-family: $second-font;
   @media screen and (min-width: 768px) {
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 15px;
   }
 }
