@@ -159,9 +159,9 @@
             <p class="about-us"> Створюємо систему залучень нових клієнтів у бізнес за допомогою соціальних мереж: <span class="hero-social-netw">Instagram, Tik Tok, Facebook, Google ads</span>
             </p>
             <div class="call-us-container">
-              <form name="call-us-form" action="" class="call-us-form">
-                <input type="numer" name="phone-number" class="call-us-form-input" placeholder="+38(0__)-__-__-___">
-                <button class="call-us-btn prevent-default button-9" type="submit">
+              <form name="call-us-form" action="" class="call-us-form" id="first-form">
+                <input type="numer" name="firstFormPhone" class="call-us-form-input" placeholder="+38(0__)-__-__-___">
+                <button class="call-us-btn button-9" type="submit">
                   <svg width="25" height="25" fill="white">
                     <use href="./images/sprite/symbol-defs.svg#icon-checkmark"></use>
                   </svg>
@@ -994,15 +994,17 @@
         </ul>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/forms-telegram.js"></script>
     <script type="module" src="./js/carousel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script type="module" src="./js/our-cases-splider.js"></script>
     <script type="module" src="./js/contact-us.js"></script>
-    <!-- <script type="module" src="./js/modal.js"></script> -->
     <script type="module" src="./js/hamburger-menu.js"></script>
     <script type="module" src="./js/btn.js"></script>
     <script type="module" src="./js/smooth-scroll.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
     <script>
       AOS.init();
     </script>
