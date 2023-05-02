@@ -201,6 +201,9 @@ html {
   height: 60px;
   border-radius: 50%;
   background-color: #ceb76e;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -215,6 +218,9 @@ html {
   width: 43px;
   height: 3px;
   background-color: black;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -259,11 +265,17 @@ html {
   background-color: black;
   overflow-y: auto;
   right: -100%;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -o-transition: 0.8s;
   transition: 0.8s;
 }
 
 .burger-menu_active .burger-menu_nav {
   right: 0;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -688,9 +700,7 @@ html {
 }
 
 .button-9 {
-  -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
+  appearance: button;
   backface-visibility: hidden;
   background-color: #ceb76e;
   border-radius: 6px;
@@ -710,8 +720,7 @@ html {
   text-transform: none;
   transform: translateZ(0);
   transition: all 0.2s, box-shadow 0.08s ease-in;
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   max-width: 180px;
@@ -1712,22 +1721,12 @@ html {
   font-family: "Roboto Mono", monospace;
 }
 
-.biz-type-input::-moz-placeholder {
-  text-align: center;
-  font-size: 11px;
-  font-family: "MyFont2";
-}
-
 .biz-type-input::placeholder {
   text-align: center;
   font-size: 11px;
   font-family: "MyFont2";
 }
 @media screen and (min-width: 768px) {
-  .biz-type-input::-moz-placeholder {
-    font-size: 20px;
-    text-align: start;
-  }
   .biz-type-input::placeholder {
     font-size: 20px;
     text-align: start;
@@ -1934,9 +1933,7 @@ html {
 }
 
 .form-submit-btn {
-  -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
+  appearance: button;
   backface-visibility: hidden;
   background-color: #ceb76e;
   border-radius: 5px;
@@ -1956,8 +1953,7 @@ html {
   text-transform: none;
   transform: translateZ(0);
   transition: all 0.2s, box-shadow 0.08s ease-in;
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   max-width: 180px;
@@ -1996,8 +1992,7 @@ dialog::backdrop {
   animation: fadeIn 1s ease both;
   background: rgba(255, 255, 255, 0.4);
   z-index: 2;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 dialog .x {
   filter: grayscale(1);
@@ -2383,14 +2378,33 @@ button.primary:hover {
   align-items: center;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .footer-list {
+    flex-direction: unset;
+  }
+}
 
 .footer-list-item {
   font-family: "MyFont2";
-  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .footer-list-item {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-list-item {
+    font-size: 22px;
+  }
 }
 
 .footer-list-item:not(:last-child) {
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .footer-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .footer-list-item:first-child {
@@ -2398,20 +2412,28 @@ button.primary:hover {
 }
 
 .footer-mail-link {
-  color: #fcfcfc;
+  margin-top: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fcfcfc;
 }
 
 .footer-phone-num-link {
-  color: #fcfcfc;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fcfcfc;
 }
 
 .footer-icon {
   fill: #ceb76e;
   margin-right: 4px;
+}
+
+.footer-location-link {
+  color: #fcfcfc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
