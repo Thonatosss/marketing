@@ -673,14 +673,72 @@
             <ul class="splide__list">
               <li class="splide__slide">
                 <div class="team-card-container">
-                  <img src="./images/team/founder-crooped.jpg" alt="" width="100%" height="250" class="team-member-photo">
+                  <picture>
+                    <source
+                    class="founder-desktop-img"
+                      srcset="
+                        ./images/team/founder-crooped.jpg 1x,
+                        ./images/team/founder-crooped.jpg 2x,
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/team/founder-tablet.jpg 1x,
+                      ./images/team/founder-tablet.jpg 2x,
+                      "
+                      media="(min-width: 768px)"
+
+                    />
+                    <source
+                    srcset="
+                      ./images/team/founder-mobile.jpg 1x,
+                      ./images/team/founder-mobile.jpg 2x
+                    "
+                    media="(max-width: 767)"
+                  />
+                   
+                    <img class="team-section-images"
+                      src="./images/team/founder-mobile.jpg"
+                      alt="Лучков Олексій Founder"
+                    />
+                  </picture>
                   <h5 class="team-member-name">Олексій Лучков</h5>
                   <p class="team-member-info">Founder - засновник компанії Prime Digital Group</p>
                 </div>
               </li>
               <li class="splide__slide">
                 <div class="team-card-container">
-                  <img src="./images/team/seo-crooped.jpg" alt="" width="100%" height="250" class="team-member-photo">
+                  <picture>
+                    <source
+                    class="seo-desktop-img"
+                      srcset="
+                        ./images/team/seo-crooped.jpg 1x,
+                        ./images/team/seo-crooped.jpg 2x,
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/team/seo-tablet.jpg 1x,
+                      ./images/team/seo-tablet.jpg 2x,
+                      "
+                      media="(min-width: 768px)"
+
+                    />
+                    <source
+                    srcset="
+                      ./images/team/seo-mobile.jpg 1x,
+                      ./images/team/seo-mobile.jpg 2x
+                    "
+                    media="(max-width: 767)"
+                  />
+                   
+                    <img class="team-section-images"
+                      src="./images/team/seo-mobile.jpg"
+                      alt="Лучков Олексій Founder"
+                    />
+                  </picture>
                   <h5 class="team-member-name">Лучкова Катерина</h5>
                   <p class="team-member-info">CEO - Керівник Prime Digital Group</p>
                 </div>
