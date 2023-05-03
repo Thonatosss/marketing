@@ -9,6 +9,25 @@
   src: url("/fonts/RG-StandardMedium.ttf");
   font-display: swap;
 }
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+  background-color: black;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ceb76e;
+}
+
 .to-center {
   display: flex;
   justify-content: space-between;
@@ -755,7 +774,6 @@ html {
 }
 
 .second-section {
-  padding-top: 50px;
   background-color: #ceb76e;
 }
 
@@ -767,14 +785,12 @@ html {
 }
 @media screen and (min-width: 768px) {
   .second-sec-t-corner {
-    width: 60px;
-    height: 60px;
+    display: none;
   }
 }
 @media screen and (min-width: 1200px) {
   .second-sec-t-corner {
-    width: 100px;
-    height: 100px;
+    display: none;
   }
 }
 
@@ -785,14 +801,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   .second-sec-b-corner {
-    width: 60px;
-    height: 60px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .second-sec-b-corner {
-    width: 100px;
-    height: 100px;
+    display: none;
   }
 }
 
@@ -827,12 +836,25 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: row-reverse;
+    position: relative;
   }
 }
 
-.second-section-tab-img {
-  width: 300px;
-  height: 300px;
+.second-section-img {
+  width: 500px;
+  height: 332px;
+}
+@media screen and (min-width: 768px) {
+  .second-section-img {
+    width: 500px;
+    height: 332px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .second-section-img {
+    height: 100%;
+    width: 820px;
+  }
 }
 
 .second-sec-img-wrapper {
@@ -841,6 +863,23 @@ html {
 @media screen and (min-width: 768px) {
   .second-sec-img-wrapper {
     display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .second-section-container {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .second-info-container {
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .second-info-container {
+    margin-left: 60px;
   }
 }
 
@@ -1461,13 +1500,14 @@ html {
 .team-card-container {
   width: 250px;
   height: 350px;
-  background-color: #ffffff;
+  background-color: black;
   margin-right: auto;
   margin-left: auto;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin-top: 5px;
   margin-bottom: 5px;
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .team-card-container {
@@ -1477,11 +1517,37 @@ html {
 }
 
 .team-member-info {
-  color: #fcfcfc;
+  font-size: 15px;
+  color: #ceb76e;
+  font-family: "MyFont2";
+}
+@media screen and (min-width: 768px) {
+  .team-member-info {
+    font-size: 23px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-member-info {
+    font-size: 29px;
+  }
 }
 
 .team-member-name {
+  font-size: 15px;
   color: #fcfcfc;
+  font-weight: 600;
+  font-family: "MyFont1";
+}
+@media screen and (min-width: 768px) {
+  .team-member-name {
+    font-size: 23px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-member-name {
+    font-size: 29px;
+    margin-bottom: 10px;
+  }
 }
 
 /*form styles*/
@@ -2389,7 +2455,7 @@ button.primary:hover {
 }
 @media screen and (min-width: 768px) {
   .footer-list-item {
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2436,4 +2502,16 @@ button.primary:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-telegram-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fcfcfc;
+}
+@media screen and (min-width: 1200px) {
+  .footer-telegram-link {
+    margin-bottom: 15px;
+  }
 }/*# sourceMappingURL=main.css.map */

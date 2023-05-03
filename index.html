@@ -160,7 +160,7 @@
             </p>
             <div class="call-us-container">
               <form name="call-us-form" action="" class="call-us-form" id="first-form">
-                <input type="numer" name="firstFormPhone" class="call-us-form-input" placeholder="+38(0__)-__-__-___">
+                <input type="number" name="firstFormPhone" class="call-us-form-input" placeholder="Номер телефону" required >
                 <button class="call-us-btn button-9" type="submit" aria-label="Відправити заявку">
                   <svg width="25" height="25" fill="white">
                     <use href="./images/sprite/symbol-defs.svg#icon-checkmark"></use>
@@ -181,12 +181,13 @@
       </div>
     </section>
     <section class="second-section" id="second-section" data-aos="fade-down">
-      <div class="container">
+      <div class="container second-section-container">
         <svg width="30" height="50" class="second-sec-t-corner">
           <use href="./images/sprite/symbol-defs.svg#corner"></use>
         </svg>
         <div class="second-section-tablet-wrapper">
-          <div>
+          <div class="second-info-container">
+            
             <span class="first-font-text">65</span>
             <p class="second-section-info">ПРОЕКТІВ В РІЗНИХ ГАЛУЗЯХ </p>
             <span class="first-font-text">5+</span>
@@ -195,7 +196,7 @@
             <p class="second-section-info">СЕРЕДНІЙ ROMI </p>
           </div>
           <div class="second-sec-img-wrapper">
-            <img src="" alt="" class="second-section-tab-img">
+            <img src="./images/team/second-section-black.jpg" alt="Засновник та СЕО компанії" class="second-section-img">
           </div>
         </div>
         <svg width="30" height="50" class="second-sec-b-corner">
@@ -672,30 +673,23 @@
             <ul class="splide__list">
               <li class="splide__slide">
                 <div class="team-card-container">
-                  <img src="" alt="" width="100%" height="250" class="team-member-photo">
-                  <h5 class="team-member-name">Lorem ipsum dolor sit amet.</h5>
-                  <p class="team-member-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, nam?</p>
+                  <img src="./images/team/founder-crooped.jpg" alt="" width="100%" height="250" class="team-member-photo">
+                  <h5 class="team-member-name">Олексій Лучков</h5>
+                  <p class="team-member-info">Founder - засновник компанії Prime Digital Group</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="team-card-container">
+                  <img src="./images/team/seo-crooped.jpg" alt="" width="100%" height="250" class="team-member-photo">
+                  <h5 class="team-member-name">Лучкова Катерина</h5>
+                  <p class="team-member-info">CEO - Керівник Prime Digital Group</p>
                 </div>
               </li>
               <li class="splide__slide">
                 <div class="team-card-container">
                   <img src="" alt="" width="100%" height="250" class="team-member-photo">
-                  <h5 class="team-member-name">Lorem ipsum dolor sit amet.</h5>
-                  <p class="team-member-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, nam?</p>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="team-card-container">
-                  <img src="" alt="" width="100%" height="250" class="team-member-photo">
-                  <h5 class="team-member-name">Lorem ipsum dolor sit amet.</h5>
-                  <p class="team-member-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, nam?</p>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="team-card-container">
-                  <img src="" alt="" width="100%" height="250" class="team-member-photo">
-                  <h5 class="team-member-name">Lorem ipsum dolor sit amet.</h5>
-                  <p class="team-member-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, nam?</p>
+                  <h5 class="team-member-name">Андрійчук Володимир</h5>
+                  <p class="team-member-info">Sales Manager - менеджер з продажу</p>
                 </div>
               </li>
             </ul>
@@ -735,7 +729,8 @@
             <!-- fieldsets -->
             <fieldset>
               <h2 class="fs-title">Яка галузь вашого бізнесу?</h2>
-              <input type="text" name="biz_type" class="biz-type-input" placeholder="Наприклад: інтернет-магазин" required />
+              <input type=
+              "text" name="biz_type" class="biz-type-input" placeholder="Наприклад: інтернет-магазин" required />
               <input type="button" name="next" class="next action-button" value="Наступний крок" />
             </fieldset>
             <fieldset>
@@ -768,8 +763,8 @@
               <h2 class="fs-title">Залиште ваші контакти</h2>
               <label for="fname" class="contacts-label">Ім'я</label>
               <input type="text" name="user_name" class="contacts-input" />
-              <label for="lname" class="contacts-label">Номер телефону</label>
-              <input type="text" name="user_phone" class="contacts-input" />
+              <label  for="lname" class="contacts-label">Номер телефону</label>
+              <input type="number" name="user_phone" class="contacts-input"  />
               <label for="phone" class="contacts-label">Посилання на бізнес</label>
               <input type="text" name="biz_link" class="contacts-input" />
               <input type="button" name="previous" class="previous action-button" value="Попередній крок" class="form-btn" />
@@ -897,7 +892,7 @@
       </div>
       <form class="free-oudit-form" id="ouditForm">
         <input name="oudit_user_name" type="text" class="oudit-user-name" placeholder="Ваше ім'я" required>
-        <input name="oudit_user_phone" type="text" class="oudit-user-phone" placeholder="+38(0__)-___-__-__" required>
+        <input name="oudit_user_phone" type="number" class="oudit-user-phone" placeholder="Номер телефону" required>
         <button type="submit" class="free-oudit-submit button-9" aria-label="Отримати безкоштовний аудит"> ОТРМАТИ АУДИТ </button>
       </form>
     </section>
@@ -955,7 +950,7 @@
           </h5>
           <form class="modal-form" id="modal_form">
             <input name="modal_form_userName" type="text" class="modal-user-name" autofocus="false" placeholder="Ваше ім'я" required>
-            <input name="modal_form_userPhone" type="text" class="modal-user-phone" autofocus="false" placeholder="+38(0__)-___-__-__" required>
+            <input name="modal_form_userPhone" type="number" class="modal-user-phone" autofocus="false" placeholder = "Номер телефону" step="any" required>
             <button type="submit" class="form-submit-btn" aria-label="Відправити заявку">Відправити</button>
           </form>
           <p class="rights">Натискаючи кнопку «ВІДПРАВИТИ», Ви погоджуєтесь на обробку персональних даних згідно Політики конфіденційності</p>
@@ -999,6 +994,15 @@
               <span class="footer-location">м.Львів, Зубрівська 38</span>
             </a>
           </li>
+          <li class="footer-list-item">
+            <a href="https://t.me/primedigitalgroup" class="footer-telegram-link">
+              <svg width="20" height="20" class="footer-icon">
+                <use href="/images/sprite/symbol-defs.svg#icon-telegram"></use>
+              </svg>
+              <span class="footer-location">@primedigitalgroup</span>
+            </a>
+          </li>
+          
         </ul>
       </div>
     </footer>
@@ -1012,6 +1016,7 @@
     <script type="module" src="./js/smooth-scroll.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script type="module" src="./js/forms-telegram.js"></script>
+    <script type="module" src="./js/forms-validation.js"> </script>
     
     <script>
       AOS.init();

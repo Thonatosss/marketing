@@ -98,17 +98,37 @@
         width: 350px;
         height: 400px;
     }
-    background-color: $card-container;
+    background-color: black;
     margin-right: auto;
     margin-left: auto;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-top: 5px ;
     margin-bottom: 5px;
+    text-align: center;
 }
 .team-member-info{
-    color: $text-color;
+    font-size: 15px;
+    color: $accent-color;
+    font-family: $second-font;
+    @media screen and (min-width: 768px) {
+        font-size: 23px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 29px;
+    }
+    
 }
 .team-member-name{
+    font-size: 15px;
     color: $text-color;
+    font-weight: 600;
+    font-family: $first-font;
+    @media screen and (min-width: 768px) {
+        font-size: 23px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 29px;
+        margin-bottom: 10px;
+    }
 }
