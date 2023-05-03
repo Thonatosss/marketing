@@ -686,6 +686,7 @@ html {
 .furore-font {
   font-family: "MyFont1";
   color: #fcfcfc;
+  font-size: 36px;
 }
 @media screen and (min-width: 768px) {
   .furore-font {

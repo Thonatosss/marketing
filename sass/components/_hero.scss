@@ -120,6 +120,7 @@
 .furore-font{
     font-family: $first-font;
     color: $text-color;
+    font-size: 36px;
     @media screen and (min-width: 768px){
         font-size: 45px;   
     }
