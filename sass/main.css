@@ -2124,6 +2124,28 @@ button.primary:hover {
     opacity: 1;
   }
 }
+.swal-modal {
+  font-family: "MyFont1";
+}
+
+.swal-title,
+.swal-text {
+  text-align: center;
+}
+
+.swal-button {
+  width: 40%;
+  height: 30%;
+  background-color: #ceb76e;
+  color: #fcfcfc;
+}
+
+.swal-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .contact-us-section {
   padding-top: 50px;
 }

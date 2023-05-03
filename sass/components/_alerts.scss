@@ -1,0 +1,20 @@
+.swal-modal{
+    font-family: $first-font;
+    
+
+}
+.swal-title,
+.swal-text{
+    text-align: center;
+}
+.swal-button{
+    width: 40%;
+    height: 30%;
+    background-color: $accent-color;
+    color: $text-color;
+}
+.swal-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -27,6 +27,7 @@ document.getElementById('first-form').addEventListener('submit', function (e) {
                 title: "Заявка успішно відправлена!",
                 text: "Ми зв'яжемось з вами найближчим часом!",
                 icon: "success",
+                timer: 3000,
               });
             this.firstFormPhone.value = '';
 
@@ -64,6 +65,7 @@ submitButton.addEventListener("click", function (event) {
                 title: "Заявка успішно відправлена!",
                 text: "Ми зв'яжемось з вами найближчим часом!",
                 icon: "success",
+                timer: 3000,
               });
         })
         .catch(error => {
@@ -96,6 +98,7 @@ document.getElementById('ouditForm').addEventListener('submit', function (e) {
                 title: "Заявка успішно відправлена!",
                 text: "Ми зв'яжемось з вами найближчим часом!",
                 icon: "success",
+                timer: 3000,
               });
             this.oudit_user_name.value = '';
             this.ooudit_user_phone.value = '';
@@ -129,6 +132,7 @@ document.getElementById('modal_form').addEventListener('submit', function (e) {
                 title: "Заявка успішно відправлена!",
                 text: "Ми зв'яжемось з вами найближчим часом!",
                 icon: "success",
+                timer: 3000,
               });
             this.modal_form_userName.value = '';
             this.modal_form_userPhone.value = '';
