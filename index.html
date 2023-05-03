@@ -1112,8 +1112,8 @@
             <br> І МИ ВАМ ЗАТЕЛЕФОНУЄМО
           </h5>
           <form class="modal-form" id="modal_form">
-            <input name="modal_form_userName" type="text" class="modal-user-name" autofocus="false" placeholder="Ваше ім'я" autocomplete="false">
-            <input name="modal_form_userPhone" type="number" class="modal-user-phone" autofocus="false" placeholder = "Номер телефону" step="any" required>
+            <input name="modal_form_userName" type="text" class="modal-user-name" autofocus="false" placeholder="Ваше ім'я" autocomplete="off" required >
+            <input name="modal_form_userPhone" type="number" class="modal-user-phone" autofocus="false" placeholder = "Номер телефону" step="any" autocomplete="off">
             <button onclick="window.dialog.close();" type="submit" class="form-submit-btn" aria-label="Відправити заявку">Відправити</button>
           </form>
           <p class="rights">Натискаючи кнопку «ВІДПРАВИТИ», Ви погоджуєтесь на обробку персональних даних згідно Політики конфіденційності</p>
@@ -1177,13 +1177,15 @@
     <script type="module" src="./js/hamburger-menu.js"></script>
     <script type="module" src="./js/btn.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script type="module" src="./js/smooth-scroll.js"></script>
+    <!-- <script type="module" src="./js/smooth-scroll.js"></script> -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script type="module" src="./js/forms-telegram.js"></script>
     <script type="module" src="./js/forms-validation.js"> </script>
     <script>
       AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script type="module" src="./js/scroll.js"></script>
     <canvas class="particles"></canvas>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.js" integrity="sha512-BgV3bZfMmUklIZI+dP0SILdmQ0RBY2gxegFFyfgo4Ui56WhKF4Pny9LsV/l96jxDDA+2w47zAXA4IyHo2UT/Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
