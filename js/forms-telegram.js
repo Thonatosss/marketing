@@ -1,6 +1,5 @@
 
 
-
 const TOKEN = "6132227911:AAG-nRjY0h7mhKHyJ1zVkHbRm2po-pPA9eA";
 const CHAT_ID = "-1001841828213";
 const URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
@@ -24,7 +23,11 @@ document.getElementById('first-form').addEventListener('submit', function (e) {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-
+            swal({
+                title: "Заявка успішно відправлена!",
+                text: "Ми зв'яжемось з вами найближчим часом!",
+                icon: "success",
+              });
             this.firstFormPhone.value = '';
 
         })
@@ -57,7 +60,11 @@ submitButton.addEventListener("click", function (event) {
         body: `chat_id=${CHAT_ID}&text=${messageText}`,
     })
         .then(response => {
-            
+            swal({
+                title: "Заявка успішно відправлена!",
+                text: "Ми зв'яжемось з вами найближчим часом!",
+                icon: "success",
+              });
         })
         .catch(error => {
             alert('Виникла помилка під час відправки даних. Спробуйте ще раз.');
@@ -85,7 +92,11 @@ document.getElementById('ouditForm').addEventListener('submit', function (e) {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-            
+            swal({
+                title: "Заявка успішно відправлена!",
+                text: "Ми зв'яжемось з вами найближчим часом!",
+                icon: "success",
+              });
             this.oudit_user_name.value = '';
             this.ooudit_user_phone.value = '';
 
@@ -114,7 +125,11 @@ document.getElementById('modal_form').addEventListener('submit', function (e) {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-         
+            swal({
+                title: "Заявка успішно відправлена!",
+                text: "Ми зв'яжемось з вами найближчим часом!",
+                icon: "success",
+              });
             this.modal_form_userName.value = '';
             this.modal_form_userPhone.value = '';
 
