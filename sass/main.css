@@ -1610,6 +1610,11 @@ html {
   }
 }
 
+#msform input[type=submit],
+#msform input[type=button] {
+  color: #fcfcfc;
+}
+
 /*buttons*/
 #msform .action-button {
   max-width: 150px;

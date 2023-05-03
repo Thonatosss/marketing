@@ -24,6 +24,7 @@
 /*inputs*/
 #msform input:not(.form-checkbox),
 #msform textarea {
+  
   padding: 15px;
   width: 100%;
   box-sizing: border-box;
@@ -34,6 +35,10 @@
     height: 60px;
     margin-top: 20px;
   }
+}
+#msform input[type=submit],
+#msform input[type=button]{
+  color: $text-color;
 }
 /*buttons*/
 #msform .action-button {
