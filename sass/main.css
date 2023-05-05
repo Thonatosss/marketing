@@ -2484,6 +2484,95 @@ button.primary:hover {
     align-items: center;
   }
 }
+.comfort-title {
+  font-size: 32px;
+  font-family: "MyFont1";
+  color: #fcfcfc;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .comfort-title {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comfort-title {
+    font-size: 66px;
+  }
+}
+
+.comfort-list {
+  margin-top: 10px;
+}
+
+.comfort-li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 2px solid #ceb76e;
+}
+.comfort-li:not(:last-child) {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .comfort-li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .comfort-li:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.comfort-subtitle {
+  color: #fcfcfc;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "MyFont1";
+}
+@media screen and (min-width: 768px) {
+  .comfort-subtitle {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comfort-subtitle {
+    font-size: 32px;
+  }
+}
+
+.comfort-info {
+  color: #fcfcfc;
+  font-size: 16px;
+  font-family: "MyFont2";
+}
+@media screen and (min-width: 768px) {
+  .comfort-info {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comfort-info {
+    font-size: 28px;
+  }
+}
+
+.comfort-to-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comfort-icons {
+  fill: #ceb76e;
+}
+
+.comfort-icons {
+  margin-right: 10px;
+}
+
 .free-oudit-section {
   padding-top: 50px;
 }

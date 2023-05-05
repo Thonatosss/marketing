@@ -1,0 +1,66 @@
+.comfort-title {
+    font-size: 32px;
+    font-family: $first-font;
+    color: $text-color;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+        font-size: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 66px;
+    }
+}
+.comfort-list {
+    margin-top: 10px;
+}
+.comfort-li {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 2px solid $accent-color;
+    &:not(:last-child){
+        margin-bottom: 10px;
+        @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+    }
+    }
+}
+.comfort-subtitle {
+    color: $text-color;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: $first-font;
+     @media screen and (min-width: 768px) {
+        font-size: 24px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 32px;
+    }
+}
+.comfort-info {
+    color: $text-color;
+    font-size: 16px;
+    font-family: $second-font;
+    @media screen and (min-width: 768px) {
+        font-size: 22px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 28px;
+    }
+
+}
+.comfort-to-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comfort-icons{
+    fill: $accent-color;
+}
+.comfort-icons{
+    margin-right: 10px;
+}
