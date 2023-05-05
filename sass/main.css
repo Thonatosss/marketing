@@ -220,9 +220,6 @@ html {
   height: 60px;
   border-radius: 50%;
   background-color: #ceb76e;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -237,9 +234,6 @@ html {
   width: 43px;
   height: 3px;
   background-color: black;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -284,17 +278,11 @@ html {
   background-color: black;
   overflow-y: auto;
   right: -100%;
-  -webkit-transition: 0.8s;
-  -moz-transition: 0.8s;
-  -o-transition: 0.8s;
   transition: 0.8s;
 }
 
 .burger-menu_active .burger-menu_nav {
   right: 0;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -721,7 +709,9 @@ html {
 }
 
 .button-9 {
-  appearance: button;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
   backface-visibility: hidden;
   background-color: #ceb76e;
   border-radius: 6px;
@@ -741,7 +731,8 @@ html {
   text-transform: none;
   transform: translateZ(0);
   transition: all 0.2s, box-shadow 0.08s ease-in;
-  user-select: none;
+  -moz-user-select: none;
+       user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   max-width: 180px;
@@ -1959,12 +1950,22 @@ html {
   font-family: "Roboto Mono", monospace;
 }
 
+.biz-type-input::-moz-placeholder {
+  text-align: center;
+  font-size: 11px;
+  font-family: "MyFont2";
+}
+
 .biz-type-input::placeholder {
   text-align: center;
   font-size: 11px;
   font-family: "MyFont2";
 }
 @media screen and (min-width: 768px) {
+  .biz-type-input::-moz-placeholder {
+    font-size: 20px;
+    text-align: start;
+  }
   .biz-type-input::placeholder {
     font-size: 20px;
     text-align: start;
@@ -2245,7 +2246,9 @@ html {
 }
 
 .form-submit-btn {
-  appearance: button;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
   backface-visibility: hidden;
   background-color: #ceb76e;
   border-radius: 5px;
@@ -2265,7 +2268,8 @@ html {
   text-transform: none;
   transform: translateZ(0);
   transition: all 0.2s, box-shadow 0.08s ease-in;
-  user-select: none;
+  -moz-user-select: none;
+       user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   max-width: 180px;
@@ -2304,7 +2308,8 @@ dialog::backdrop {
   animation: fadeIn 1s ease both;
   background: rgba(255, 255, 255, 0.4);
   z-index: 2;
-  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 }
 dialog .x {
   filter: grayscale(1);
@@ -2377,10 +2382,28 @@ button.primary:hover {
 }
 
 .sertification-title {
-  font-size: 30px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 25px;
   color: #fcfcfc;
   font-family: "MyFont1";
   margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .sertification-title {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sertification-title {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sertification-title {
+    font-size: 48px;
+  }
 }
 
 .sertification-link {
@@ -2395,15 +2418,72 @@ button.primary:hover {
   font-family: "MyFont2";
   font-size: 18px;
 }
+@media screen and (min-width: 768px) {
+  .sertification-info-item {
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+  .sertification-info-item:hover {
+    box-shadow: 0 20px 20px -10px rgb(var(--vs-primary)/50%);
+    transform: translateY(-5px);
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sertification-info-item {
+    font-size: 22px;
+  }
+}
 
 .sertification-info-item:not(:last-child) {
   margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .sertification-info-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sertification-info-item:not(:last-child) {
+    margin-right: 18px;
+  }
 }
 
 .sertification-icon {
   margin-right: 10px;
 }
+@media screen and (min-width: 768px) {
+  .sertification-icon {
+    width: 70px;
+    height: 70px;
+  }
+}
 
+.google-analytics {
+  margin-right: 10px;
+}
+@media screen and (min-width: 768px) {
+  .google-analytics {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sertification-info-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .free-oudit-section {
   padding-top: 50px;
 }
