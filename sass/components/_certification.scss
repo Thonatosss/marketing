@@ -1,0 +1,23 @@
+.sertification-title{
+    font-size: 30px;
+    color: $text-color;
+    font-family: $first-font;
+    margin-bottom: 15px;
+}
+.sertification-link{
+    color: $accent-color;
+    text-align: center;
+}
+.sertification-info-item{
+    display: flex;
+    align-items: center;
+    color: $text-color;
+    font-family: $second-font;
+    font-size: 18px;
+}
+.sertification-info-item:not(:last-child){
+    margin-bottom: 15px;
+}
+.sertification-icon{
+    margin-right: 10px;
+}

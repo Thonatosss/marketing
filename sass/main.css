@@ -2376,6 +2376,34 @@ button.primary:hover {
   align-items: center;
 }
 
+.sertification-title {
+  font-size: 30px;
+  color: #fcfcfc;
+  font-family: "MyFont1";
+  margin-bottom: 15px;
+}
+
+.sertification-link {
+  color: #ceb76e;
+  text-align: center;
+}
+
+.sertification-info-item {
+  display: flex;
+  align-items: center;
+  color: #fcfcfc;
+  font-family: "MyFont2";
+  font-size: 18px;
+}
+
+.sertification-info-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.sertification-icon {
+  margin-right: 10px;
+}
+
 .free-oudit-section {
   padding-top: 50px;
 }
