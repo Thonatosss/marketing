@@ -345,8 +345,8 @@ html {
 .link-title {
   display: block;
   /*  Set same font-size and line height  */
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 17px;
   transition: transform 0.4s ease;
 }
 
@@ -361,8 +361,8 @@ html {
 
 .link-icon {
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
   background: #ceb76e;
   border-radius: 50%;
   display: flex;
@@ -2090,7 +2090,6 @@ html {
 @media screen and (min-width: 1200px) {
   .benefits-title {
     font-size: 50px;
-    text-align: right;
   }
 }
 
