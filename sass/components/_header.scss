@@ -124,3 +124,9 @@
   margin-right: 14px;
   margin-top: 10px;
 }
+.move-right-bitch{
+  
+  @media screen and (max-width: 767px) {
+    margin-right: 70px;
+  }
+}

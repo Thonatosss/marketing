@@ -581,6 +581,12 @@ html {
   margin-top: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .move-right-bitch {
+    margin-right: 70px;
+  }
+}
+
 .hero-section {
   padding-top: 150px;
   position: relative;
