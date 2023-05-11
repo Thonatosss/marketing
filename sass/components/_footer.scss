@@ -1,10 +1,4 @@
-.footer{
-    padding-top: 50px;
-    padding-bottom: 20px;
-    @media screen and (min-width: 1200px) {
-        padding-top: 80px;
-    }
-}
+
 .footer-wrapper{
     display: flex;
     justify-content: center;
@@ -76,4 +70,16 @@
         margin-bottom: 15px;
     }
 
+}
+.footer-logo{
+    width: 240px;
+    height: 180px;
+    @media screen and (min-width: 768px) {
+    width: 270px;
+    height: 200px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 330px;
+    height: 230px;
+  }
 }

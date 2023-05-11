@@ -1,4 +1,12 @@
 .contact-us {
+  @media screen and (max-width: 767px) {
+    width: 45px;
+    height: 45px;
+    margin-right: 80px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
   background-color: $accent-color;
   border-radius: 50%;
   width: 60px;
@@ -11,10 +19,26 @@
     display: none;
   }
 }
+.logo {
+  width: 160px;
+  height: 135px;
+  @media screen and (min-width: 768px) {
+    width: 230px;
+    height: 150px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 160px;
+    height: 130px;
+  }
+}
 .contac-us-svg {
   fill: $primary-white-color;
   @media screen and (min-width: 1200px) {
     display: none;
+  }
+  @media screen and (max-width: 767px) {
+    width: 35px;
+    height: 35px;
   }
 }
 .header-container {
@@ -33,7 +57,7 @@
   display: none;
   @media screen and (min-width: 1200px) {
     display: flex;
-    
+
     align-items: center;
     font-family: $first-font;
   }
@@ -46,59 +70,57 @@
   }
 }
 
-
-.header-phone-link{
+.header-phone-link {
   display: flex;
   justify-content: center;
   align-items: center;
-   transition: all 0.25s ease;
-	cursor: pointer;
-	&:hover {
-		box-shadow: 0 20px 20px -10px rgb(var(--vs-primary) / 50%);
-		transform: translateY(-5px);
-	}
+  transition: all 0.25s ease;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 20px 20px -10px rgb(var(--vs-primary) / 50%);
+    transform: translateY(-5px);
+  }
 
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-}
-.header-phone-num{
-display: none;
-  @media screen and (min-width: 1200px){
-     font-size: px;
-     font-weight: 500;
-     color: $text-color;
-     display: block;
-     font-family: $first-font;
-     font-size: 22px;
-     
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
     }
+    to {
+      opacity: 1;
+    }
+  }
 }
-.header-phone-icon{
+.header-phone-num {
   display: none;
-  @media screen and (min-width: 1200px){
-     display: block;
-     width: 24px;
-     height: 24px;
-     margin-right: 10px;
-     fill: $accent-color;
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: px;
+    font-weight: 500;
+    color: $text-color;
+    display: block;
+    font-family: $first-font;
+    font-size: 22px;
+  }
 }
-.navigation-li:not(:last-child){
-  margin-right: 25px
+.header-phone-icon {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    fill: $accent-color;
+  }
 }
-.contacts-header{
+.navigation-li:not(:last-child) {
+  margin-right: 25px;
+}
+.contacts-header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.second-phone-icon{
+.second-phone-icon {
   margin-right: 14px;
   margin-top: 10px;
 }

@@ -211,13 +211,25 @@ html {
 .burger-menu_button {
   position: fixed;
   top: 38px;
-  right: 44px;
   z-index: 30;
   width: 60px;
   height: 60px;
   border-radius: 50%;
   background-color: #ceb76e;
   transition: 0.4s;
+}
+@media screen and (max-width: 767px) {
+  .burger-menu_button {
+    right: 44px;
+    width: 45px;
+    height: 45px;
+    top: 45px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .burger-menu_button {
+    top: 45px;
+  }
 }
 
 .burger-menu_button:hover {
@@ -232,6 +244,14 @@ html {
   height: 3px;
   background-color: black;
   transition: 0.4s;
+}
+@media screen and (max-width: 767px) {
+  .burger-menu_lines::before,
+  .burger-menu_lines::after,
+  .burger-menu_lines {
+    width: 30px;
+    height: 2.5px;
+  }
 }
 
 .burger-menu_lines {
@@ -414,9 +434,38 @@ html {
   align-items: center;
   margin-right: 100px;
 }
+@media screen and (max-width: 767px) {
+  .contact-us {
+    width: 45px;
+    height: 45px;
+    margin-right: 80px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-us {
+    margin-right: 30px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contact-us {
     display: none;
+  }
+}
+
+.logo {
+  width: 160px;
+  height: 135px;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 230px;
+    height: 150px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    width: 160px;
+    height: 130px;
   }
 }
 
@@ -426,6 +475,12 @@ html {
 @media screen and (min-width: 1200px) {
   .contac-us-svg {
     display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contac-us-svg {
+    width: 35px;
+    height: 35px;
   }
 }
 
@@ -2859,16 +2914,6 @@ button.primary:hover {
   }
 }
 
-.footer {
-  padding-top: 50px;
-  padding-bottom: 20px;
-}
-@media screen and (min-width: 1200px) {
-  .footer {
-    padding-top: 80px;
-  }
-}
-
 .footer-wrapper {
   display: flex;
   justify-content: center;
@@ -2951,5 +2996,22 @@ button.primary:hover {
 @media screen and (min-width: 1200px) {
   .footer-telegram-link {
     margin-bottom: 15px;
+  }
+}
+
+.footer-logo {
+  width: 240px;
+  height: 180px;
+}
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    width: 270px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    width: 330px;
+    height: 230px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -6,7 +6,19 @@
 .burger-menu_button {
   position: fixed;
   top: 38px;
-  right: 44px;
+  
+  @media screen and (max-width: 767px) {
+    right: 44px;
+    width: 45px;
+    height: 45px;
+    top: 45px;
+
+  }
+  @media screen and (min-width: 768px) {
+   top: 45px;
+    
+    
+  }
   z-index: 30;
   width: 60px;
   height: 60px;
@@ -28,6 +40,12 @@
 .burger-menu_lines::before,
 .burger-menu_lines::after,
 .burger-menu_lines {
+  @media screen and (max-width: 767px) {
+    width: 30px;
+    height: 2.5px;
+    
+  }
+  
   position: absolute;
   width: 43px;
   height: 3px;
