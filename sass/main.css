@@ -1202,14 +1202,19 @@ html {
 
 .scene {
   display: inline-block;
-  width: 280px;
+  width: 260px;
   height: 320px;
   /*   border: 1px solid #CCC; */
   perspective: 600px;
 }
+@media screen and (min-width: 768px) {
+  .scene {
+    width: 300px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .scene {
-    width: 350px;
+    width: 360px;
     height: 400px;
   }
 }
@@ -1274,12 +1279,22 @@ html {
   color: silver;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .our-cases-card-description {
+    font-size: 15px;
+  }
+}
 
 .our-cases-card-title {
   font-size: 17px;
   font-family: "MyFont2";
   text-align: center;
   color: #ceb76e;
+}
+@media screen and (min-width: 1200px) {
+  .our-cases-card-title {
+    font-size: 23px;
+  }
 }
 
 .our-cases-subtitle {
@@ -1294,6 +1309,18 @@ html {
   margin-top: 6px;
 }
 
+@media screen and (min-width: 768px) {
+  .our-cases-subtitle {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-cases-subtitle {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+}
+
 .our-cases-card-title-face {
   font-size: 23px;
   text-align: center;
@@ -1301,16 +1328,46 @@ html {
   color: #ceb76e;
   margin-top: 5px;
 }
+@media screen and (min-width: 768px) {
+  .our-cases-card-title-face {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-cases-card-title-face {
+    font-size: 30px;
+  }
+}
 
 .our-cases-card-description-face {
   color: silver;
   font-size: 10px;
+}
+@media screen and (min-width: 768px) {
+  .our-cases-card-description-face {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-cases-card-description-face {
+    font-size: 13px;
+  }
 }
 
 .our-cases-li-face {
   font-size: 15px;
   margin-top: 10px;
   font-family: "MyFont2";
+}
+@media screen and (min-width: 768px) {
+  .our-cases-li-face {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-cases-li-face {
+    font-size: 23px;
+  }
 }
 
 .services-section {

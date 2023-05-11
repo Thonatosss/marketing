@@ -1,12 +1,15 @@
 .scene {
   display: inline-block;
-  width: 280px;
+  width: 260px;
   height: 320px;
   /*   border: 1px solid #CCC; */
   // margin: 40px 0;
   perspective: 600px;
+    @media screen and (min-width: 768px) {
+    width: 300px;
+  }
   @media screen and (min-width: 1200px) {
-    width: 350px;
+    width: 360px;
     height: 400px;
   }
 }
@@ -29,10 +32,6 @@
   transition: transform 1s;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-// .card:hover {
-//   transform: translateX(-100%) rotateY(-180deg);
-//   }
-
 .card.is-flipped {
   transform: translateX(-100%) rotateY(-180deg);
 }
@@ -70,21 +69,38 @@
   font-family: $second-font;
   color: silver;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+   font-size: 15px; 
+  }
+  
 }
 .our-cases-card-title {
   font-size: 17px;
   font-family: $second-font;
   text-align: center;
   color: $accent-color;
+  @media screen and (min-width: 1200px) {
+   font-size: 23px; 
+  }
 }
 .our-cases-subtitle {
   font-size: 12px;
+  
 }
-.small{
+.small {
   font-size: 10px;
 }
-.our-cases-back-li{
+.our-cases-back-li {
   margin-top: 6px;
+}
+.our-cases-subtitle{
+    @media screen and (min-width: 768px) {
+   font-size: 13px; 
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    margin-top: 5px;
+  }
 }
 // ---------------FACE-------------
 .our-cases-card-title-face {
@@ -93,13 +109,34 @@
   font-family: $first-font;
   color: $accent-color;
   margin-top: 5px;
+  @media screen and (min-width: 768px) {
+    font-size: 25px;
+  }
+    @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
 }
-.our-cases-card-description-face{
-  color:silver;
+.our-cases-card-description-face {
+  color: silver;
   font-size: 10px;
+
+    @media screen and (min-width: 768px) {
+   font-size: 11px; 
+  }
+  @media screen and (min-width: 1200px) {
+   font-size: 13px; 
+  }
+  
 }
-.our-cases-li-face{
+.our-cases-li-face {
   font-size: 15px;
   margin-top: 10px;
   font-family: $second-font;
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+    
+  }
+  @media screen and (min-width: 1200px) {
+   font-size: 23px; 
+  }
 }
