@@ -35,6 +35,9 @@
 .card.is-flipped {
   transform: translateX(-100%) rotateY(-180deg);
 }
+.card:hover {
+  transform: translateX(-100%) rotateY(-180deg);
+}
 
 .card__face {
   position: absolute;
