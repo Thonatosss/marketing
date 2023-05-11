@@ -4,19 +4,15 @@
       "value": 70
     },
     "color": {
-      "value": "ffffff"
+      "value": "#ceb76e"
     },
     "shape": {
-      "type": "image",
-      "image":{
-        "src":"images/logo_transparent.png",
-        "width":100,
-        "heigth": 100
-      }
+      "type": "circle"
+     
     },
    
     "size":{
-        "value":60,
+        "value":1,
         "random": true,
         "anim":{
             "enabe": true,
