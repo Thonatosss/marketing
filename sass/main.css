@@ -194,15 +194,12 @@ html {
   }
 }
 
-.particles {
+#particles-js {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+  top: 0;
   z-index: -1;
-  display: block;
-  display: block;
 }
 
 @media screen and (min-width: 1200px) {
@@ -220,9 +217,6 @@ html {
   height: 60px;
   border-radius: 50%;
   background-color: #ceb76e;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -237,9 +231,6 @@ html {
   width: 43px;
   height: 3px;
   background-color: black;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -284,17 +275,11 @@ html {
   background-color: black;
   overflow-y: auto;
   right: -100%;
-  -webkit-transition: 0.8s;
-  -moz-transition: 0.8s;
-  -o-transition: 0.8s;
   transition: 0.8s;
 }
 
 .burger-menu_active .burger-menu_nav {
   right: 0;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -721,7 +706,9 @@ html {
 }
 
 .button-9 {
-  appearance: button;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
   backface-visibility: hidden;
   background-color: #ceb76e;
   border-radius: 6px;
@@ -741,7 +728,8 @@ html {
   text-transform: none;
   transform: translateZ(0);
   transition: all 0.2s, box-shadow 0.08s ease-in;
-  user-select: none;
+  -moz-user-select: none;
+       user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   max-width: 180px;
@@ -1996,12 +1984,22 @@ html {
   font-family: "Roboto Mono", monospace;
 }
 
+.biz-type-input::-moz-placeholder {
+  text-align: center;
+  font-size: 11px;
+  font-family: "MyFont2";
+}
+
 .biz-type-input::placeholder {
   text-align: center;
   font-size: 11px;
   font-family: "MyFont2";
 }
 @media screen and (min-width: 768px) {
+  .biz-type-input::-moz-placeholder {
+    font-size: 20px;
+    text-align: start;
+  }
   .biz-type-input::placeholder {
     font-size: 20px;
     text-align: start;
@@ -2281,7 +2279,9 @@ html {
 }
 
 .form-submit-btn {
-  appearance: button;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
   backface-visibility: hidden;
   background-color: #ceb76e;
   border-radius: 5px;
@@ -2301,7 +2301,8 @@ html {
   text-transform: none;
   transform: translateZ(0);
   transition: all 0.2s, box-shadow 0.08s ease-in;
-  user-select: none;
+  -moz-user-select: none;
+       user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   max-width: 180px;
@@ -2340,7 +2341,8 @@ dialog::backdrop {
   animation: fadeIn 1s ease both;
   background: rgba(255, 255, 255, 0.4);
   z-index: 2;
-  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 }
 dialog .x {
   filter: grayscale(1);

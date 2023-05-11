@@ -1,6 +1,33 @@
-<img src="" alt="" width="200" height="200" class="team-member-photo">
-<h5 class="team-member-name">Lorem ipsum dolor sit amet.</h5>
-<p class="team-member-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, nam?</p>
-
-
-'position': 'absolute'
+// window.onload = function () {
+//     Particles.init({
+//         selector: '.particles',
+//         color: '#ceb76e',
+//         connectParticles: true,
+//         responsive: [
+//             {
+//                 breakpoint: 767,
+//                 options: {
+//                     sizeVariations: 2,
+//                     speed: 0.2,
+//                     minDistance: 100,
+//                 }
+//             },
+//             {
+//                 breakpoint: 1999,
+//                 options: {
+//                     sizeVariations: 3,
+//                     speed: 0.3,
+//                     minDistance: 150,
+//                 }
+//             },
+//             {
+//                 breakpoint: 3000,
+//                 options: {
+//                     sizeVariations: 4,
+//                     speed: 0.5,
+//                     minDistance: 220,
+//                 }
+//             }
+//         ]
+//     });
+// };
