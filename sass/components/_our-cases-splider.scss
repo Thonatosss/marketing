@@ -2,15 +2,15 @@
   display: inline-block;
   width: 250px;
   height: 300px;
-/*   border: 1px solid #CCC; */
+  /*   border: 1px solid #CCC; */
   // margin: 40px 0;
   perspective: 600px;
-  @media screen and (min-width: 1200px){
-        width: 350px;
-        height: 400px;
-    }
+  @media screen and (min-width: 1200px) {
+    width: 350px;
+    height: 400px;
+  }
 }
-.our-cases-container{
+.our-cases-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,6 +29,9 @@
   transition: transform 1s;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+// .card:hover {
+//   transform: translateX(-100%) rotateY(-180deg);
+//   }
 
 .card.is-flipped {
   transform: translateX(-100%) rotateY(-180deg);
@@ -38,51 +41,65 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  color: black;
+  color: $text-color;
   // text-align: center;
   backface-visibility: hidden;
 }
 
 .card__face--front {
-  background: $card-container;
-  
+  background: black;
 }
 
 .card__face--back {
-  background: $card-container;
+  background: black;
   transform: rotateY(180deg);
 }
-.our-cases-list{
+.our-cases-list {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.our-cases-li{
-  font-size: 15px;
+.our-cases-li {
+  font-size: 16px;
   font-family: $second-font;
 }
-.our-cases-li{
-  margin-top: 10px;
-  
-}
-.our-cases-li:not(:last-child){
-  margin-bottom: 10px;
-}
-.our-cases-card-description{
+
+.our-cases-card-description {
   font-size: 13px;
   font-family: $second-font;
-  color: silver;  
+  color: silver;
   text-align: center;
 }
-.our-cases-card-title{
+.our-cases-card-title {
   font-size: 17px;
   font-family: $second-font;
   text-align: center;
+  color: $accent-color;
 }
-.our-cases-subtitle{
+.our-cases-subtitle {
+  font-size: 12px;
+}
+.small{
   font-size: 10px;
 }
-// .our-cases-back-li{
-//  font-size: 13px;
-// }
+.our-cases-back-li{
+  margin-top: 6px;
+}
+// ---------------FACE-------------
+.our-cases-card-title-face {
+  font-size: 23px;
+  text-align: center;
+  font-family: $first-font;
+  color: $accent-color;
+  margin-top: 5px;
+}
+.our-cases-card-description-face{
+  color:silver;
+  font-size: 10px;
+}
+.our-cases-li-face{
+  font-size: 15px;
+  margin-top: 10px;
+  font-family: $second-font;
+}

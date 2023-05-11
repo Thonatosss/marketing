@@ -220,6 +220,9 @@ html {
   height: 60px;
   border-radius: 50%;
   background-color: #ceb76e;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -234,6 +237,9 @@ html {
   width: 43px;
   height: 3px;
   background-color: black;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -278,11 +284,17 @@ html {
   background-color: black;
   overflow-y: auto;
   right: -100%;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -o-transition: 0.8s;
   transition: 0.8s;
 }
 
 .burger-menu_active .burger-menu_nav {
   right: 0;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -709,9 +721,7 @@ html {
 }
 
 .button-9 {
-  -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
+  appearance: button;
   backface-visibility: hidden;
   background-color: #ceb76e;
   border-radius: 6px;
@@ -731,8 +741,7 @@ html {
   text-transform: none;
   transform: translateZ(0);
   transition: all 0.2s, box-shadow 0.08s ease-in;
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   max-width: 180px;
@@ -820,7 +829,6 @@ html {
   font-weight: 600;
   font-size: 16px;
   color: #fcfcfc;
-  margin-top: 24px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1175,16 +1183,16 @@ html {
   position: absolute;
   width: 100%;
   height: 100%;
-  color: black;
+  color: #fcfcfc;
   backface-visibility: hidden;
 }
 
 .card__face--front {
-  background: #ffffff;
+  background: black;
 }
 
 .card__face--back {
-  background: #ffffff;
+  background: black;
   transform: rotateY(180deg);
 }
 
@@ -1196,16 +1204,8 @@ html {
 }
 
 .our-cases-li {
-  font-size: 15px;
+  font-size: 16px;
   font-family: "MyFont2";
-}
-
-.our-cases-li {
-  margin-top: 10px;
-}
-
-.our-cases-li:not(:last-child) {
-  margin-bottom: 10px;
 }
 
 .our-cases-card-description {
@@ -1219,10 +1219,38 @@ html {
   font-size: 17px;
   font-family: "MyFont2";
   text-align: center;
+  color: #ceb76e;
 }
 
 .our-cases-subtitle {
+  font-size: 12px;
+}
+
+.small {
   font-size: 10px;
+}
+
+.our-cases-back-li {
+  margin-top: 6px;
+}
+
+.our-cases-card-title-face {
+  font-size: 23px;
+  text-align: center;
+  font-family: "MyFont1";
+  color: #ceb76e;
+  margin-top: 5px;
+}
+
+.our-cases-card-description-face {
+  color: silver;
+  font-size: 10px;
+}
+
+.our-cases-li-face {
+  font-size: 15px;
+  margin-top: 10px;
+  font-family: "MyFont2";
 }
 
 .services-section {
@@ -1968,22 +1996,12 @@ html {
   font-family: "Roboto Mono", monospace;
 }
 
-.biz-type-input::-moz-placeholder {
-  text-align: center;
-  font-size: 11px;
-  font-family: "MyFont2";
-}
-
 .biz-type-input::placeholder {
   text-align: center;
   font-size: 11px;
   font-family: "MyFont2";
 }
 @media screen and (min-width: 768px) {
-  .biz-type-input::-moz-placeholder {
-    font-size: 20px;
-    text-align: start;
-  }
   .biz-type-input::placeholder {
     font-size: 20px;
     text-align: start;
@@ -2263,9 +2281,7 @@ html {
 }
 
 .form-submit-btn {
-  -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
+  appearance: button;
   backface-visibility: hidden;
   background-color: #ceb76e;
   border-radius: 5px;
@@ -2285,8 +2301,7 @@ html {
   text-transform: none;
   transform: translateZ(0);
   transition: all 0.2s, box-shadow 0.08s ease-in;
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   max-width: 180px;
@@ -2325,8 +2340,7 @@ dialog::backdrop {
   animation: fadeIn 1s ease both;
   background: rgba(255, 255, 255, 0.4);
   z-index: 2;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 dialog .x {
   filter: grayscale(1);
@@ -2739,6 +2753,7 @@ button.primary:hover {
   font-weight: 800;
   font-size: 16px;
   margin: 20px 0 20px 0;
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .last-section-info {
@@ -2750,6 +2765,7 @@ button.primary:hover {
   color: #fcfcfc;
   font-family: "MyFont2";
   font-weight: 500;
+  text-align: center;
   font-size: 16px;
   margin-bottom: 30px;
 }
