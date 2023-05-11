@@ -568,7 +568,7 @@ html {
 }
 @media screen and (min-width: 1200px) {
   .hero-wrapper-tablet {
-    padding: 30px;
+    padding: 0 30px 30px 30px;
   }
 }
 
