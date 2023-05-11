@@ -1202,8 +1202,8 @@ html {
 
 .scene {
   display: inline-block;
-  width: 250px;
-  height: 300px;
+  width: 280px;
+  height: 320px;
   /*   border: 1px solid #CCC; */
   perspective: 600px;
 }

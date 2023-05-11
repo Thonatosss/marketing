@@ -9,7 +9,7 @@ new Splide('#splide1', {
         767: {
             perPage: 2,
         },
-        1999: {
+        3000: {
             perPage: 5,
             interval: 3000,
             speed: 2000,
@@ -28,7 +28,7 @@ new Splide('#splide2', {
         767: {
             perPage: 2,
         },
-        1999: {
+        3000: {
             perPage: 5,
             interval: 3000,
             speed: 2000,
