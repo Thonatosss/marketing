@@ -52,5 +52,6 @@
             "duratin": 0.4
         }
     }
-  }
+  },
+   "retina_detect": true
 }
