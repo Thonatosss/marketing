@@ -30,7 +30,7 @@ body::-webkit-scrollbar-thumb {
 
 .to-center {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -513,6 +513,18 @@ html {
 
 .navigation-li:not(:last-child) {
   margin-right: 25px;
+}
+
+.contacts-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.second-phone-icon {
+  margin-right: 14px;
+  margin-top: 10px;
 }
 
 .hero-section {
