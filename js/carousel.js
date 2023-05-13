@@ -60,7 +60,7 @@ new Splide('#splide3', {
 
 }).mount();
 new Splide('#splide4', {
-    type: 'loop',
+    // type: 'loop',
     perPage: 1,
     autoplay: true,
     lazyload: true,
@@ -76,7 +76,7 @@ new Splide('#splide4', {
 
         },
         3000: {
-            perPage: 3,
+            perPage: 2,
             interval: 2000,
             speed: 2000
         }
