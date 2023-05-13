@@ -5,7 +5,7 @@
   /*   border: 1px solid #CCC; */
   // margin: 40px 0;
   perspective: 600px;
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: 300px;
   }
   @media screen and (min-width: 1200px) {
@@ -35,8 +35,10 @@
 .card.is-flipped {
   transform: translateX(-100%) rotateY(-180deg);
 }
-.card:hover {
-  transform: translateX(-100%) rotateY(-180deg);
+@media screen and (min-width: 1200px) {
+  .card:hover {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
 }
 
 .card__face {
@@ -73,9 +75,8 @@
   color: silver;
   text-align: center;
   @media screen and (min-width: 1200px) {
-   font-size: 15px; 
+    font-size: 15px;
   }
-  
 }
 .our-cases-card-title {
   font-size: 17px;
@@ -83,12 +84,11 @@
   text-align: center;
   color: $accent-color;
   @media screen and (min-width: 1200px) {
-   font-size: 23px; 
+    font-size: 23px;
   }
 }
 .our-cases-subtitle {
   font-size: 12px;
-  
 }
 .small {
   font-size: 10px;
@@ -96,9 +96,9 @@
 .our-cases-back-li {
   margin-top: 6px;
 }
-.our-cases-subtitle{
-    @media screen and (min-width: 768px) {
-   font-size: 13px; 
+.our-cases-subtitle {
+  @media screen and (min-width: 768px) {
+    font-size: 13px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 16px;
@@ -115,7 +115,7 @@
   @media screen and (min-width: 768px) {
     font-size: 25px;
   }
-    @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     font-size: 30px;
   }
 }
@@ -123,23 +123,21 @@
   color: silver;
   font-size: 10px;
 
-    @media screen and (min-width: 768px) {
-   font-size: 11px; 
+  @media screen and (min-width: 768px) {
+    font-size: 11px;
   }
   @media screen and (min-width: 1200px) {
-   font-size: 13px; 
+    font-size: 13px;
   }
-  
 }
 .our-cases-li-face {
   font-size: 15px;
   margin-top: 10px;
   font-family: $second-font;
-    @media screen and (min-width: 768px) {
-      font-size: 20px;
-    
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
   }
   @media screen and (min-width: 1200px) {
-   font-size: 23px; 
+    font-size: 23px;
   }
 }

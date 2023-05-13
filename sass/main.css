@@ -581,9 +581,20 @@ html {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 767px) {
-  .move-right-bitch {
-    margin-right: 70px;
+@media screen and (max-width: 1199px) {
+  .move-right-header {
+    margin-right: 60px;
+  }
+}
+
+.to-center-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .to-center-header {
+    justify-content: center;
   }
 }
 
@@ -1244,10 +1255,11 @@ html {
   transform: translateX(-100%) rotateY(-180deg);
 }
 
-.card:hover {
-  transform: translateX(-100%) rotateY(-180deg);
+@media screen and (min-width: 1200px) {
+  .card:hover {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
 }
-
 .card__face {
   position: absolute;
   width: 100%;
@@ -2005,7 +2017,7 @@ html {
 @media screen and (min-width: 768px) {
   #progressbar li {
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 
@@ -3000,11 +3012,12 @@ button.primary:hover {
 }
 
 .footer-list-item {
+  text-transform: uppercase;
   font-family: "MyFont2";
 }
 @media screen and (min-width: 768px) {
   .footer-list-item {
-    font-size: 17px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -3018,7 +3031,7 @@ button.primary:hover {
 }
 @media screen and (min-width: 768px) {
   .footer-list-item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 20px;
   }
 }
 
@@ -3080,4 +3093,92 @@ button.primary:hover {
     width: 330px;
     height: 230px;
   }
+}
+
+.policy {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.org {
+  color: #fcfcfc;
+  font-family: "MyFont2";
+  font-size: 17px;
+  text-align: center;
+}
+
+.policy-link {
+  color: #fcfcfc;
+  font-family: "MyFont2";
+  font-size: 17px;
+}
+
+.policy-link:hover {
+  color: #ceb76e;
+}
+
+.policy-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.policy-logo-container {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  z-index: 30;
+}
+
+.policy-section {
+  padding-top: 150px;
+}
+
+.heading {
+  font-family: "MyFont1";
+  color: #fcfcfc;
+  font-size: 25px;
+}
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+.policy-heading {
+  color: #ceb76e;
+  font-family: "MyFont1";
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  .policy-heading {
+    font-size: 26px;
+    margin-top: 50px;
+  }
+}
+
+.policy-info {
+  color: #fcfcfc;
+  font-family: "MyFont2";
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  .policy-info {
+    font-size: 18px;
+  }
+}
+
+.main-page-link {
+  color: #ceb76e;
+}
+
+.policy-logo {
+  width: 170px;
+  height: 130px;
 }/*# sourceMappingURL=main.css.map */

@@ -61,6 +61,9 @@ submitButton.addEventListener("click", function (event) {
         body: `chat_id=${CHAT_ID}&text=${messageText}`,
     })
         .then(response => {
+            
+            form.reset();
+            
             swal({
                 title: "Заявка успішно відправлена!",
                 text: "Ми зв'яжемось з вами найближчим часом!",
