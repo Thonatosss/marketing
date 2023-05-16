@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./sass/main.css" />
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
     
@@ -1288,7 +1288,7 @@
           </h5>
           <form class="modal-form" id="modal_form">
             <input name="modal_form_userName" type="text" class="modal-user-name" autofocus="false" placeholder="Ваше ім'я" autocomplete="off" required >
-            <input name="modal_form_userPhone" type="text" id="last-section-phone" class="modal-user-phone" autofocus="false" placeholder = "Номер телефону" step="any" autocomplete="off">
+            <input name="modal_form_userPhone" type="text" id="last-section-phone" class="modal-user-phone intl-tel-input" autofocus="false" placeholder = "Номер телефону" step="any" autocomplete="off">
             <button onclick="window.dialog.close();" type="submit" class="form-submit-btn" aria-label="Відправити заявку">Відправити</button>
           </form>
           <p class="rights">Натискаючи кнопку «ВІДПРАВИТИ», Ви погоджуєтесь на обробку персональних даних згідно Політики конфіденційності</p>
@@ -1383,6 +1383,7 @@ var input4 = document.getElementById('last-section-phone');
 var input1Obj = window.intlTelInput(input1, {initialCountry: "ua",});
 var input2Obj = window.intlTelInput(input2, {initialCountry: "ua",});
 var input3Obj = window.intlTelInput(input3, {initialCountry: "ua",});
+var input4Obj = window.intlTelInput(input4, {initialCountry: "ua",});
 
 // Додаємо подію 'countrychange' до кожного інпуту
 input1.addEventListener('input', function() {
@@ -1415,6 +1416,16 @@ input3.addEventListener('countrychange', function() {
   var countryCode = input3Obj.getSelectedCountryData().dialCode;
   var phoneNumber = input3Obj.getNumber();
   input3.value = "+" + countryCode + phoneNumber;
+});
+input4.addEventListener('input', function() {
+  var value = input4.value;
+  var numericValue = value.replace(/[^0-9+]/g, ''); // Видаляємо всі символи, крім цифр
+  input4.value = numericValue;
+});
+input4.addEventListener('countrychange', function() {
+  var countryCode = input4Obj.getSelectedCountryData().dialCode;
+  var phoneNumber = input4Obj.getNumber();
+  input4.value = "+" + countryCode + phoneNumber;
 });
 
 </script>
