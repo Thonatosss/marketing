@@ -25,7 +25,6 @@
 #msform input:not(.form-checkbox),
 #msform textarea {
   
-  padding: 15px;
   width: 100%;
   box-sizing: border-box;
   font-family: $first-font;
@@ -196,11 +195,11 @@
 }
 .contacts-input {
   border: none;
-  width: 80%;
+  width: 500px !important;
+  padding-left: 50px;
   height: 40px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 5px;
-  padding: 15px;
   font-family: "Roboto Mono", monospace;
 }
 .biz-type-input::placeholder {
@@ -216,4 +215,10 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border: none;
   border-radius: 5px;
+}
+.last-step{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

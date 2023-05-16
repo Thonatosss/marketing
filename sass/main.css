@@ -215,6 +215,9 @@ html {
   height: 60px;
   border-radius: 50%;
   background-color: #ceb76e;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 @media screen and (max-width: 767px) {
@@ -242,6 +245,9 @@ html {
   width: 43px;
   height: 3px;
   background-color: black;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 @media screen and (max-width: 767px) {
@@ -294,11 +300,17 @@ html {
   background-color: black;
   overflow-y: auto;
   right: -100%;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -o-transition: 0.8s;
   transition: 0.8s;
 }
 
 .burger-menu_active .burger-menu_nav {
   right: 0;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -789,9 +801,7 @@ html {
 }
 
 .button-9 {
-  -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
+  appearance: button;
   backface-visibility: hidden;
   background-color: #ceb76e;
   border-radius: 6px;
@@ -811,8 +821,7 @@ html {
   text-transform: none;
   transform: translateZ(0);
   transition: all 0.2s, box-shadow 0.08s ease-in;
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   max-width: 180px;
@@ -1916,7 +1925,6 @@ html {
 /*inputs*/
 #msform input:not(.form-checkbox),
 #msform textarea {
-  padding: 15px;
   width: 100%;
   box-sizing: border-box;
   font-family: "MyFont1";
@@ -2121,18 +2129,12 @@ html {
 
 .contacts-input {
   border: none;
-  width: 80%;
+  width: 500px !important;
+  padding-left: 50px;
   height: 40px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 5px;
-  padding: 15px;
   font-family: "Roboto Mono", monospace;
-}
-
-.biz-type-input::-moz-placeholder {
-  text-align: center;
-  font-size: 11px;
-  font-family: "MyFont2";
 }
 
 .biz-type-input::placeholder {
@@ -2141,10 +2143,6 @@ html {
   font-family: "MyFont2";
 }
 @media screen and (min-width: 768px) {
-  .biz-type-input::-moz-placeholder {
-    font-size: 20px;
-    text-align: start;
-  }
   .biz-type-input::placeholder {
     font-size: 20px;
     text-align: start;
@@ -2155,6 +2153,13 @@ html {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border: none;
   border-radius: 5px;
+}
+
+.last-step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .contact-us-section {
@@ -2404,11 +2409,12 @@ html {
   border: none;
   border-color: black;
   font-family: "MyFont2";
-  width: 80%;
+  width: 250px;
   height: 50px;
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   padding: 10px;
+  margin-bottom: 20px;
 }
 
 .modal-user-phone {
@@ -2416,7 +2422,7 @@ html {
   border: none;
   border-color: black;
   font-family: "MyFont2";
-  width: 80%;
+  width: 250px;
   height: 50px;
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
@@ -2424,9 +2430,7 @@ html {
 }
 
 .form-submit-btn {
-  -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
+  appearance: button;
   backface-visibility: hidden;
   background-color: #ceb76e;
   border-radius: 5px;
@@ -2446,8 +2450,7 @@ html {
   text-transform: none;
   transform: translateZ(0);
   transition: all 0.2s, box-shadow 0.08s ease-in;
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   max-width: 180px;
@@ -2486,8 +2489,7 @@ dialog::backdrop {
   animation: fadeIn 1s ease both;
   background: rgba(255, 255, 255, 0.4);
   z-index: 2;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 dialog .x {
   filter: grayscale(1);
@@ -2804,16 +2806,22 @@ button.primary:hover {
 .oudit-user-name {
   background-color: white;
   border: none;
-  width: 80%;
+  width: 250px;
+  margin-bottom: 20px;
   height: 50px;
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   padding: 15px;
   font-family: "MyFont2";
 }
+@media screen and (min-width: 768px) {
+  .oudit-user-name {
+    width: 300px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .oudit-user-name {
-    width: 50%;
+    width: 500px;
     height: 70px;
     font-size: 22px;
   }
@@ -2822,7 +2830,7 @@ button.primary:hover {
 .oudit-user-phone {
   background-color: white;
   border: none;
-  width: 80%;
+  width: 250px;
   height: 50px;
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
@@ -2830,9 +2838,14 @@ button.primary:hover {
   font-family: "MyFont2";
   margin-top: 15px;
 }
+@media screen and (min-width: 768px) {
+  .oudit-user-phone {
+    width: 300px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .oudit-user-phone {
-    width: 50%;
+    width: 500px;
     height: 70px;
     font-size: 22px;
   }
