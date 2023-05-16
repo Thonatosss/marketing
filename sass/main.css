@@ -736,6 +736,7 @@ html {
 }
 
 .call-us-form {
+  user-scalable: no;
   margin-top: 40px;
   margin-bottom: 70px;
   padding: 15px;
