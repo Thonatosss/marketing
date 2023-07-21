@@ -215,9 +215,6 @@ html {
   height: 60px;
   border-radius: 50%;
   background-color: #ceb76e;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -o-transition: 0.4s;
   transition: 0.4s;
 }
 @media screen and (max-width: 767px) {
@@ -245,9 +242,6 @@ html {
   width: 43px;
   height: 3px;
   background-color: black;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -o-transition: 0.4s;
   transition: 0.4s;
 }
 @media screen and (max-width: 767px) {
@@ -300,17 +294,11 @@ html {
   background-color: black;
   overflow-y: auto;
   right: -100%;
-  -webkit-transition: 0.8s;
-  -moz-transition: 0.8s;
-  -o-transition: 0.8s;
   transition: 0.8s;
 }
 
 .burger-menu_active .burger-menu_nav {
   right: 0;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -726,25 +714,29 @@ html {
   border: none;
   background-color: white;
   padding: 8px 30px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  width: 239px;
+  border-radius: 5px;
 }
 @media screen and (min-width: 768px) {
   .call-us-form-input {
     height: 70px;
     font-size: 20px;
+    width: 500px;
   }
 }
 
 .call-us-form {
   margin-top: 40px;
   margin-bottom: 70px;
+  gap: 20px;
   padding: 15px;
   width: 100%;
-  height: 70px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  background-color: white;
+  flex-direction: column;
   border-radius: 5px;
   max-width: 600px;
 }
@@ -800,7 +792,9 @@ html {
 }
 
 .button-9 {
-  appearance: button;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
   backface-visibility: hidden;
   background-color: #ceb76e;
   border-radius: 6px;
@@ -820,7 +814,8 @@ html {
   text-transform: none;
   transform: translateZ(0);
   transition: all 0.2s, box-shadow 0.08s ease-in;
-  user-select: none;
+  -moz-user-select: none;
+       user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   max-width: 180px;
@@ -2143,12 +2138,22 @@ html {
   font-family: "Roboto Mono", monospace;
 }
 
+.biz-type-input::-moz-placeholder {
+  text-align: center;
+  font-size: 11px;
+  font-family: "MyFont2";
+}
+
 .biz-type-input::placeholder {
   text-align: center;
   font-size: 11px;
   font-family: "MyFont2";
 }
 @media screen and (min-width: 768px) {
+  .biz-type-input::-moz-placeholder {
+    font-size: 20px;
+    text-align: start;
+  }
   .biz-type-input::placeholder {
     font-size: 20px;
     text-align: start;
@@ -2436,7 +2441,9 @@ html {
 }
 
 .form-submit-btn {
-  appearance: button;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
   backface-visibility: hidden;
   background-color: #ceb76e;
   border-radius: 5px;
@@ -2456,7 +2463,8 @@ html {
   text-transform: none;
   transform: translateZ(0);
   transition: all 0.2s, box-shadow 0.08s ease-in;
-  user-select: none;
+  -moz-user-select: none;
+       user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   max-width: 180px;
@@ -2494,7 +2502,8 @@ dialog::backdrop {
   animation: fadeIn 1s ease both;
   background: rgba(255, 255, 255, 0.4);
   z-index: 2;
-  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 }
 dialog .x {
   filter: grayscale(1);

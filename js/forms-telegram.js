@@ -7,7 +7,7 @@ const URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 document.getElementById('first-form').addEventListener('submit', function (e) {
     e.preventDefault();
     let message = `Заявка з сайту!\n`;
-    message += `Номер телефону:${this.firstFormPhone.value}\n`;
+    message += `Ім'я: ${this.firstFormName.value}\nНомер телефону:${this.firstFormPhone.value}`;
     fetch(URL, {
         method: 'POST',
         headers: {
@@ -28,8 +28,9 @@ document.getElementById('first-form').addEventListener('submit', function (e) {
                 text: "Ми зв'яжемось з вами найближчим часом!",
                 icon: "success",
                 timer: 3000,
-              });
+            });
             this.firstFormPhone.value = '';
+            this.firstFormName.value = '';
 
         })
         .catch(error => {
@@ -65,9 +66,9 @@ document.getElementById('ouditForm').addEventListener('submit', function (e) {
                 text: "Ми зв'яжемось з вами найближчим часом!",
                 icon: "success",
                 timer: 3000,
-              });
+            });
             this.oudit_user_name.value = '';
-            this.ooudit_user_phone.value = '';
+            this.oudit_user_phone.value = '';
 
         })
         .catch(error => {
@@ -99,7 +100,7 @@ document.getElementById('modal_form').addEventListener('submit', function (e) {
                 text: "Ми зв'яжемось з вами найближчим часом!",
                 icon: "success",
                 timer: 3000,
-              });
+            });
             this.modal_form_userName.value = '';
             this.modal_form_userPhone.value = '';
 

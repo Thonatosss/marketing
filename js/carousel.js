@@ -59,26 +59,26 @@ new Splide('#splide3', {
     }
 
 }).mount();
-new Splide('#splide4', {
-    type: 'loop',
-    perPage: 1,
-    autoplay: true,
-    lazyload: true,
-    arrows: false,
-    pagination: false,
-    direction: 'rtl',
-    breakpoints: {
-        767: {
-            perPage: 1,
-        },
-        1199: {
-            perPage: 2,
+// new Splide('#splide4', {
+//     type: 'loop',
+//     perPage: 1,
+//     autoplay: true,
+//     lazyload: true,
+//     arrows: false,
+//     pagination: false,
+//     direction: 'rtl',
+//     breakpoints: {
+//         767: {
+//             perPage: 1,
+//         },
+//         1199: {
+//             perPage: 2,
 
-        },
-        3000: {
-            perPage: 3,
-            interval: 2000,
-            speed: 2000
-        }
-    }
-}).mount();
+//         },
+//         3000: {
+//             perPage: 3,
+//             interval: 2000,
+//             speed: 2000
+//         }
+//     }
+// }).mount();
