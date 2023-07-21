@@ -23,12 +23,7 @@ document.getElementById('first-form').addEventListener('submit', function (e) {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-            swal({
-                title: "Заявка успішно відправлена!",
-                text: "Ми зв'яжемось з вами найближчим часом!",
-                icon: "success",
-                timer: 3000,
-            });
+            window.location.href = 'thanks.html';
             this.firstFormPhone.value = '';
             this.firstFormName.value = '';
 
@@ -61,12 +56,8 @@ document.getElementById('ouditForm').addEventListener('submit', function (e) {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-            swal({
-                title: "Заявка успішно відправлена!",
-                text: "Ми зв'яжемось з вами найближчим часом!",
-                icon: "success",
-                timer: 3000,
-            });
+            
+            window.location.href = 'thanks.html';
             this.oudit_user_name.value = '';
             this.oudit_user_phone.value = '';
 
@@ -95,12 +86,8 @@ document.getElementById('modal_form').addEventListener('submit', function (e) {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-            swal({
-                title: "Заявка успішно відправлена!",
-                text: "Ми зв'яжемось з вами найближчим часом!",
-                icon: "success",
-                timer: 3000,
-            });
+           
+            window.location.href = 'thanks.html';
             this.modal_form_userName.value = '';
             this.modal_form_userPhone.value = '';
 

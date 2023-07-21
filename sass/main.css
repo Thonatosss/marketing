@@ -3233,4 +3233,79 @@ button.primary:hover {
 .policy-logo {
   width: 170px;
   height: 130px;
+}
+
+.thanks-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  z-index: 30;
+}
+
+.thanks-logo {
+  width: 170px;
+  height: 130px;
+}
+@media screen and (min-width: 768px) {
+  .thanks-logo {
+    height: 160px;
+    width: 200px;
+  }
+}
+
+.thanks-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+@media screen and (min-width: 768px) {
+  .thanks-section {
+    gap: 20px;
+  }
+}
+
+.thanks-main-title {
+  color: #ceb76e;
+  font-family: "MyFont1";
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .thanks-main-title {
+    font-size: 46px;
+  }
+}
+
+.thanks-second-title {
+  color: #fcfcfc;
+  font-family: "MyFont2";
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .thanks-second-title {
+    font-size: 42px;
+  }
+}
+
+.to-main-btn {
+  margin-top: 10px;
+}
+
+.to-main-link {
+  color: #fcfcfc;
+  font-family: "MyFont1";
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .to-main-link {
+    font-size: 19px;
+  }
 }/*# sourceMappingURL=main.css.map */
