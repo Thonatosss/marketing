@@ -93,12 +93,11 @@
 .header-phone-num {
   display: none;
   @media screen and (min-width: 1200px) {
-    font-size: px;
     font-weight: 500;
     color: $text-color;
     display: block;
     font-family: $first-font;
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 .header-phone-icon {

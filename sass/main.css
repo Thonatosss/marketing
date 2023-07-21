@@ -555,12 +555,11 @@ html {
 }
 @media screen and (min-width: 1200px) {
   .header-phone-num {
-    font-size: px;
     font-weight: 500;
     color: #fcfcfc;
     display: block;
     font-family: "MyFont1";
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
@@ -853,6 +852,13 @@ html {
 
 .button-9:focus {
   box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px;
+}
+
+.first-form-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .second-section {

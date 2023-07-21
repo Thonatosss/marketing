@@ -38,43 +38,6 @@ document.getElementById('first-form').addEventListener('submit', function (e) {
 });
 
 
-const form = document.getElementById("msform");
-const submitButton = form.querySelector('input[type="submit"]');
-
-submitButton.addEventListener("click", function (event) {
-    event.preventDefault();
-
-    const formData = new FormData(form);
-    const formDataObj = Object.fromEntries(formData);
-
-    let messageText = "Заявка з сайту!! \n\n";
-    for (const [key, value] of Object.entries(formDataObj)) {
-        messageText += `${key}: ${value} \n`;
-    }
-
-    fetch(URL, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": `Bearer ${TOKEN}`,
-        },
-        body: `chat_id=${CHAT_ID}&text=${messageText}`,
-    })
-        .then(response => {
-            
-            form.reset();
-            
-            swal({
-                title: "Заявка успішно відправлена!",
-                text: "Ми зв'яжемось з вами найближчим часом!",
-                icon: "success",
-                timer: 3000,
-              });
-        })
-        .catch(error => {
-            alert('Виникла помилка під час відправки даних. Спробуйте ще раз.');
-        });
-});
 
 
 document.getElementById('ouditForm').addEventListener('submit', function (e) {
