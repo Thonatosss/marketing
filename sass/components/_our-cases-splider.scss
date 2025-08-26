@@ -1,7 +1,7 @@
 .scene {
   display: inline-block;
   width: 260px;
-  height: 320px;
+  height: 350px;
   /*   border: 1px solid #CCC; */
   // margin: 40px 0;
   perspective: 600px;
@@ -10,7 +10,7 @@
   }
   @media screen and (min-width: 1200px) {
     width: 360px;
-    height: 400px;
+    height: 450px;
   }
 }
 .our-cases-container {
@@ -89,6 +89,7 @@
 }
 .our-cases-subtitle {
   font-size: 12px;
+  text-align: center;
 }
 .small {
   font-size: 10px;
@@ -112,6 +113,7 @@
   font-family: $first-font;
   color: $accent-color;
   margin-top: 5px;
+  
   @media screen and (min-width: 768px) {
     font-size: 25px;
   }
@@ -122,12 +124,14 @@
 .our-cases-card-description-face {
   color: silver;
   font-size: 10px;
+  text-align: center;
 
   @media screen and (min-width: 768px) {
     font-size: 11px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 13px;
+    
   }
 }
 .our-cases-li-face {

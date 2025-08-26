@@ -520,7 +520,6 @@ html {
 
 .header-phone-link {
   display: flex;
-  justify-content: center;
   align-items: center;
   transition: all 0.25s ease;
   cursor: pointer;
@@ -1076,11 +1075,33 @@ html {
   }
 }
 
+.budget-page-title {
+  color: #fcfcfc;
+  font-family: "MyFont1";
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .budget-page-title {
+    font-size: 66px;
+  }
+}
+
+.budget-info {
+  color: #fcfcfc;
+  font-family: "MyFont2";
+}
 @media screen and (min-width: 768px) {
-  .budget-tablet-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .budget-info {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .budget-info {
+    font-size: 25px;
+    margin: 10px 0 10px 0;
+    text-align: left;
   }
 }
 
@@ -1224,7 +1245,7 @@ html {
 .scene {
   display: inline-block;
   width: 260px;
-  height: 320px;
+  height: 350px;
   /*   border: 1px solid #CCC; */
   perspective: 600px;
 }
@@ -1236,7 +1257,7 @@ html {
 @media screen and (min-width: 1200px) {
   .scene {
     width: 360px;
-    height: 400px;
+    height: 450px;
   }
 }
 
@@ -1325,6 +1346,7 @@ html {
 
 .our-cases-subtitle {
   font-size: 12px;
+  text-align: center;
 }
 
 .small {
@@ -1368,6 +1390,7 @@ html {
 .our-cases-card-description-face {
   color: silver;
   font-size: 10px;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .our-cases-card-description-face {

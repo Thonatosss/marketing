@@ -58,6 +58,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
 
+
     align-items: center;
     font-family: $first-font;
   }
@@ -72,7 +73,6 @@
 
 .header-phone-link {
   display: flex;
-  justify-content: center;
   align-items: center;
   transition: all 0.25s ease;
   cursor: pointer;
@@ -137,3 +137,8 @@
   }
   align-items: center;
 }
+// .contacts-details-list{
+//   display: flex;
+//   flex-direction: column;
+//   gap: 3px;
+// }
