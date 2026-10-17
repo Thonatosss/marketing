@@ -1,32 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./sass/main.css" />
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/favico//apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favico//favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favico//favicon-16x16.png"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
     <title>Дякуюємо, що обрали нас!</title>
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#111111" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favico/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favico/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favico/apple-touch-icon.png" />
+    <link rel="manifest" href="images/favico/site.webmanifest" />
+    <link rel="preload" href="fonts/RG-SpaciousBook.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/RG-StandardMedium.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/js/main.css" />
+    <script defer src="assets/js/main.js"></script>
     <script>
       !function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -38,15 +26,15 @@
       'https://connect.facebook.net/en_US/fbevents.js');
       fbq('init', '1463494927551605');
       fbq('track', 'Lead');
-      </script>
+    </script>
   </head>
- 
+
   <body>
     <header class="thanks-header">
       <div class="container thanks-logo-container">
-        <a href="/index.html" class="to-main-link">
+        <a href="./" class="to-main-link">
           <img
-            src="./images/second_logo.png"
+            src="images/second_logo.webp"
             alt="логотип"
             class="thanks-logo"
           />
@@ -60,12 +48,10 @@
           Наш менеджер зв'яжеться з Вами найближчим часом
         </h2>
         <button class="to-main-btn button-9">
-          <a href="/index.html" class="to-main-link ">ПОВЕРНУТИСЬ НА ГОЛОВНУ</a>
+          <a href="./" class="to-main-link ">ПОВЕРНУТИСЬ НА ГОЛОВНУ</a>
         </button>
       </section>
     </div>
     <div id="particles-js"></div>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="./js/particles.js"></script>
   </body>
 </html>

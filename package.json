@@ -3,7 +3,9 @@
   "version": "2.0.0",
   "private": true,
   "description": "Лендінг Prime Digital Group",
-  "engines": { "node": ">=18" },
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "build:css": "sass --style=compressed --no-source-map sass/main.scss assets/css/styles.css",
     "build:js": "esbuild js/main.js --bundle --minify --format=iife --outfile=assets/js/main.js --loader:.png=file --loader:.svg=file --asset-names=[name]-[hash] --public-path=./",
@@ -22,6 +24,6 @@
   "devDependencies": {
     "esbuild": "^0.25.0",
     "sass": "^1.80.0",
-    "sharp": "^0.33.0"
+    "sharp": "^0.35.5"
   }
 }

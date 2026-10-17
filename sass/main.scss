@@ -1,14 +1,11 @@
 
 @import './utils/vars';
 
-
 @import './base/common';
 @import './base/resets';
 @import './base/carousel';
 
-
 @import './components/container';
-@import './components/section';
 
 @import './components/particles';
 @import './components/hamburger-menu';
@@ -23,22 +20,16 @@
 @import './components/our-cases-splider';
 @import './components/services';
 @import './components/motivation-section';
-@import './components/team-section';
-@import './components/contact-us';
-@import './components/contact-us-section';
 @import './components/benefits-section';
 @import './components/why-we-section';
 @import './components/modal';
-@import './components/alerts';
 @import './components/certification';
 @import './components/comfort-section';
-
-
 
 @import './components/free-oudit';
 @import './components/last-section';
 @import './components/footer';
 
-
 @import './components/policy';
 @import './components/thanks';
+@import './components/toast';

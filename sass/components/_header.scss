@@ -137,8 +137,12 @@
   }
   align-items: center;
 }
-// .contacts-details-list{
-//   display: flex;
-//   flex-direction: column;
-//   gap: 3px;
-// }
+.contacts-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.header-phone-link--wa {
+  margin-right: 10px;
+}

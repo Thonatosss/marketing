@@ -1,0 +1,26 @@
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  z-index: 100;
+  max-width: calc(100% - 32px);
+  padding: 14px 22px;
+  border-radius: 8px;
+  font-family: $second-font;
+  color: $text-color;
+  background-color: #2b2b2b;
+  border: 1px solid $accent-color;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  transform: translate(-50%, 20px);
+  transition: opacity 0.3s, transform 0.3s;
+
+  &--error {
+    border-color: #d9534f;
+  }
+
+  &--visible {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
