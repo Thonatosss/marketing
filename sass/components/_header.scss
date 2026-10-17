@@ -1,12 +1,6 @@
+@use '../utils/vars' as *;
+
 .contact-us {
-  @media screen and (max-width: 767px) {
-    width: 45px;
-    height: 45px;
-    margin-right: 10px;
-  }
-  @media screen and (min-width: 768px) {
-    margin-right: 30px;
-  }
   background-color: $accent-color;
   border-radius: 50%;
   width: 60px;
@@ -15,6 +9,14 @@
   justify-content: center;
   align-items: center;
   margin-right: 100px;
+  @media screen and (max-width: 767px) {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
   @media screen and (min-width: 1200px) {
     display: none;
   }
@@ -132,10 +134,10 @@
 .to-center-header{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   @media screen and (min-width: 1200px) {
      justify-content: center;
   }
-  align-items: center;
 }
 .contacts-details-list {
   display: flex;

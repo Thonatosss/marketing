@@ -1,3 +1,5 @@
+@use '../utils/vars' as *;
+
 .our-cases-corner{
     transform: rotate(90deg) scaleX(-1);
     margin-left: auto;

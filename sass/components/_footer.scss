@@ -1,3 +1,5 @@
+@use '../utils/vars' as *;
+
 
 .footer-wrapper{
     display: flex;
@@ -102,14 +104,14 @@
     color: $accent-color;
 }
 .center-footer-policy{
-    
-    @media screen and (min-width: 768px) {
-        margin-top: 20px;
-    }
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    
+    @media screen and (min-width: 768px) {
+        margin-top: 20px;
+    }
     
     
 }

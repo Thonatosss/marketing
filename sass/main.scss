@@ -1,35 +1,34 @@
 
-@import './utils/vars';
 
-@import './base/common';
-@import './base/resets';
-@import './base/carousel';
+@use 'base/common';
+@use 'base/resets';
+@use 'base/carousel';
 
-@import './components/container';
+@use 'components/container';
 
-@import './components/particles';
-@import './components/hamburger-menu';
-@import './components/header-links';
-@import './components/header';
+@use 'components/particles';
+@use 'components/hamburger-menu';
+@use 'components/header-links';
+@use 'components/header';
 
-@import './components/hero';
-@import './components/second-section';
-@import './components/budget-section';
-@import './components/our-exp-section';
-@import './components/our-cases-section';
-@import './components/our-cases-splider';
-@import './components/services';
-@import './components/motivation-section';
-@import './components/benefits-section';
-@import './components/why-we-section';
-@import './components/modal';
-@import './components/certification';
-@import './components/comfort-section';
+@use 'components/hero';
+@use 'components/second-section';
+@use 'components/budget-section';
+@use 'components/our-exp-section';
+@use 'components/our-cases-section';
+@use 'components/our-cases-splider';
+@use 'components/services';
+@use 'components/motivation-section';
+@use 'components/benefits-section';
+@use 'components/why-we-section';
+@use 'components/modal';
+@use 'components/certification';
+@use 'components/comfort-section';
 
-@import './components/free-oudit';
-@import './components/last-section';
-@import './components/footer';
+@use 'components/free-oudit';
+@use 'components/last-section';
+@use 'components/footer';
 
-@import './components/policy';
-@import './components/thanks';
-@import './components/toast';
+@use 'components/policy';
+@use 'components/thanks';
+@use 'components/toast';

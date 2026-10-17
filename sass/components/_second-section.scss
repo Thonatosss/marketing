@@ -1,3 +1,5 @@
+@use '../utils/vars' as *;
+
 .second-section {
   background-color: $accent-color;
 }

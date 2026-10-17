@@ -13,8 +13,8 @@ import { initParticles } from './modules/particles.js';
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 initMenu();
-initCards();
 initSliders();
+initCards();
 initDialog();
 initForms();
 
