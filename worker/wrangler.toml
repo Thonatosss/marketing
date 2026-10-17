@@ -1,0 +1,7 @@
+name = "prime-leads"
+main = "lead-worker.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+# Домен сайту, з якого дозволені запити (без слеша в кінці)
+ALLOWED_ORIGIN = "https://example.com"

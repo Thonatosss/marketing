@@ -31,15 +31,26 @@ npm run serve        # локальний сервер на http://localhost:550
 
 ## Заявки з форм
 
-Форми (`data-lead-form`) надсилають `POST` із JSON на адресу з тегу в `index.html`:
+Форми (`data-lead-form`) надсилають `POST` із JSON `{ name, phone, source, page }` на адресу з тегу в `index.html`:
 
 ```html
-<meta name="lead-endpoint" content="https://ваш-вебхук" />
+<meta name="lead-endpoint" content="https://prime-leads.<акаунт>.workers.dev" />
 ```
 
-Тіло запиту: `{ "name", "phone", "source", "page" }`, де `source` — `hero`, `audit` або `consultation`.
-Приймачем може бути вебхук n8n/Make або власна serverless-функція, яка вже сама надсилає повідомлення
-в Telegram. **Токен бота не повинен потрапляти в код сайту.**
+Приймач — Cloudflare Worker з `worker/lead-worker.js`: перевіряє дані та origin, екранує текст
+і надсилає повідомлення в Telegram. Токен бота живе лише в секретах Worker, не в коді сайту.
+
+Розгортання (потрібен безкоштовний акаунт Cloudflare):
+
+```bash
+cd worker
+# у wrangler.toml вкажіть ALLOWED_ORIGIN — домен сайту
+npx wrangler secret put BOT_TOKEN   # токен нового бота від @BotFather
+npx wrangler secret put CHAT_ID     # id чату/каналу
+npx wrangler deploy
+```
+
+Скопіюйте URL із виводу `deploy` у `<meta name="lead-endpoint">`.
 
 > Поки `lead-endpoint` порожній, користувач бачить повідомлення про помилку з номером телефону.
 
