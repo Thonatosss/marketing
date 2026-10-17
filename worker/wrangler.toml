@@ -1,0 +1,7 @@
+name = "prime-digital-leads"
+main = "index.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+# Домен(и) сайту через кому. Після появи домену на HostIQ — додати сюди.
+ALLOWED_ORIGIN = "https://primedigitalgroup.com.ua,https://www.primedigitalgroup.com.ua"
