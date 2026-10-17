@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'MyFont1';
-    src: url('/fonts/RG-SpaciousBook.ttf');
+    src: url('../../fonts/RG-SpaciousBook.woff2') format('woff2');
     font-display: swap;
 }
 @font-face {
     font-family: 'MyFont2';
-    src: url('/fonts/RG-StandardMedium.ttf');
+    src: url('../../fonts/RG-StandardMedium.woff2') format('woff2');
     font-display: swap;
 }
 
@@ -110,3 +110,22 @@ body {
 }
 
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+// honeypot проти ботів: людина не бачить, бот заповнює
+.visually-hidden-field {
+  position: absolute !important;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}

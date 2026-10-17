@@ -1,52 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./sass/main.css" />
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/favico//apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favico//favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favico//favicon-16x16.png"
-    />
+    <title>Дякуємо, що обрали нас! — Prime Digital Group</title>
+    <meta name="description" content="Заявку отримано. Наш менеджер зв'яжеться з вами найближчим часом." />
+    <link rel="canonical" href="https://primedigitalgroup.com.ua/thanks.html" />
+    <meta name="robots" content="noindex" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="uk_UA" />
+    <meta property="og:site_name" content="Prime Digital Group" />
+    <meta property="og:title" content="Дякуємо, що обрали нас! — Prime Digital Group" />
+    <meta property="og:description" content="Заявку отримано. Наш менеджер зв'яжеться з вами найближчим часом." />
+    <meta property="og:url" content="https://primedigitalgroup.com.ua/thanks.html" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favico/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favico/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favico/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <title>Дякуюємо, що обрали нас!</title>
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '1463494927551605');
-      fbq('track', 'Lead');
-      </script>
+    <meta name="theme-color" content="#000000" />
   </head>
  
   <body>
     <header class="thanks-header">
       <div class="container thanks-logo-container">
-        <a href="/index.html" class="to-main-link">
+        <a href="/" class="to-main-link">
           <img
-            src="./images/second_logo.png"
+            src="./images/second_logo-190.webp"
             alt="логотип"
             class="thanks-logo"
           />
@@ -60,12 +40,15 @@
           Наш менеджер зв'яжеться з Вами найближчим часом
         </h2>
         <button class="to-main-btn button-9">
-          <a href="/index.html" class="to-main-link ">ПОВЕРНУТИСЬ НА ГОЛОВНУ</a>
+          <a href="/" class="to-main-link ">ПОВЕРНУТИСЬ НА ГОЛОВНУ</a>
         </button>
       </section>
     </div>
     <div id="particles-js"></div>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="./js/particles.js"></script>
+    <script type="module" src="./js/page.js"></script>
+    <script type="module">
+      import { loadPixel } from './js/pixel.js';
+      loadPixel('Lead');
+    </script>
   </body>
 </html>
